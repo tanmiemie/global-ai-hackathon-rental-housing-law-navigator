@@ -1,0 +1,1950 @@
+{
+  "schema_version": "1.0",
+  "rules_sha256": "8430e5972ec27ef3c490f40bdf54b0bf1775b65371f850d4170e18b4b71140e9",
+  "plans_sha256": "528a2b5276eaca9218922b76bbd986f0372d9bb3d77808169cd13c74dd6a1dc7",
+  "purpose": "Explanation-only links from decisive missing executable facts to address CSV validation issues; no value binding or changes to applicability.",
+  "review": {
+    "method": "Reviewed finite distinct fact semantic names, descriptions, data types, and subject scopes from the current plans; expanded approved families into exact fully qualified keys. Runtime matching uses exact keys only.",
+    "construction_timing_names": [
+      "building_construction_date",
+      "construction_completed_date",
+      "construction_completion_date",
+      "construction_date",
+      "first_built_date",
+      "first_built_full_date"
+    ],
+    "property_unit_count_names": [
+      "building_dwelling_units",
+      "building_living_units",
+      "building_rental_unit_count",
+      "building_rental_units",
+      "building_residential_units",
+      "configuration_units",
+      "dwelling_apartment_count",
+      "dwelling_apartments",
+      "dwelling_family_units",
+      "dwelling_units_in_structure",
+      "fair_chance_property_unit_count",
+      "leased_dwelling_units",
+      "premises_dwelling_units",
+      "premises_rental_units",
+      "premises_total_dwelling_units",
+      "premises_total_units",
+      "property_rental_units",
+      "property_total_units",
+      "property_unit_count",
+      "residential_rental_units",
+      "separate_dwelling_units_in_structure",
+      "separate_units_in_structure",
+      "single_family_units_on_parcel",
+      "single_family_units_on_same_parcel",
+      "single_structure_dwelling_count",
+      "single_structure_dwelling_units",
+      "structure_dwelling_units",
+      "structure_separate_dwelling_units"
+    ],
+    "pilot_shared_facts": [
+      "property.building_rental_unit_count",
+      "property.building_unit_count",
+      "property.two_units_in_single_structure"
+    ],
+    "excluded_semantics": [
+      "Certificate-of-occupancy issuance or existence; construction completion existence without timing",
+      "Owner portfolio, owner holdings, and unrelated landlords or competitors",
+      "Counts of occupants, tenants, owners, memberships, and bedrooms",
+      "Family classification or capacity rather than unit counts",
+      "Demolition and conversion project units or sites, new hypothetical buildings, and percentage thresholds",
+      "Rented units or bedrooms combined without an independently identified unit count"
+    ],
+    "scope_policy": "Links to building, premises, subset, rental, and event-scoped counts only explain related source issues. Their legal counting scope and relevant date remain independent, unbound facts. Construction dates likewise remain distinct from calendar-year intervals and certificate dates."
+  },
+  "dependencies": {
+    "case.r-0050f22a2b36fbb03da7.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within the subject single structure.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-0050f22a2b36fbb03da7"
+      ]
+    },
+    "case.r-024a0c68f47c93ac8c4c.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within this one structure, not parcel or portfolio count.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-024a0c68f47c93ac8c4c"
+      ]
+    },
+    "case.r-03a705a5b2fd13c23cc5.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-03a705a5b2fd13c23cc5"
+      ]
+    },
+    "case.r-0485c8772770dabb1c7e.structure_separate_dwelling_units": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units in the single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-0485c8772770dabb1c7e"
+      ]
+    },
+    "case.r-04c099559f1691fddce6.structure_separate_dwelling_units": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units in the single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-04c099559f1691fddce6"
+      ]
+    },
+    "case.r-0531f6212c76aa92fff7.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-0531f6212c76aa92fff7"
+      ]
+    },
+    "case.r-0985759c6fd807a82798.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-0985759c6fd807a82798"
+      ]
+    },
+    "case.r-0e6df07a1d23b8a86d1d.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-0e6df07a1d23b8a86d1d"
+      ]
+    },
+    "case.r-103370206d5d79070d73.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-103370206d5d79070d73"
+      ]
+    },
+    "case.r-135701a6886ff65f1089.single_structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the protected unit.",
+      "subject_scope": "protected_unit_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-135701a6886ff65f1089"
+      ]
+    },
+    "case.r-13877f2ce3e3a87844d3.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-13877f2ce3e3a87844d3"
+      ]
+    },
+    "case.r-13877f2ce3e3a87844d3.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-13877f2ce3e3a87844d3"
+      ]
+    },
+    "case.r-140706c9ebc0e42fd3fa.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-140706c9ebc0e42fd3fa"
+      ]
+    },
+    "case.r-173073bb90c938507794.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-173073bb90c938507794"
+      ]
+    },
+    "case.r-173073bb90c938507794.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-173073bb90c938507794"
+      ]
+    },
+    "case.r-1959c7eeb73675dc5540.residential_rental_units": {
+      "input_group": "units",
+      "description": "Number of residential rental units contained in the foreclosed property acquired.",
+      "subject_scope": "acquired_property",
+      "data_type": "number",
+      "rule_ids": [
+        "r-1959c7eeb73675dc5540"
+      ]
+    },
+    "case.r-1b46566f1187d0531630.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-1b46566f1187d0531630"
+      ]
+    },
+    "case.r-1c94bf3ed93aa92a1520.first_built_full_date": {
+      "input_group": "year_built",
+      "description": "Full date the building was first built, not certificate-of-occupancy issuance. A construction-year interval alone does not establish which side of October 1, 1978 applies.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-1c94bf3ed93aa92a1520"
+      ]
+    },
+    "case.r-1c94bf3ed93aa92a1520.single_family_units_on_same_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel, not total units or owner holdings.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-1c94bf3ed93aa92a1520"
+      ]
+    },
+    "case.r-1d1a9f085a144e3465fa.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the landlord-occupied building.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-1d1a9f085a144e3465fa"
+      ]
+    },
+    "case.r-1e8474890565dd0a53d0.building_construction_date": {
+      "input_group": "year_built",
+      "description": "Actual full construction date, distinct from certificate issuance; do not derive a full date from an assessor year.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-1e8474890565dd0a53d0"
+      ]
+    },
+    "case.r-218a00648640236a42f2.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-218a00648640236a42f2"
+      ]
+    },
+    "case.r-218a00648640236a42f2.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-218a00648640236a42f2"
+      ]
+    },
+    "case.r-231297b0754691005c59.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-231297b0754691005c59"
+      ]
+    },
+    "case.r-231297b0754691005c59.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-231297b0754691005c59"
+      ]
+    },
+    "case.r-2350aacd84aefebd72a5.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-2350aacd84aefebd72a5"
+      ]
+    },
+    "case.r-2350aacd84aefebd72a5.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-2350aacd84aefebd72a5"
+      ]
+    },
+    "case.r-243f416168fd35d959cd.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-243f416168fd35d959cd"
+      ]
+    },
+    "case.r-244868a8c38f1e79d621.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-244868a8c38f1e79d621"
+      ]
+    },
+    "case.r-25afca7230b634660a0d.property_rental_units": {
+      "input_group": "units",
+      "description": "Number of rented dwelling units in the subject premises.",
+      "subject_scope": "subject_premises_relevant_tax_year",
+      "data_type": "number",
+      "rule_ids": [
+        "r-25afca7230b634660a0d"
+      ]
+    },
+    "case.r-26b2d99fc53aba7da8bb.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-26b2d99fc53aba7da8bb"
+      ]
+    },
+    "case.r-2a5469485ea296f663fa.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-2a5469485ea296f663fa"
+      ]
+    },
+    "case.r-2bdf855426e9e89aae4f.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-2bdf855426e9e89aae4f"
+      ]
+    },
+    "case.r-2cc4cc22ff5144827672.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-2cc4cc22ff5144827672"
+      ]
+    },
+    "case.r-2cc4cc22ff5144827672.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-2cc4cc22ff5144827672"
+      ]
+    },
+    "case.r-2f4510377b1727516d54.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-2f4510377b1727516d54"
+      ]
+    },
+    "case.r-31df336e5319d40e51cc.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within this single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-31df336e5319d40e51cc"
+      ]
+    },
+    "case.r-330b5c9a6cf6fd9cba6a.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Separate dwelling units in this structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-330b5c9a6cf6fd9cba6a"
+      ]
+    },
+    "case.r-3489d5a0acad2c69eabb.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-3489d5a0acad2c69eabb"
+      ]
+    },
+    "case.r-34f17edbac653c449f1c.separate_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in this one structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-34f17edbac653c449f1c"
+      ]
+    },
+    "case.r-36b1e58b7e3ebf70c23a.configuration_units": {
+      "input_group": "units",
+      "description": "Units in the particular statutory housing configuration, not aggregate owner holdings.",
+      "subject_scope": "relevant_multiple_dwelling_or_contiguous_configuration",
+      "data_type": "number",
+      "rule_ids": [
+        "r-36b1e58b7e3ebf70c23a"
+      ]
+    },
+    "case.r-36b1e58b7e3ebf70c23a.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-36b1e58b7e3ebf70c23a"
+      ]
+    },
+    "case.r-37465950d79e2ebeeb5f.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-37465950d79e2ebeeb5f"
+      ]
+    },
+    "case.r-37465950d79e2ebeeb5f.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-37465950d79e2ebeeb5f"
+      ]
+    },
+    "case.r-3805dad117fde8aca726.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building; not parcel or portfolio count.",
+      "subject_scope": "subject_building_at_rental",
+      "data_type": "number",
+      "rule_ids": [
+        "r-3805dad117fde8aca726"
+      ]
+    },
+    "case.r-3e1f8f5089bf1e4c75b3.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-3e1f8f5089bf1e4c75b3"
+      ]
+    },
+    "case.r-3e1f8f5089bf1e4c75b3.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-3e1f8f5089bf1e4c75b3"
+      ]
+    },
+    "case.r-40e06c1d7254d3e6cf42.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-40e06c1d7254d3e6cf42"
+      ]
+    },
+    "case.r-40e06c1d7254d3e6cf42.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-40e06c1d7254d3e6cf42"
+      ]
+    },
+    "case.r-42958fa192a037d949a3.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-42958fa192a037d949a3"
+      ]
+    },
+    "case.r-42958fa192a037d949a3.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-42958fa192a037d949a3"
+      ]
+    },
+    "case.r-4383284fa0689add3f72.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-4383284fa0689add3f72"
+      ]
+    },
+    "case.r-4383284fa0689add3f72.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4383284fa0689add3f72"
+      ]
+    },
+    "case.r-45503cbe2d34f9bf15a6.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-45503cbe2d34f9bf15a6"
+      ]
+    },
+    "case.r-46ecbdcb348c97893896.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-46ecbdcb348c97893896"
+      ]
+    },
+    "case.r-46ecbdcb348c97893896.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-46ecbdcb348c97893896"
+      ]
+    },
+    "case.r-485d566ff433cf036651.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-485d566ff433cf036651"
+      ]
+    },
+    "case.r-485d566ff433cf036651.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-485d566ff433cf036651"
+      ]
+    },
+    "case.r-48d7a70e039fd7886dbf.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-48d7a70e039fd7886dbf"
+      ]
+    },
+    "case.r-49001c5c8c73cca9e8bf.dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the rental.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-49001c5c8c73cca9e8bf"
+      ]
+    },
+    "case.r-4b1aae40f2491020e470.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-4b1aae40f2491020e470"
+      ]
+    },
+    "case.r-4b1aae40f2491020e470.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4b1aae40f2491020e470"
+      ]
+    },
+    "case.r-4d23316f760ba3c98d20.building_construction_date": {
+      "input_group": "year_built",
+      "description": "Actual full construction date, distinct from certificate issuance; do not derive a full date from an assessor year.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-4d23316f760ba3c98d20"
+      ]
+    },
+    "case.r-4dc23790a7e640178400.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4dc23790a7e640178400"
+      ]
+    },
+    "case.r-4e1f59b1c232c84d95cd.dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the rental.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4e1f59b1c232c84d95cd"
+      ]
+    },
+    "case.r-4ea9d914b4fb6eaa002d.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4ea9d914b4fb6eaa002d"
+      ]
+    },
+    "case.r-4f3b2f29fa9a7351bb4e.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-4f3b2f29fa9a7351bb4e"
+      ]
+    },
+    "case.r-4f3b2f29fa9a7351bb4e.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-4f3b2f29fa9a7351bb4e"
+      ]
+    },
+    "case.r-50baf29cdc9977efe8d8.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within this single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-50baf29cdc9977efe8d8"
+      ]
+    },
+    "case.r-50be04be0cc4573c9611.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-50be04be0cc4573c9611"
+      ]
+    },
+    "case.r-50d740e2d871c23b57b4.building_living_units": {
+      "input_group": "units",
+      "description": "Number of living units in the subject building.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-50d740e2d871c23b57b4"
+      ]
+    },
+    "case.r-51574feb0640e447b2f7.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rental dwelling units in these premises, excluding unrelated holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-51574feb0640e447b2f7"
+      ]
+    },
+    "case.r-51574feb0640e447b2f7.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-51574feb0640e447b2f7"
+      ]
+    },
+    "case.r-532e2ffd5635321b90b2.dwelling_apartments": {
+      "input_group": "units",
+      "description": "Number of apartments in this dwelling, not owner holdings.",
+      "subject_scope": "subject_dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-532e2ffd5635321b90b2"
+      ]
+    },
+    "case.r-532e2ffd5635321b90b2.dwelling_family_units": {
+      "input_group": "units",
+      "description": "Number of family dwelling units in this dwelling.",
+      "subject_scope": "subject_dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-532e2ffd5635321b90b2"
+      ]
+    },
+    "case.r-532e2ffd5635321b90b2.leased_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units leased in the subject dwelling.",
+      "subject_scope": "subject_dwelling_at_relevant_event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-532e2ffd5635321b90b2"
+      ]
+    },
+    "case.r-54a549b0bc1e17950702.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-54a549b0bc1e17950702"
+      ]
+    },
+    "case.r-57bfe293b3358a9d7589.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-57bfe293b3358a9d7589"
+      ]
+    },
+    "case.r-590a907f8dc71da2276c.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within this single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-590a907f8dc71da2276c"
+      ]
+    },
+    "case.r-5ad0f98ba2eaeab487fd.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-5ad0f98ba2eaeab487fd"
+      ]
+    },
+    "case.r-5b584468833be61b042b.separate_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in this one structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5b584468833be61b042b"
+      ]
+    },
+    "case.r-5c25915dab1a9f20ce72.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-5c25915dab1a9f20ce72"
+      ]
+    },
+    "case.r-5c25915dab1a9f20ce72.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5c25915dab1a9f20ce72"
+      ]
+    },
+    "case.r-5cca2ca497be668c9a18.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-5cca2ca497be668c9a18"
+      ]
+    },
+    "case.r-5e6e3b0e071f5bbffea4.fair_chance_property_unit_count": {
+      "input_group": "units",
+      "description": "Units on the subject property for the Fair Chance 1–3-unit exception; not building-only units, owner holdings or generic reported units.",
+      "subject_scope": "fair_chance_owner_occupied_property",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5e6e3b0e071f5bbffea4"
+      ]
+    },
+    "case.r-5f5af32beba9dcf5f366.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5f5af32beba9dcf5f366"
+      ]
+    },
+    "case.r-5f5af32beba9dcf5f366.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5f5af32beba9dcf5f366"
+      ]
+    },
+    "case.r-5fa41bf950781164d1b7.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-5fa41bf950781164d1b7"
+      ]
+    },
+    "case.r-638262799059d40b3dc7.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-638262799059d40b3dc7"
+      ]
+    },
+    "case.r-65297fb19ce15a9992d6.property_total_units": {
+      "input_group": "units",
+      "description": "Total units in the subject Jersey City property; not building rental units, assessor-reported units without scope verification, or owner portfolio holdings.",
+      "subject_scope": "subject_property",
+      "data_type": "number",
+      "rule_ids": [
+        "r-65297fb19ce15a9992d6"
+      ]
+    },
+    "case.r-67410e07334a7aaac316.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Exact date building construction was completed, not certificate-of-occupancy date or construction-year interval.",
+      "subject_scope": "same_building_construction",
+      "data_type": "date",
+      "rule_ids": [
+        "r-67410e07334a7aaac316"
+      ]
+    },
+    "case.r-680140f045c5d290508f.first_built_full_date": {
+      "input_group": "year_built",
+      "description": "Full date the building was first built, not certificate-of-occupancy issuance. A construction-year interval alone does not establish which side of October 1, 1978 applies.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-680140f045c5d290508f"
+      ]
+    },
+    "case.r-680140f045c5d290508f.single_family_units_on_same_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel, not total units or owner holdings.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-680140f045c5d290508f"
+      ]
+    },
+    "case.r-6ab8a4320b6415fb5e4e.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within this single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-6ab8a4320b6415fb5e4e"
+      ]
+    },
+    "case.r-6bec618b01506002c6c9.single_structure_dwelling_count": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within that single structure.",
+      "subject_scope": "single structure containing subject dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-6bec618b01506002c6c9"
+      ]
+    },
+    "case.r-6cf78a7714ba8f3f1be5.premises_total_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises, not portfolio or unrelated building count.",
+      "subject_scope": "entire underlying premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-6cf78a7714ba8f3f1be5"
+      ]
+    },
+    "case.r-6d1cc7baf92f653b2d2e.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual full construction-completion date; not certificate issuance or an assessor construction-year interval.",
+      "subject_scope": "subject building construction",
+      "data_type": "date",
+      "rule_ids": [
+        "r-6d1cc7baf92f653b2d2e"
+      ]
+    },
+    "case.r-6dde39d9b245cd113a6c.building_rental_units": {
+      "input_group": "units",
+      "description": "Number of rental dwelling units, not parcel units or owner holdings.",
+      "subject_scope": "subject building or structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-6dde39d9b245cd113a6c"
+      ]
+    },
+    "case.r-71b566a4ace7e6e3e61a.building_rental_unit_count": {
+      "input_group": "units",
+      "description": "Actual rental dwelling-unit count in the subject building, not assessor reported units or owner portfolio holdings.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-71b566a4ace7e6e3e61a"
+      ]
+    },
+    "case.r-71b9801b716d56b27f1d.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the single structure, not parcel units or owner holdings.",
+      "subject_scope": "subject_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-71b9801b716d56b27f1d"
+      ]
+    },
+    "case.r-720e1b6c29210f4fe76f.single_structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the protected unit.",
+      "subject_scope": "protected_unit_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-720e1b6c29210f4fe76f"
+      ]
+    },
+    "case.r-721ef71861c3d1581567.property_unit_count": {
+      "input_group": "units",
+      "description": "Units on the property for the Fair Chance 1–3-unit exception, not building-only or portfolio units.",
+      "subject_scope": "subject_property",
+      "data_type": "number",
+      "rule_ids": [
+        "r-721ef71861c3d1581567"
+      ]
+    },
+    "case.r-74eec774b5d89bc1b6e2.property_unit_count": {
+      "input_group": "units",
+      "description": "Units on the property for the Fair Chance 1–3-unit exception, not building-only or portfolio units.",
+      "subject_scope": "subject_property",
+      "data_type": "number",
+      "rule_ids": [
+        "r-74eec774b5d89bc1b6e2"
+      ]
+    },
+    "case.r-790b61fd3323b311047c.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-790b61fd3323b311047c"
+      ]
+    },
+    "case.r-7a42c541126f8b139b0b.first_built_full_date": {
+      "input_group": "year_built",
+      "description": "Full date the building was first built, not certificate-of-occupancy issuance. A construction-year interval alone does not establish which side of October 1, 1978 applies.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-7a42c541126f8b139b0b"
+      ]
+    },
+    "case.r-7a42c541126f8b139b0b.single_family_units_on_same_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel, not total units or owner holdings.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-7a42c541126f8b139b0b"
+      ]
+    },
+    "case.r-7ea98dd660e6391220f9.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-7ea98dd660e6391220f9"
+      ]
+    },
+    "case.r-80d3a3e3dd574c062534.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-80d3a3e3dd574c062534"
+      ]
+    },
+    "case.r-80d3a3e3dd574c062534.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-80d3a3e3dd574c062534"
+      ]
+    },
+    "case.r-810ce117aff3c0ee958c.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-810ce117aff3c0ee958c"
+      ]
+    },
+    "case.r-85c4c4f3dfc7e035f28e.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within the subject single structure.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-85c4c4f3dfc7e035f28e"
+      ]
+    },
+    "case.r-86bd7fbfaea1ceea7119.first_built_date": {
+      "input_group": "year_built",
+      "description": "Exact original construction date; distinct from certificate issuance. Do not substitute a construction-year interval without interval-aware resolution.",
+      "subject_scope": "subject_rental_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-86bd7fbfaea1ceea7119"
+      ]
+    },
+    "case.r-86bd7fbfaea1ceea7119.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-86bd7fbfaea1ceea7119"
+      ]
+    },
+    "case.r-86d1e4ae527a1d080714.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building; not parcel or portfolio count.",
+      "subject_scope": "subject_building_at_rental",
+      "data_type": "number",
+      "rule_ids": [
+        "r-86d1e4ae527a1d080714"
+      ]
+    },
+    "case.r-8ac026c6ae5d7e9c19c6.first_built_full_date": {
+      "input_group": "year_built",
+      "description": "Full date the building was first built, not certificate-of-occupancy issuance. A construction-year interval alone does not establish which side of October 1, 1978 applies.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-8ac026c6ae5d7e9c19c6"
+      ]
+    },
+    "case.r-8ac026c6ae5d7e9c19c6.single_family_units_on_same_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel, not total units or owner holdings.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-8ac026c6ae5d7e9c19c6"
+      ]
+    },
+    "case.r-8d343e7b6ead2d1e3b01.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-8d343e7b6ead2d1e3b01"
+      ]
+    },
+    "case.r-8d343e7b6ead2d1e3b01.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-8d343e7b6ead2d1e3b01"
+      ]
+    },
+    "case.r-931c3dc99ad034b0f6c4.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Separate dwelling units in this structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-931c3dc99ad034b0f6c4"
+      ]
+    },
+    "case.r-9339005d3257ba6d8673.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within the subject single structure.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9339005d3257ba6d8673"
+      ]
+    },
+    "case.r-9353a8714b7edc44c3eb.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within the subject single structure.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9353a8714b7edc44c3eb"
+      ]
+    },
+    "case.r-935b48f63dc3010e1fe9.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-935b48f63dc3010e1fe9"
+      ]
+    },
+    "case.r-94f8f7d135f3c7cc35ca.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-94f8f7d135f3c7cc35ca"
+      ]
+    },
+    "case.r-94f8f7d135f3c7cc35ca.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-94f8f7d135f3c7cc35ca"
+      ]
+    },
+    "case.r-97dca25ba264edb4726c.single_structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the protected unit.",
+      "subject_scope": "protected_unit_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-97dca25ba264edb4726c"
+      ]
+    },
+    "case.r-99e1409c8c9be8c10db0.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the particular building, not parcel units or owner holdings.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-99e1409c8c9be8c10db0"
+      ]
+    },
+    "case.r-99fe139699cf74b2c846.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure; not parcel or owner holdings.",
+      "subject_scope": "single_subject_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-99fe139699cf74b2c846"
+      ]
+    },
+    "case.r-9aabadce2cd91964c040.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9aabadce2cd91964c040"
+      ]
+    },
+    "case.r-9ae915f6c29a37270b10.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9ae915f6c29a37270b10"
+      ]
+    },
+    "case.r-9ae915f6c29a37270b10.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9ae915f6c29a37270b10"
+      ]
+    },
+    "case.r-9b4bdba24cc034d5157e.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date, distinct from certificate issuance.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-9b4bdba24cc034d5157e"
+      ]
+    },
+    "case.r-9bc70b320ec6d3f32942.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building; not parcel or portfolio count.",
+      "subject_scope": "subject_building_at_rental",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9bc70b320ec6d3f32942"
+      ]
+    },
+    "case.r-9d0148e3dc34d001f68f.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in this building, not portfolio holdings.",
+      "subject_scope": "subject building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9d0148e3dc34d001f68f"
+      ]
+    },
+    "case.r-9d3664fc1415d480c949.single_structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units within the one structure containing the protected unit.",
+      "subject_scope": "protected_unit_single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9d3664fc1415d480c949"
+      ]
+    },
+    "case.r-9ded5cc7b50f1bdabaec.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Separate dwelling units in this structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-9ded5cc7b50f1bdabaec"
+      ]
+    },
+    "case.r-a0c68a8a93cb80946df4.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in this building, not portfolio holdings.",
+      "subject_scope": "subject building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-a0c68a8a93cb80946df4"
+      ]
+    },
+    "case.r-a2d9f502d656228ba4d8.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-a2d9f502d656228ba4d8"
+      ]
+    },
+    "case.r-a2e81a71b8564b481979.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-a2e81a71b8564b481979"
+      ]
+    },
+    "case.r-a2e81a71b8564b481979.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-a2e81a71b8564b481979"
+      ]
+    },
+    "case.r-a7429aab805727d88fb6.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-a7429aab805727d88fb6"
+      ]
+    },
+    "case.r-aa9161eec30648c8dc9b.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building; not parcel or portfolio count.",
+      "subject_scope": "subject_building_at_rental",
+      "data_type": "number",
+      "rule_ids": [
+        "r-aa9161eec30648c8dc9b"
+      ]
+    },
+    "case.r-abd7191bb8199aa15ac5.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure; not parcel or owner holdings.",
+      "subject_scope": "single_subject_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-abd7191bb8199aa15ac5"
+      ]
+    },
+    "case.r-ad0c0bda5f549729c455.single_structure_dwelling_count": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within that single structure.",
+      "subject_scope": "single structure containing subject dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ad0c0bda5f549729c455"
+      ]
+    },
+    "case.r-ad91984d4c38520bc1ea.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ad91984d4c38520bc1ea"
+      ]
+    },
+    "case.r-ad91984d4c38520bc1ea.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ad91984d4c38520bc1ea"
+      ]
+    },
+    "case.r-afb1c62be0fd01e5940f.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building, not portfolio holdings.",
+      "subject_scope": "subject_building_at_relevant_event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-afb1c62be0fd01e5940f"
+      ]
+    },
+    "case.r-afe0743da80dcc3f9866.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-afe0743da80dcc3f9866"
+      ]
+    },
+    "case.r-afe0743da80dcc3f9866.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-afe0743da80dcc3f9866"
+      ]
+    },
+    "case.r-b14e8b2d2050cdd117e0.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-b14e8b2d2050cdd117e0"
+      ]
+    },
+    "case.r-b65410ee8f075b5a1209.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-b65410ee8f075b5a1209"
+      ]
+    },
+    "case.r-b686f7527aaf38816210.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-b686f7527aaf38816210"
+      ]
+    },
+    "case.r-b686f7527aaf38816210.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-b686f7527aaf38816210"
+      ]
+    },
+    "case.r-bacaadd03c9ac958fc9c.construction_completion_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 cutoff, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_unit",
+      "data_type": "date",
+      "rule_ids": [
+        "r-bacaadd03c9ac958fc9c"
+      ]
+    },
+    "case.r-bae306dfcd15c2181cf4.structure_separate_dwelling_units": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units in the single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-bae306dfcd15c2181cf4"
+      ]
+    },
+    "case.r-baeb2343708297483aa8.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-baeb2343708297483aa8"
+      ]
+    },
+    "case.r-c50dd882bd5472b0c853.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c50dd882bd5472b0c853"
+      ]
+    },
+    "case.r-c53104475ec3da114908.building_residential_units": {
+      "input_group": "units",
+      "description": "Number of residential dwelling units in the subject building; not premises rental count or owner holdings.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c53104475ec3da114908"
+      ]
+    },
+    "case.r-c53104475ec3da114908.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c53104475ec3da114908"
+      ]
+    },
+    "case.r-c53104475ec3da114908.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c53104475ec3da114908"
+      ]
+    },
+    "case.r-c6571f1f45db724a7568.first_built_date": {
+      "input_group": "year_built",
+      "description": "Actual first-built date, distinct from certificate issuance; do not convert a construction-year interval to an invented full date.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-c6571f1f45db724a7568"
+      ]
+    },
+    "case.r-c6571f1f45db724a7568.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c6571f1f45db724a7568"
+      ]
+    },
+    "case.r-c65d35c86d60f1e323a9.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure; not parcel or owner holdings.",
+      "subject_scope": "single_subject_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-c65d35c86d60f1e323a9"
+      ]
+    },
+    "case.r-c856f6363cf81035ec9b.building_construction_date": {
+      "input_group": "year_built",
+      "description": "Actual full construction date, distinct from certificate issuance; do not derive a full date from an assessor year.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-c856f6363cf81035ec9b"
+      ]
+    },
+    "case.r-ccef92bfebe196802e51.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-ccef92bfebe196802e51"
+      ]
+    },
+    "case.r-ceebe7921eb3113f3921.property_rental_units": {
+      "input_group": "units",
+      "description": "Number of rented dwelling units in the subject premises.",
+      "subject_scope": "subject_premises_relevant_tax_year",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ceebe7921eb3113f3921"
+      ]
+    },
+    "case.r-cf35e8c4f284f2c1901d.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in the single structure; not parcel or owner holdings.",
+      "subject_scope": "single_subject_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-cf35e8c4f284f2c1901d"
+      ]
+    },
+    "case.r-cf527528799d3983d441.separate_dwelling_units_in_structure": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within the subject single structure.",
+      "subject_scope": "single_structure",
+      "data_type": "number",
+      "rule_ids": [
+        "r-cf527528799d3983d441"
+      ]
+    },
+    "case.r-cf9eefb468d869a4291d.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building, not portfolio holdings.",
+      "subject_scope": "subject_building_at_relevant_event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-cf9eefb468d869a4291d"
+      ]
+    },
+    "case.r-d0bae975f18032423017.separate_units_in_structure": {
+      "input_group": "units",
+      "description": "Number of separate dwelling units in this one structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-d0bae975f18032423017"
+      ]
+    },
+    "case.r-d2e4fe3a4fab72fcc8bd.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in this building, not portfolio holdings.",
+      "subject_scope": "subject building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-d2e4fe3a4fab72fcc8bd"
+      ]
+    },
+    "case.r-d65858f4b12bb485c068.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in this building, not portfolio holdings.",
+      "subject_scope": "subject building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-d65858f4b12bb485c068"
+      ]
+    },
+    "case.r-d764e39f57d6c96e196d.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in this building, not portfolio holdings.",
+      "subject_scope": "subject building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-d764e39f57d6c96e196d"
+      ]
+    },
+    "case.r-d91d5854030e5d8ad2f4.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-d91d5854030e5d8ad2f4"
+      ]
+    },
+    "case.r-daf4c7c753ad0c0330ad.single_structure_dwelling_count": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within that single structure.",
+      "subject_scope": "single structure containing subject dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-daf4c7c753ad0c0330ad"
+      ]
+    },
+    "case.r-dbdded398071e8fa0231.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the subject building.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-dbdded398071e8fa0231"
+      ]
+    },
+    "case.r-dd7b7566dafe1b7d5756.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-dd7b7566dafe1b7d5756"
+      ]
+    },
+    "case.r-de0394778866153ec5fc.first_built_date": {
+      "input_group": "year_built",
+      "description": "Exact original construction date; distinct from certificate issuance. Do not substitute a construction-year interval without interval-aware resolution.",
+      "subject_scope": "subject_rental_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-de0394778866153ec5fc"
+      ]
+    },
+    "case.r-de0394778866153ec5fc.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-de0394778866153ec5fc"
+      ]
+    },
+    "case.r-defcdc70be10d84920f1.structure_separate_dwelling_units": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units in the single structure.",
+      "subject_scope": "single_structure_containing_subject_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-defcdc70be10d84920f1"
+      ]
+    },
+    "case.r-e009fdce9d384d7512be.building_dwelling_units": {
+      "input_group": "units",
+      "description": "Number of dwelling units in the particular building, not parcel units or owner holdings.",
+      "subject_scope": "subject_building",
+      "data_type": "number",
+      "rule_ids": [
+        "r-e009fdce9d384d7512be"
+      ]
+    },
+    "case.r-e39845cefa898ad33917.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-e39845cefa898ad33917"
+      ]
+    },
+    "case.r-e71b3419f83af44e97e7.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-e71b3419f83af44e97e7"
+      ]
+    },
+    "case.r-ecff349ff08e8780c64b.structure_dwelling_units": {
+      "input_group": "units",
+      "description": "Separate dwelling units in this structure, not parcel or portfolio count.",
+      "subject_scope": "single structure containing subject unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ecff349ff08e8780c64b"
+      ]
+    },
+    "case.r-ed652dc72e81afddb376.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in those premises; not portfolio or generic reported units.",
+      "subject_scope": "entire subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ed652dc72e81afddb376"
+      ]
+    },
+    "case.r-efac1f4525ae091a4cb7.premises_dwelling_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the premises, not owner holdings or reported assessor units.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-efac1f4525ae091a4cb7"
+      ]
+    },
+    "case.r-f0911017621cb9299b31.dwelling_apartment_count": {
+      "input_group": "units",
+      "description": "Number of occupancy apartments or flats in this dwelling, not parcel or owner portfolio units.",
+      "subject_scope": "subject_dwelling_at_transaction",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f0911017621cb9299b31"
+      ]
+    },
+    "case.r-f2262ea533642213e622.first_built_date": {
+      "input_group": "year_built",
+      "description": "Exact original construction date; distinct from certificate issuance. Do not substitute a construction-year interval without interval-aware resolution.",
+      "subject_scope": "subject_rental_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-f2262ea533642213e622"
+      ]
+    },
+    "case.r-f2262ea533642213e622.single_family_units_on_parcel": {
+      "input_group": "units",
+      "description": "Number of single-family dwelling units on the same parcel.",
+      "subject_scope": "subject_parcel",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f2262ea533642213e622"
+      ]
+    },
+    "case.r-f4c83099cc6fbb0ef472.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f4c83099cc6fbb0ef472"
+      ]
+    },
+    "case.r-f4c83099cc6fbb0ef472.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f4c83099cc6fbb0ef472"
+      ]
+    },
+    "case.r-f5681e101ad2f6e0cb69.single_structure_dwelling_count": {
+      "input_group": "units",
+      "description": "Count of separate dwelling units within that single structure.",
+      "subject_scope": "single structure containing subject dwelling",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f5681e101ad2f6e0cb69"
+      ]
+    },
+    "case.r-f68c5d64129b4f2dba70.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f68c5d64129b4f2dba70"
+      ]
+    },
+    "case.r-f68c5d64129b4f2dba70.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f68c5d64129b4f2dba70"
+      ]
+    },
+    "case.r-f79568af1d8e55d81fa3.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-f79568af1d8e55d81fa3"
+      ]
+    },
+    "case.r-f7b4f4004c775226e4b3.construction_completed_date": {
+      "input_group": "year_built",
+      "description": "Actual construction completion date for the June 1980 boundary, distinct from the shared construction-year interval.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-f7b4f4004c775226e4b3"
+      ]
+    },
+    "case.r-f7c12bb362b72e048a7a.premises_rental_units": {
+      "input_group": "units",
+      "description": "Rented dwelling units in the subject premises at the relevant event.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f7c12bb362b72e048a7a"
+      ]
+    },
+    "case.r-f7c12bb362b72e048a7a.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in the subject premises at the relevant event, not owner holdings.",
+      "subject_scope": "subject_premises",
+      "data_type": "number",
+      "rule_ids": [
+        "r-f7c12bb362b72e048a7a"
+      ]
+    },
+    "case.r-f901f9e99e98890132d8.building_construction_date": {
+      "input_group": "year_built",
+      "description": "Actual full construction date, distinct from certificate issuance; do not derive a full date from an assessor year.",
+      "subject_scope": "subject_building",
+      "data_type": "date",
+      "rule_ids": [
+        "r-f901f9e99e98890132d8"
+      ]
+    },
+    "case.r-fb3321136c81ca774c80.premises_rental_units": {
+      "input_group": "units",
+      "description": "Number of rented dwelling units in these premises.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-fb3321136c81ca774c80"
+      ]
+    },
+    "case.r-fb3321136c81ca774c80.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in these premises, not portfolio units.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-fb3321136c81ca774c80"
+      ]
+    },
+    "case.r-fd65261c2dc20b55aa0d.premises_rental_units": {
+      "input_group": "units",
+      "description": "Number of rented dwelling units in these premises.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-fd65261c2dc20b55aa0d"
+      ]
+    },
+    "case.r-fd65261c2dc20b55aa0d.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in these premises, not portfolio units.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-fd65261c2dc20b55aa0d"
+      ]
+    },
+    "case.r-ffe08d4e21bd5f2a88c0.premises_rental_units": {
+      "input_group": "units",
+      "description": "Number of rented dwelling units in these premises.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ffe08d4e21bd5f2a88c0"
+      ]
+    },
+    "case.r-ffe08d4e21bd5f2a88c0.premises_total_units": {
+      "input_group": "units",
+      "description": "Total dwelling units in these premises, not portfolio units.",
+      "subject_scope": "subject premises at relevant event",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ffe08d4e21bd5f2a88c0"
+      ]
+    },
+    "property.building_rental_unit_count": {
+      "input_group": "units",
+      "description": "Number of rental units in the building containing the subject dwelling.",
+      "subject_scope": "property_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-ff43968a7ddaa6bf88ae"
+      ]
+    },
+    "property.building_unit_count": {
+      "input_group": "units",
+      "description": "Number of units in the building containing the subject dwelling.",
+      "subject_scope": "property_unit",
+      "data_type": "number",
+      "rule_ids": [
+        "r-cce550a580dd877d4a97"
+      ]
+    },
+    "property.construction_date": {
+      "input_group": "year_built",
+      "description": "Construction calendar-date interval derived from the verified construction year; not certificate-of-occupancy issuance.",
+      "subject_scope": "address_property",
+      "data_type": "date",
+      "rule_ids": [
+        "r-140706c9ebc0e42fd3fa",
+        "r-243f416168fd35d959cd",
+        "r-26b2d99fc53aba7da8bb",
+        "r-2a5469485ea296f663fa",
+        "r-2bdf855426e9e89aae4f",
+        "r-57bfe293b3358a9d7589",
+        "r-5ad0f98ba2eaeab487fd",
+        "r-5cca2ca497be668c9a18",
+        "r-810ce117aff3c0ee958c",
+        "r-9b4bdba24cc034d5157e",
+        "r-b65410ee8f075b5a1209",
+        "r-bacaadd03c9ac958fc9c",
+        "r-baeb2343708297483aa8",
+        "r-ccef92bfebe196802e51",
+        "r-f79568af1d8e55d81fa3",
+        "r-f7b4f4004c775226e4b3"
+      ]
+    },
+    "property.two_units_in_single_structure": {
+      "input_group": "units",
+      "description": "Whether the two dwelling units are in a single structure.",
+      "subject_scope": "property_unit",
+      "data_type": "boolean",
+      "rule_ids": [
+        "r-cce550a580dd877d4a97"
+      ]
+    }
+  }
+}

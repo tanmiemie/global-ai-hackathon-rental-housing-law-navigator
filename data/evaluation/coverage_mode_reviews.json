@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-01",
+  "scope": "Explicitly reviewed ordinary California residential-security and screening-fee duties only. No blanket change to property-wide exemptions, remedies, special-class benefits, route-specific permissions, or reduced allowances.",
+  "interpretation": "In coverage mode, report a governing conditional residential-rental duty independently of whether a particular security payment, screening payment, vacancy, deduction, inspection or delivery has happened. Preserve complete original coverage predicates in the event trigger, and preserve every transaction-specific exception and source question at the event stage. This aligns these records with the existing reviewed cap, 21-day accounting and alternative screening-process plans. An applies result is not a finding that a specific event or breach occurred.",
+  "coverage": {
+    "all": [
+      {
+        "fact": "property.residential_use",
+        "op": "eq",
+        "value": true
+      },
+      {
+        "fact": "context.residential_rental_lookup",
+        "op": "eq",
+        "value": true
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "team_rule_id": "r-0031694696ee5510fbbb",
+      "source_rule_sha256": "e366f5b387e2b65a0a8eb43e4ede20e5f726905ee660a2b8599a97f8d3f4e993",
+      "title": "Initial-inspection notice must contain the abandoned-property statement",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Written notice under f(1) in applicable inspection procedure.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-0a0364cb0611c4de4b51",
+      "source_rule_sha256": "7ae3c89ec07d28861c641af0ed2a62767e2299085b0eaa940a35bca00872e3ec",
+      "title": "Return remaining deposit and document deductions",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Residential security return; statutory D025 adds precise core timing/delivery and document-specific branches.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-0de399b8ca107438b211",
+      "source_rule_sha256": "925ad3daa290b7b70908e77c049631b677acac43ece1e35223581fa17a296875",
+      "title": "Methods for delivering the security itemization",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Required security itemization, separate from actual refund route.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-13fb57eeb26ac20b9a82",
+      "source_rule_sha256": "ff5acfe4e78fd648a39646745ed24f0f3ebca06edbb1efb6644fb029a1c3ff72",
+      "title": "Refund and itemization arrangements for multiple adult tenants",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Multiple adults residing plus remainder/accounting.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-240177e13c801bcefa22",
+      "source_rule_sha256": "fdbefaa4115fe1598a098a3bf18b4388550e9492592f12efd435a679794802e9",
+      "title": "Limits on deductions not identified during the initial inspection",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Applicable inspection and later repair/cleaning claim; identify which condition inspection could reveal.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-3bec362694f1299fb080",
+      "source_rule_sha256": "03a4898c260027756617faa236bf5a35451beea1620d4af4e09ad2b16ca49b79",
+      "title": "Tenant opportunity to remedy inspected deficiencies",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Applicable inspection occurred and identified deficiencies.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-4ada4ef0a0a68473e565",
+      "source_rule_sha256": "d6d92907292490db1a43e8ed84d92fe6c3ccc57daac4496d26aa668333c3528f",
+      "title": "Notice to the tenant after security transfer to a successor",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Chosen transfer-to-successor alternative when landlord interest ends.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-529f500ec97aa25f183d",
+      "source_rule_sha256": "f53f7557d862f00cdaf0125fa34b1b8bb0b42f99f25cf9ea3ad03885b514b70b",
+      "title": "Written notice of initial-inspection and attendance rights",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Covered initial-inspection subdivision and termination/lease-end context.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-52f3243ccaa9b1723852",
+      "source_rule_sha256": "9c50d26c3aef40755ec591b75162b70dc9bfa70f4d19419281c8abb7c6d82e68",
+      "title": "No claims for preexisting defects or ordinary wear",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Covered residential agreement; can concern direct tenant claim as well as deposit deduction.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-59552dc8568e5961e275",
+      "source_rule_sha256": "fc419ffaf7c7caf17e5f5aee063a94a3c7652a24716cae1d406fee08340baf0c",
+      "title": "Cost documentation for deducted materials and supplies",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Material/supply cost deduction for unit repair/cleaning.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-67a8d6109e63fc85cc8c",
+      "source_rule_sha256": "a04021ec66b360f8def26997c202a3cf88969f89d74acff634bdf715c724c1fb",
+      "title": "Proof of completed necessary repairs",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Necessary repairs claimed in security-return process, under guide stated date.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-68f1b5f82c66aa952eed",
+      "source_rule_sha256": "7e74ff15f59fd84fbf4b75d7c518d8fea39d9830f5d026e76a0677da388a7588",
+      "title": "Security held for the tenant with priority over landlord creditors",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Tenant is party to lease/agreement and security exists.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-69bdaad768edee5b062c",
+      "source_rule_sha256": "e7911cc58dbcf998b23d99c6fab4cf3bad3e8dc0686d18b7dab9d38fde830a99",
+      "title": "Default method for returning remaining security",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Remaining covered security under accounting clock.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-7a7aadb88849c189b3d0",
+      "source_rule_sha256": "ce37c5e6699237c0c78dc139bf1b83ddb4a6752077a6bb8e56439c7ba23216df",
+      "title": "Rental agreements may not characterize security as nonrefundable",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Payment must actually be security under b, considering supplied 1950.6 exclusion.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-87f1787ca3e1d83ecbd4",
+      "source_rule_sha256": "f30560850421759c83e40db60197d156327cb8c41b463734d90f680e105877c1",
+      "title": "Written notice of the right to electronic security return",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Actor-specific electronic-payment history and approaching termination.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-8a0df2e394aa3c2a8d6e",
+      "source_rule_sha256": "010f90e54e616ff7758b31b51d5d642c54122743374d910201b79ecb32be21b1",
+      "title": "Photographs before and after deductible repairs or cleaning",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Possession returned AND deductible repair/cleaning contemplated.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-8c85852e6370bf5678d3",
+      "source_rule_sha256": "06e53255c95efa71b012e39d6546ec4a542bd744f7570799064bae7a47cc706b",
+      "title": "Requested initial-inspection timing, scheduling, and notice",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Requested, nonwithdrawn initial inspection under shared scope.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-9e2bbe542adb800f9128",
+      "source_rule_sha256": "508e5de85a45a51e5348455db94ec49b6674738ada972a595487c9357aa40ed3",
+      "title": "Itemized proposed deductions after the initial inspection",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Conducted applicable initial inspection with proposed covered deductions.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-9f08f058764c568ed872",
+      "source_rule_sha256": "6b41e3dca02723dc8dc77b121909e15c32e8be045d5a01f90d2d4f1a2b242ffa",
+      "title": "Photograph the unit before deductible move-out work",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Residential move-out work for deduction; source guide and full D025 document-delivery context.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-a00067ab58b24f828cab",
+      "source_rule_sha256": "36195b6695a332894322917c99183e219b9ef6bc757833fd041044b38efdd371",
+      "title": "Photographs and explanations supporting repair or cleaning deductions",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Allowed repair/cleaning deduction and applicable g photo set.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-a7d79cec279857ed1173",
+      "source_rule_sha256": "b73da8882667f5be6d76e053ef98cecd63a97e998dbf97ea51bb8cb1782e6db6",
+      "title": "Photograph the unit at the beginning of newer tenancies",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Qualifying residential tenancy start date.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-bbc8fc832a2f6986a804",
+      "source_rule_sha256": "a3f088920986e505b897434d4fc86593249615a75470fe38cbfccc63ec3ab991",
+      "title": "Offer a pre-move-out inspection",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Applicable residential termination/inspection procedure.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-becdeea2aeb31f7ded85",
+      "source_rule_sha256": "91ef15cd1dfc6f4da1764bd8e089edd1bc357eaef92c81a44c11482534a5cefa",
+      "title": "Photographs at the beginning of covered tenancies",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Covered residential tenancy with qualifying start date.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-bff82770f3b92f7f6040",
+      "source_rule_sha256": "8ad409d9713c610024e33e5206e12335ed0651127db3d2204243ba4dc3f3cede",
+      "title": "Disposition of security when the landlord's interest ends",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Security held when landlord interest ends.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-df71c976dead414416df",
+      "source_rule_sha256": "aa10212743b6cd5959e52ebd17970f236da1330ef6a670b60bed241ebc76c498",
+      "title": "Security statement to the successor before voluntary property transfer",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Voluntary transfer specifically, distinguish broader i transfer duties including death/receiver.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-e220b606ff085ac2697b",
+      "source_rule_sha256": "a5262ebb06a24ea54987ba03026770c7ff5ca98b67515359d48c1805f6d2419f",
+      "title": "Invoices and provider details for third-party repair or cleaning deductions",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Outside provider work charged against security.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-ee3bd1c24dfbca8a874a",
+      "source_rule_sha256": "d28381112005f56eb094b8485297a8255462fb18afaa661feb9d258a2b6571ba",
+      "title": "Security claims limited to reasonable amounts for statutory purposes",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Covered security and proposed claim/deduction.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-ef496668a728f4613eba",
+      "source_rule_sha256": "d5b75bb6f1f38f8260cba9ca0c42c01b87214d1d7004c0e0016b596d43deb9cc",
+      "title": "Professional cleaning charges require reasonable necessity",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Professional carpet OR other professional cleaning charge in covered rental.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-f7d34b1241aa0b5bde89",
+      "source_rule_sha256": "ab3b7b7abb160f79f9f634e94a68c9b1ef972dff853fc67b432ddf716b662b60",
+      "title": "Documentation for repair or cleaning performed by the landlord or employee",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Covered deduction and landlord/employee performer branch.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-fafc3285e9bbbd4189d2",
+      "source_rule_sha256": "c9040cd825dec57d841dc22d76a978c370e6739b51e0a1955cc0904ba2e2e26f",
+      "title": "Electronic return after electronic payments and successor limitation",
+      "coverage_criterion_id": "ca_residential_security.dwelling_security",
+      "event_description": "Return of remainder with qualifying actor-specific electronic receipts.",
+      "reason": "The identified event/procedure conditions activate this ordinary duty; they do not create a property-wide exemption from its governing conditional protection. All original predicates remain necessary for the event result."
+    },
+    {
+      "team_rule_id": "r-1132dff4a496f308317f",
+      "source_rule_sha256": "07f8634cf1e7189ef52183a4b5d80a650e5ef8f6e15ee2f964aac7d89f55e839",
+      "title": "Unselected-applicant refund or ordered application policy",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "State fee context inD005, with fullA/B scope supplied by referenced1950.6.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-2631447ed394936009aa",
+      "source_rule_sha256": "9e4ced84a9d5bef222da3ac7b17d54c4b98095057cdc5a8b419b12ab18c1bc54",
+      "title": "No screening fee where no unit is or reasonably soon will be available",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee scope AND actual/constructive knowledge of lack of current/reasonably-soon availability.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-41c216770e881f697270",
+      "source_rule_sha256": "ed99db0800528641771e4da2ebbb5bcc8c124dfcab766ea64acf41803a7571d3",
+      "title": "Credit report copy within seven days",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Defined fee-paying applicant AND report about that applicant received.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-50e76b1159776278ca7f",
+      "source_rule_sha256": "32606aa3504ef965c5274ee957fba2e7f82aaa48afe98e549b7a4bce94ee39b7",
+      "title": "Itemized receipt for screening fees",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee paid within scope; eitherA/B.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-67b2b9adba2d2044fe39",
+      "source_rule_sha256": "7b3da584b4ea65c013afeb0b3b27934ab4fd51ff82abf2af7ec1ad54d180504b",
+      "title": "Fee-paying applicant receives the consumer credit report within seven days",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee scope AND fee paid AND report about fee payer received.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-6a0f31e31ef84b7e6587",
+      "source_rule_sha256": "09ba7d62217e4d3f783c1baa4458f7592e7d865a66a9e78696eab514bf97ce86",
+      "title": "2026 maximum tenant screening fee",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Defined screening fee charged during2026 AND permitted charge under1950.6.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-6a4dc2b39ecfb8d89e86",
+      "source_rule_sha256": "7f047079dc13669b018fb8245d469312ffabed18a2210d888ca02b80e56b58e5",
+      "title": "No screening fee without an available rental unit",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Screening-fee demand and availability/knowledge facts under governing statutory provision.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-754ffed340e38544b2fb",
+      "source_rule_sha256": "fae65361e9d178b6c9ca28ccb0ed0a849f468163796c9f0d39e053221b716aee",
+      "title": "Screening-fee accounting and unused-fee refund",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee payment within state screening scope.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-7c5277a81f0a3ec0d6b9",
+      "source_rule_sha256": "47c7841f866de898599b08da3a508b7a567e105c718f5a77af883f4cfba99d79",
+      "title": "Return screening fees unused for authorized purposes",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee collected AND source stated OR trigger AND unused authorized-purpose balance.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    },
+    {
+      "team_rule_id": "r-e9581a38cc3c24e4a6f8",
+      "source_rule_sha256": "23480dbcc37a4b9d87c4b00c3afe89b1907c6cb0dc528ea09babf1652800f7a3",
+      "title": "Application screening fee limited by actual costs and the adjustable statutory ceiling",
+      "coverage_criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+      "event_description": "Fee scope AND fee demand, subject to permission-to-charge gates.",
+      "reason": "The applicant/actor/payment definition and event activate this ordinary screening-fee protection; they do not create a property-wide exemption. All original predicates remain necessary for the event result; program overlap and reusable-report questions retain their original stage unless transaction-specific coverage was being tested."
+    }
+  ]
+}

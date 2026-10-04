@@ -2,4 +2,12 @@
 participant-final-no-hour16_v5/** -text
 data/supplemental/D074.txt -text
 outputs/module_a/*.json -text
+outputs/address_facts/** -text
+outputs/evaluator_all500_workflow_v3/** -text
+outputs/evaluator_first10_workflow_v3/** -text
+data/evaluation/** -text
+AGENTS.md -text
+src/rent_rules/*.py text eol=lf
+scripts/*.py text eol=lf
+tests/*.py text eol=lf
 *.pdf -text -diff

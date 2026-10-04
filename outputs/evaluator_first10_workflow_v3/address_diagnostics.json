@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-10-01",
+  "addresses": {
+    "A0001": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=6238 DE LONGPRE AVE, LOS ANGELES, CA, 90028; place_geoid=0644000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0002": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=1035 CLINTON ST, HOBOKEN, NJ, 07030; place_geoid=3432250; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0003": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=878 S 14TH ST, NEWARK, NJ, 07108; place_geoid=3451000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0004": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=10050 MOUNTAIR AVE, TUJUNGA, CA, 91042; place_geoid=0644000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0005": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=1609 ADDISON ST, BERKELEY, CA, 94703; place_geoid=0606000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0006": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=71 WESTLAND AVE, BOSTON, MA, 02115; place_geoid=2507000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0007": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=4257 SAN PEDRO PL, LOS ANGELES, CA, 90011; place_geoid=0644000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0008": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=1065 SUMMIT AVE, JERSEY CITY, NJ, 07307; place_geoid=3436000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    },
+    "A0009": {
+      "status": "skipped",
+      "jurisdiction_status": "partial",
+      "reason_code": "jurisdiction_not_verified",
+      "reason": "Existing legal-city mapping retained; Census lookup did not independently verify the boundary.",
+      "jurisdiction_evidence_ref": "Existing legal-city mapping retained; Census lookup did not independently verify the boundary.",
+      "message": "Rule evaluation skipped because jurisdiction_status is not verified. This does not establish that the physical address is nonexistent.",
+      "rules_evaluated": 0
+    },
+    "A0010": {
+      "status": "evaluated",
+      "jurisdiction_status": "verified",
+      "reason_code": null,
+      "reason": "",
+      "jurisdiction_evidence_ref": "Census Geocoder/TIGER-Line; matched_address=134 OXFORD ST, CAMBRIDGE, MA, 02140; place_geoid=2511000; benchmark=Public_AR_Current",
+      "message": "Address passed the jurisdiction input check.",
+      "rules_evaluated": 466
+    }
+  }
+}

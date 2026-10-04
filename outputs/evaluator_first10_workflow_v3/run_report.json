@@ -1,0 +1,228 @@
+{
+  "as_of": "2026-10-01",
+  "mode": "coverage",
+  "scope": "Versioned executable applicability plans; any missing candidate plans remain explicitly uncompiled.",
+  "rule_count": 466,
+  "plan_count": 466,
+  "addresses": {
+    "A0001": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 162,
+      "compiled_candidate_count": 162,
+      "returned_count": 161,
+      "results": {
+        "applies": 54,
+        "unknown": 107
+      },
+      "decision_bases": {
+        "coverage_established": 54,
+        "needs_source_review": 73,
+        "needs_information": 34,
+        "government_or_court_actor": 1
+      },
+      "coverage_complete": true
+    },
+    "A0002": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 101,
+      "compiled_candidate_count": 101,
+      "returned_count": 91,
+      "results": {
+        "unknown": 83,
+        "applies": 8
+      },
+      "decision_bases": {
+        "needs_information": 40,
+        "government_or_court_actor": 10,
+        "needs_source_review": 43,
+        "coverage_established": 8
+      },
+      "coverage_complete": true
+    },
+    "A0003": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 100,
+      "compiled_candidate_count": 100,
+      "returned_count": 90,
+      "results": {
+        "unknown": 82,
+        "applies": 8
+      },
+      "decision_bases": {
+        "needs_information": 39,
+        "government_or_court_actor": 10,
+        "needs_source_review": 43,
+        "coverage_established": 8
+      },
+      "coverage_complete": true
+    },
+    "A0004": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 162,
+      "compiled_candidate_count": 162,
+      "returned_count": 161,
+      "results": {
+        "applies": 54,
+        "unknown": 107
+      },
+      "decision_bases": {
+        "coverage_established": 54,
+        "needs_source_review": 73,
+        "needs_information": 34,
+        "government_or_court_actor": 1
+      },
+      "coverage_complete": true
+    },
+    "A0005": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 141,
+      "compiled_candidate_count": 141,
+      "returned_count": 139,
+      "results": {
+        "applies": 47,
+        "unknown": 92
+      },
+      "decision_bases": {
+        "coverage_established": 47,
+        "needs_source_review": 70,
+        "needs_information": 22,
+        "government_or_court_actor": 2
+      },
+      "coverage_complete": true
+    },
+    "A0006": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 100,
+      "compiled_candidate_count": 100,
+      "returned_count": 86,
+      "results": {
+        "unknown": 74,
+        "applies": 12
+      },
+      "decision_bases": {
+        "needs_information": 56,
+        "government_or_court_actor": 13,
+        "needs_source_review": 18,
+        "coverage_established": 12,
+        "failed_proposal": 1
+      },
+      "coverage_complete": true
+    },
+    "A0007": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 162,
+      "compiled_candidate_count": 162,
+      "returned_count": 161,
+      "results": {
+        "applies": 54,
+        "unknown": 107
+      },
+      "decision_bases": {
+        "coverage_established": 54,
+        "needs_source_review": 73,
+        "needs_information": 34,
+        "government_or_court_actor": 1
+      },
+      "coverage_complete": true
+    },
+    "A0008": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 104,
+      "compiled_candidate_count": 104,
+      "returned_count": 94,
+      "results": {
+        "unknown": 86,
+        "applies": 8
+      },
+      "decision_bases": {
+        "needs_information": 41,
+        "government_or_court_actor": 10,
+        "needs_source_review": 45,
+        "coverage_established": 8
+      },
+      "coverage_complete": true
+    },
+    "A0009": {
+      "evaluation_status": "skipped",
+      "evaluated_rule_count": 0,
+      "jurisdiction_candidate_count": 0,
+      "compiled_candidate_count": 0,
+      "returned_count": 0,
+      "results": {},
+      "decision_bases": {},
+      "coverage_complete": false
+    },
+    "A0010": {
+      "evaluation_status": "evaluated",
+      "evaluated_rule_count": 466,
+      "jurisdiction_candidate_count": 91,
+      "compiled_candidate_count": 91,
+      "returned_count": 77,
+      "results": {
+        "unknown": 65,
+        "applies": 12
+      },
+      "decision_bases": {
+        "needs_information": 44,
+        "government_or_court_actor": 13,
+        "needs_source_review": 21,
+        "coverage_established": 12,
+        "failed_proposal": 1
+      },
+      "coverage_complete": true
+    }
+  },
+  "evaluated_address_count": 9,
+  "skipped_address_count": 1,
+  "exact_source_evidence_checks": 2300,
+  "input_sha256": {
+    "outputs/module_a/rules.json": "8430e5972ec27ef3c490f40bdf54b0bf1775b65371f850d4170e18b4b71140e9",
+    "data/evaluation/rule_plans.json": "528a2b5276eaca9218922b76bbd986f0372d9bb3d77808169cd13c74dd6a1dc7",
+    "outputs/address_facts/address_enrichment.csv": "2733b5234bfbedfc3dee9d4ccf43cd3cf86b15ca86e13fee8de38499c60387dc",
+    "data/evaluation/submission_rule_ids.json": "97ce3a0d65fc86460e21922aa33a2e15fee4c355d4c25b0c20a3e16a43ab41e5",
+    "data/evaluation/address_field_dependencies.json": "70186151106b0cb499fc2779a4d2b592c5e497911bcdf87e336744862d5ac88d",
+    "AGENTS.md": "bebe270b8775831a95f2dac4089a1f1a013c0fc259ae155ae91433a8f7976b49",
+    "outputs/module_a/applicability_contract.json": "6554bc1bcc7c24a584da827090a71c4cf7aefbe3805ef82b9fc1444c3b0c7c59"
+  },
+  "evaluator_code_sha256": {
+    "evaluator.py": "23aa07bbfd4f7f02f1d63f6f7caa660375ab349642148e3be877523e49b3a003",
+    "eval_logic.py": "c02d25b89f7b763a6898d6036a0b0a97d4ec52f03b8102f65b925c772f0b2d70",
+    "eval_facts.py": "dd193331ed4881c7f5f4d42fd2b0d5e804aff6112a8cd85955c3b38d3ab0fe10",
+    "submission_ids.py": "be400715c819be4c33f4cc423a214b87f99571c424a10f0376fc2f3f317f969d",
+    "lookup_output.py": "d78961a642c4ce501f20138e3381c63c8cac42d702d96b0ecc95745b7ced1008",
+    "field_diagnostics.py": "dcc2176139a2ccbd435ee0c6ef6cf1a6fdfa8581d2aa2eb20aed56999716496f"
+  },
+  "runtime_model_calls": 0,
+  "runtime_model_input_tokens": 0,
+  "runtime_model_output_tokens": 0,
+  "timings": {
+    "load_rules_seconds": 0.057424458,
+    "load_and_validate_plans_seconds": 0.358291833,
+    "bind_facts_seconds": 0.07971653900000042,
+    "evaluate_seconds": 0.6472889169999994,
+    "serialize_and_write_results_seconds": 3.3079452500000004
+  },
+  "runtime_cache_hits": 0,
+  "measurement_scope": "Fresh deterministic runtime only. Conversation-based plan compilation and development time are excluded; their token use is not measured.",
+  "warning": "Not legal advice. Format and exact-source checks do not certify legal correctness. This is not a complete 500-address submission.",
+  "rule_id_format": {
+    "submission": "r-0001 style decimal IDs",
+    "internal": "preserved content hashes",
+    "mapping": "rule_id_map.json",
+    "paired_rules": "rules.json"
+  },
+  "elapsed_before_report_write_seconds": 5.320640375,
+  "lookups_sha256": "c30400e85718172f497275c85141a39c29c3db8b1a4a77249129a794c3082038",
+  "exported_rules_sha256": "efbb30e5aeb0c53780f817a4f753b17a3059934e79d164ca2c87e3b87d261823",
+  "rule_id_map_sha256": "1b98a520778c706ec2fda84d438daef0360c6d5b729b10a86bdf66cc1ff4d023",
+  "address_diagnostics_sha256": "3294bf9a9c764345ebf29489baf662833624045067021f57a07434a35bb76a3b",
+  "evaluation_audit_sha256": "96d11a82f4ab87e2ec9a1b880a1a5277fbcbbc02cadc816a4e8344065d2c2f5d"
+}

@@ -24,6 +24,28 @@ outputs/submission_readiness_20261003/*
 !outputs/address_facts/
 !outputs/address_facts/**
 
+# Current workflow v3 publication; large raw JSON and detailed audits stay local.
+!outputs/evaluator_all500_workflow_v3/
+outputs/evaluator_all500_workflow_v3/*
+!outputs/evaluator_all500_workflow_v3/README.md
+!outputs/evaluator_all500_workflow_v3/lookups.json.gz
+!outputs/evaluator_all500_workflow_v3/rules.json
+!outputs/evaluator_all500_workflow_v3/rule_id_map.json
+!outputs/evaluator_all500_workflow_v3/address_diagnostics.json
+!outputs/evaluator_all500_workflow_v3/address_summary.csv
+!outputs/evaluator_all500_workflow_v3/address_statistics.html
+!outputs/evaluator_all500_workflow_v3/run_identity.json
+!outputs/evaluator_all500_workflow_v3/run_report.json
+!outputs/evaluator_all500_workflow_v3/repair_validation.json
+!outputs/evaluator_all500_workflow_v3/residential_repair_comparison.csv
+!outputs/evaluator_first10_workflow_v3/
+outputs/evaluator_first10_workflow_v3/*
+!outputs/evaluator_first10_workflow_v3/lookups.json
+!outputs/evaluator_first10_workflow_v3/rules.json
+!outputs/evaluator_first10_workflow_v3/rule_id_map.json
+!outputs/evaluator_first10_workflow_v3/address_diagnostics.json
+!outputs/evaluator_first10_workflow_v3/run_report.json
+
 # Third-party research captures stay local; the official final code is included.
 data/supplemental/*
 !data/supplemental/D074.txt

@@ -1,0 +1,1984 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-01",
+  "reviews": [
+    {
+      "team_rule_id": "r-024a0c68f47c93ac8c4c",
+      "source_rule_sha256": "e5ecd40965625a1bdfe71e3b5bcbb386f2b0b839eb63dcc7360cc94da02b77fe",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The preceding-15-year certificate interval must be computed at the relevant event date; this relative event-date calculation is not implemented.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-024a0c68f47c93ac8c4c.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-024a0c68f47c93ac8c4c.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-024a0c68f47c93ac8c4c.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-024a0c68f47c93ac8c4c.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-024a0c68f47c93ac8c4c.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-024a0c68f47c93ac8c4c.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-0485c8772770dabb1c7e",
+      "source_rule_sha256": "16fd1e4435c305aa3bdeef41c2f86ee1e64a25441018cdd19ad083aecb316406",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Exemption requires certificate issuance within 15 years preceding the relevant legal event. Relative event-date calculation is unavailable; query date cannot replace event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-0485c8772770dabb1c7e.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-0485c8772770dabb1c7e.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-0485c8772770dabb1c7e.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-0485c8772770dabb1c7e.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-0485c8772770dabb1c7e.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-0485c8772770dabb1c7e.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-04c099559f1691fddce6",
+      "source_rule_sha256": "8774680aec08465039075a25779e309fac436355776c4757f0dc12331c839665",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Exemption requires certificate issuance within 15 years preceding the relevant legal event. Relative event-date calculation is unavailable; query date cannot replace event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-04c099559f1691fddce6.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-04c099559f1691fddce6.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-04c099559f1691fddce6.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-04c099559f1691fddce6.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-04c099559f1691fddce6.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-04c099559f1691fddce6.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-0ae51c51aa5bcb4b8139",
+      "source_rule_sha256": "65947361dbfec451e60af451faf1e7e5eea897141ab9ed24986cef2af152f118",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-0ae51c51aa5bcb4b8139.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-0ae51c51aa5bcb4b8139.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-135701a6886ff65f1089",
+      "source_rule_sha256": "f216e49b5e265d3e7ab1d722c3933cb28b0792a87ab85fb6ac2b35a74668c375",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate test at another event date requires an unimplemented relative-date calculation.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-135701a6886ff65f1089.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-135701a6886ff65f1089.scope_evaluation_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-135701a6886ff65f1089.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-135701a6886ff65f1089.scope_evaluation_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-18527b79792020e67e5c",
+      "source_rule_sha256": "69ad1109625d1f91d6919f86f48fc3c38455b1a8c6bd03aa656ced94192e16b5",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-18527b79792020e67e5c.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-18527b79792020e67e5c.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-2a76d6f5bb85dbe3f80f",
+      "source_rule_sha256": "15b17ecfe36cb028c8e4df8c60edb16d0382a7a04f04064cab6707f2dbde3d87",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "five_year_demolition_window",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-2a76d6f5bb85dbe3f80f.demolition_date",
+                  "op": "ge",
+                  "right": "case.r-2a76d6f5bb85dbe3f80f.relevant_lahd_filing_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-2a76d6f5bb85dbe3f80f.demolition_date",
+                  "op": "le",
+                  "right": "case.r-2a76d6f5bb85dbe3f80f.relevant_lahd_filing_date",
+                  "years": 5,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-2a76d6f5bb85dbe3f80f.demolition_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual or scheduled project demolition date.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-2a76d6f5bb85dbe3f80f.relevant_lahd_filing_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date of the applicable LAHD withdrawal notice or eviction declaration filing identified by the source; document which filing governs.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-2cc4cc22ff5144827672",
+      "source_rule_sha256": "6711ab0e12abd98b753d51a891e7313aaf3463e6ed9266805c8722d409db0f69",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "recording_start_order",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-2cc4cc22ff5144827672.initial_rental_start_date",
+              "op": "gt",
+              "right": "case.r-2cc4cc22ff5144827672.recording_date",
+              "years": 0,
+              "days": 0,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-2cc4cc22ff5144827672.initial_rental_start_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date the initial tenant/subtenant rental tenancy began.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-2cc4cc22ff5144827672.recording_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Recording date of the applicable master deed, cooperative agreement or subdivision plat.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-2f3009c9ca62b44ed37f",
+      "source_rule_sha256": "e3c40c09ff209326a84f585218d9d1ef0483fd9de5ccd905d7917d0cb6eb2f0e",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "five_year_demolition_window",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-2f3009c9ca62b44ed37f.demolition_date",
+                  "op": "ge",
+                  "right": "case.r-2f3009c9ca62b44ed37f.relevant_lahd_filing_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-2f3009c9ca62b44ed37f.demolition_date",
+                  "op": "le",
+                  "right": "case.r-2f3009c9ca62b44ed37f.relevant_lahd_filing_date",
+                  "years": 5,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-2f3009c9ca62b44ed37f.demolition_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual or scheduled project demolition date.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-2f3009c9ca62b44ed37f.relevant_lahd_filing_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date of the applicable LAHD withdrawal notice or eviction declaration filing identified by the source; document which filing governs.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-31df336e5319d40e51cc",
+      "source_rule_sha256": "5d3ed75bf5c14c06c9134c0215255c51a69d4aa7f64ea02f5c8e94fab2a75a27",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be evaluated against the relevant event date; relative date comparison is not implemented. The query date cannot replace the event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-31df336e5319d40e51cc.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-31df336e5319d40e51cc.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-31df336e5319d40e51cc.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-31df336e5319d40e51cc.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-31df336e5319d40e51cc.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-31df336e5319d40e51cc.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-330b5c9a6cf6fd9cba6a",
+      "source_rule_sha256": "4e6881ecf22713252eb17eabfbb7dcb3795369574f1a237a32e2a5c65c9912bc",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate window requires event-date recalculation; only the query-date window is implemented.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-330b5c9a6cf6fd9cba6a.certificate_issued_date",
+                  "op": "gt",
+                  "right": "case.r-330b5c9a6cf6fd9cba6a.scope_assessment_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-330b5c9a6cf6fd9cba6a.certificate_issued_date",
+                  "op": "le",
+                  "right": "case.r-330b5c9a6cf6fd9cba6a.scope_assessment_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-34f17edbac653c449f1c",
+      "source_rule_sha256": "f24e198f59fbbabb35f0f42bd01910e591e62469f0edb287cf006ec6a0aa5949",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Certificate exemption needs the preceding-15-year interval at the actual relevant event date; relative date calculation is not implemented here.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-34f17edbac653c449f1c.certificate_issue_date",
+                  "op": "gt",
+                  "right": "case.r-34f17edbac653c449f1c.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-34f17edbac653c449f1c.certificate_issue_date",
+                  "op": "le",
+                  "right": "case.r-34f17edbac653c449f1c.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-44fcd096c82e1bf9900c",
+      "source_rule_sha256": "99ac027d8d11452a6065148d9fb86b416261665040de5619e3447a60822b6314",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-44fcd096c82e1bf9900c.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-44fcd096c82e1bf9900c.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-49001c5c8c73cca9e8bf",
+      "source_rule_sha256": "d8f3c0bcecd51b6e3a456fd6c6703d077c91e2e7f75dcecf2c156f6bde9d48e0",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be computed at the actual event date; relative date arithmetic is not implemented in these predicates.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-49001c5c8c73cca9e8bf.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-49001c5c8c73cca9e8bf.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-49001c5c8c73cca9e8bf.certificate_date",
+                  "op": "le",
+                  "right": "case.r-49001c5c8c73cca9e8bf.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-4e1f59b1c232c84d95cd",
+      "source_rule_sha256": "73b24e630860c216103cabeeaa8dbb0ec7c6f84b957b4127d6b7d94775a6bb67",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be computed at the actual event date; relative date arithmetic is not implemented in these predicates.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-4e1f59b1c232c84d95cd.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-4e1f59b1c232c84d95cd.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-4e1f59b1c232c84d95cd.certificate_date",
+                  "op": "le",
+                  "right": "case.r-4e1f59b1c232c84d95cd.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-50baf29cdc9977efe8d8",
+      "source_rule_sha256": "c9a98ac7c2155d8315eb2c88280cd88eee09498885b850ea431da6ecc095e8ee",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be evaluated against the relevant event date; relative date comparison is not implemented. The query date cannot replace the event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-50baf29cdc9977efe8d8.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-50baf29cdc9977efe8d8.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-50baf29cdc9977efe8d8.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-50baf29cdc9977efe8d8.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-50baf29cdc9977efe8d8.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-50baf29cdc9977efe8d8.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-52016cc8695662d3d86f",
+      "source_rule_sha256": "ed833fb2a00f11040b1dc9852da400d1211859349db27956cc0731e6ebcf237d",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "tender_within_continuance",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-52016cc8695662d3d86f.complete_tender_date",
+                  "op": "ge",
+                  "right": "case.r-52016cc8695662d3d86f.continuance_start_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-52016cc8695662d3d86f.complete_tender_date",
+                  "op": "le",
+                  "right": "case.r-52016cc8695662d3d86f.continuance_end_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-52016cc8695662d3d86f.complete_tender_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date the complete qualifying tender occurred.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-52016cc8695662d3d86f.continuance_start_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual court continuance start.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-52016cc8695662d3d86f.continuance_end_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual court continuance end.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-5217228bfc3be056af88",
+      "source_rule_sha256": "884a81b4fca1b99206889832464da8b6a2dca9e9c35233d4ed70327d39b06e11",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-5217228bfc3be056af88.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-5217228bfc3be056af88.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-590a907f8dc71da2276c",
+      "source_rule_sha256": "0b3f6840a05721fb7cd43c50c92a606606043f8afa5a054c9b413ce97e2295bb",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be evaluated against the relevant event date; relative date comparison is not implemented. The query date cannot replace the event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-590a907f8dc71da2276c.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-590a907f8dc71da2276c.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-590a907f8dc71da2276c.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-590a907f8dc71da2276c.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-590a907f8dc71da2276c.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-590a907f8dc71da2276c.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-5b584468833be61b042b",
+      "source_rule_sha256": "aa8f12426d2b04b168818f83d0bfe5c473505531b6827a6a5975e345d6e9ff6a",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Certificate exemption needs the preceding-15-year interval at the actual relevant event date; relative date calculation is not implemented here.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-5b584468833be61b042b.certificate_issue_date",
+                  "op": "gt",
+                  "right": "case.r-5b584468833be61b042b.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-5b584468833be61b042b.certificate_issue_date",
+                  "op": "le",
+                  "right": "case.r-5b584468833be61b042b.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-5fd5feb113b663f98e12",
+      "source_rule_sha256": "3aaa6526b9b5ccfeb8f463582d3ef692f479eab11685e43ec01a5ec69895d9a5",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "five_year_demolition_window",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-5fd5feb113b663f98e12.demolition_date",
+                  "op": "ge",
+                  "right": "case.r-5fd5feb113b663f98e12.relevant_lahd_filing_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-5fd5feb113b663f98e12.demolition_date",
+                  "op": "le",
+                  "right": "case.r-5fd5feb113b663f98e12.relevant_lahd_filing_date",
+                  "years": 5,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-5fd5feb113b663f98e12.demolition_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual or scheduled project demolition date.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-5fd5feb113b663f98e12.relevant_lahd_filing_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date of the applicable LAHD withdrawal notice or eviction declaration filing identified by the source; document which filing governs.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-64af8cdd447869248980",
+      "source_rule_sha256": "ecb69c42fac48777d9f2a88d03f5ed9fc4fc78cdb1cdf49f2c99ef5e18e8f29c",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-64af8cdd447869248980.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-64af8cdd447869248980.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-6ab8a4320b6415fb5e4e",
+      "source_rule_sha256": "4e6d33a17181096d44bca8dc73bc2200ce437d552f6b3723d923f0ca3df5d007",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The 15-year certificate interval must be evaluated against the relevant event date; relative date comparison is not implemented. The query date cannot replace the event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-6ab8a4320b6415fb5e4e.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-6ab8a4320b6415fb5e4e.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-6ab8a4320b6415fb5e4e.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-6ab8a4320b6415fb5e4e.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-6ab8a4320b6415fb5e4e.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-6ab8a4320b6415fb5e4e.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-720e1b6c29210f4fe76f",
+      "source_rule_sha256": "99ddc4ba2a035f7e71130a1c89315bba46684d59a3f752a98fd62227fced33b3",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate test at another event date requires an unimplemented relative-date calculation.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-720e1b6c29210f4fe76f.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-720e1b6c29210f4fe76f.scope_evaluation_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-720e1b6c29210f4fe76f.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-720e1b6c29210f4fe76f.scope_evaluation_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-72acca7b9b346ebcbf55",
+      "source_rule_sha256": "3714107ee76643a90e681379b0bd4ebf656edb9cfd09f5cab6cbfe2706dfbbb2",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "tender_within_continuance",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-72acca7b9b346ebcbf55.complete_tender_date",
+                  "op": "ge",
+                  "right": "case.r-72acca7b9b346ebcbf55.continuance_start_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-72acca7b9b346ebcbf55.complete_tender_date",
+                  "op": "le",
+                  "right": "case.r-72acca7b9b346ebcbf55.continuance_end_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-72acca7b9b346ebcbf55.complete_tender_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date the complete qualifying tender occurred.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-72acca7b9b346ebcbf55.continuance_start_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual court continuance start.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-72acca7b9b346ebcbf55.continuance_end_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual court continuance end.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-90d97c60f4434a9f7976",
+      "source_rule_sha256": "a089e966994be1b001a4e8d5b7c1fc19f0d7785e641153768a3c6dbbacf2fd24",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "event_opt_in",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-90d97c60f4434a9f7976.assessed_event_date",
+              "op": "ge",
+              "right": "case.r-90d97c60f4434a9f7976.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-931c3dc99ad034b0f6c4",
+      "source_rule_sha256": "1ba368cec6ade80c13c5b381ca7d2e3ff1b45b3148db75653f08f395bd15cffa",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate window requires event-date recalculation; only the query-date window is implemented.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-931c3dc99ad034b0f6c4.certificate_issued_date",
+                  "op": "gt",
+                  "right": "case.r-931c3dc99ad034b0f6c4.scope_assessment_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-931c3dc99ad034b0f6c4.certificate_issued_date",
+                  "op": "le",
+                  "right": "case.r-931c3dc99ad034b0f6c4.scope_assessment_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-97dca25ba264edb4726c",
+      "source_rule_sha256": "5e3d6e9ffc135ff24a0902be1fc507678f1ac2140d7bea84ac53434395cf8cda",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate test at another event date requires an unimplemented relative-date calculation.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-97dca25ba264edb4726c.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-97dca25ba264edb4726c.scope_evaluation_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-97dca25ba264edb4726c.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-97dca25ba264edb4726c.scope_evaluation_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-99fe139699cf74b2c846",
+      "source_rule_sha256": "f35f129b2cf0428cb6ed5daf26530f5c50568e5f9ac20077b5dcaac9fc3d9c23",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate interval requires an unsupported relative event-date calculation; do not substitute construction year or query date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-99fe139699cf74b2c846.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-99fe139699cf74b2c846.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-99fe139699cf74b2c846.certificate_date",
+                  "op": "le",
+                  "right": "case.r-99fe139699cf74b2c846.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-9d0148e3dc34d001f68f",
+      "source_rule_sha256": "96168eb09148c2d53ef22845fbe149983a3bab295a1e5f946d0320d02e8b9305",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Evaluate whether the relevant event precedes the written request plus 30 days; relative date comparison is not implemented.",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-9d0148e3dc34d001f68f.scope_date",
+              "op": "lt",
+              "right": "case.r-9d0148e3dc34d001f68f.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-9d3664fc1415d480c949",
+      "source_rule_sha256": "b459e008771f4400bfa53f453b680a2174e2f570b886490caa3b0de31a3afa68",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate test at another event date requires an unimplemented relative-date calculation.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-9d3664fc1415d480c949.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-9d3664fc1415d480c949.scope_evaluation_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-9d3664fc1415d480c949.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-9d3664fc1415d480c949.scope_evaluation_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-9ded5cc7b50f1bdabaec",
+      "source_rule_sha256": "af68a99c2c35fcf703151e466f01de08a03cc9166e441fd1fe3ebe7a93613f2e",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate window requires event-date recalculation; only the query-date window is implemented.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-9ded5cc7b50f1bdabaec.certificate_issued_date",
+                  "op": "gt",
+                  "right": "case.r-9ded5cc7b50f1bdabaec.scope_assessment_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-9ded5cc7b50f1bdabaec.certificate_issued_date",
+                  "op": "le",
+                  "right": "case.r-9ded5cc7b50f1bdabaec.scope_assessment_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-a0c68a8a93cb80946df4",
+      "source_rule_sha256": "fe5f008455ec6a25801c4160cb97e78e61b5963751e3c987bc50e5272fc72e3c",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Evaluate whether the relevant event precedes the written request plus 30 days; relative date comparison is not implemented.",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-a0c68a8a93cb80946df4.scope_date",
+              "op": "lt",
+              "right": "case.r-a0c68a8a93cb80946df4.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-abd7191bb8199aa15ac5",
+      "source_rule_sha256": "cb5845f84b7220df96401a8c3194f418348d34cb72faba5833d98266517328fd",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate interval requires an unsupported relative event-date calculation; do not substitute construction year or query date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-abd7191bb8199aa15ac5.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-abd7191bb8199aa15ac5.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-abd7191bb8199aa15ac5.certificate_date",
+                  "op": "le",
+                  "right": "case.r-abd7191bb8199aa15ac5.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-af2abd4994fed6eba51b",
+      "source_rule_sha256": "6db8d40b945ab77595a9133f8256eb22190078139793f4ec19d81eb3377df6d3",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Housing produced in the last 15 years is excluded, but production, age measurement and relevant date are undefined. Neither construction year nor certificate date resolves this exemption.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-af2abd4994fed6eba51b.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-af2abd4994fed6eba51b.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-af2abd4994fed6eba51b.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-af2abd4994fed6eba51b.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-af2abd4994fed6eba51b.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-af2abd4994fed6eba51b.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-bae306dfcd15c2181cf4",
+      "source_rule_sha256": "cb5e6183b20ce048ce5d1ea04a5c1a814020d94e1382e2a12696de15beb07eba",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Exemption requires certificate issuance within 15 years preceding the relevant legal event. Relative event-date calculation is unavailable; query date cannot replace event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-bae306dfcd15c2181cf4.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-bae306dfcd15c2181cf4.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-bae306dfcd15c2181cf4.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-bae306dfcd15c2181cf4.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-bae306dfcd15c2181cf4.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-bae306dfcd15c2181cf4.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-c65d35c86d60f1e323a9",
+      "source_rule_sha256": "a9163d193aec9f6ae8e3b67feb7091f7f8bc8d48dbe5ad03eacd6b41508c4dd6",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate interval requires an unsupported relative event-date calculation; do not substitute construction year or query date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-c65d35c86d60f1e323a9.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-c65d35c86d60f1e323a9.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-c65d35c86d60f1e323a9.certificate_date",
+                  "op": "le",
+                  "right": "case.r-c65d35c86d60f1e323a9.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-cf35e8c4f284f2c1901d",
+      "source_rule_sha256": "51869eab5b05c2a51d874a94a54f723384faee635a87818d69e04cd67d1573d2",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate interval requires an unsupported relative event-date calculation; do not substitute construction year or query date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-cf35e8c4f284f2c1901d.certificate_date",
+                  "op": "gt",
+                  "right": "case.r-cf35e8c4f284f2c1901d.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-cf35e8c4f284f2c1901d.certificate_date",
+                  "op": "le",
+                  "right": "case.r-cf35e8c4f284f2c1901d.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-d023dd306ddcb3697f36",
+      "source_rule_sha256": "f4fc1609d63f0e4958663b7e721de6a451fda9ece4afabdadb970edee9dbf1a6",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "five_year_demolition_window",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-d023dd306ddcb3697f36.demolition_date",
+                  "op": "ge",
+                  "right": "case.r-d023dd306ddcb3697f36.relevant_lahd_filing_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-d023dd306ddcb3697f36.demolition_date",
+                  "op": "le",
+                  "right": "case.r-d023dd306ddcb3697f36.relevant_lahd_filing_date",
+                  "years": 5,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "added_facts": [
+        {
+          "key": "case.r-d023dd306ddcb3697f36.demolition_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual or scheduled project demolition date.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-d023dd306ddcb3697f36.relevant_lahd_filing_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Date of the applicable LAHD withdrawal notice or eviction declaration filing identified by the source; document which filing governs.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-d0bae975f18032423017",
+      "source_rule_sha256": "e412ee39245fe3393c24f48791175c7eb47b9f9009180ea31a40c0bc8b03eba0",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Certificate exemption needs the preceding-15-year interval at the actual relevant event date; relative date calculation is not implemented here.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-d0bae975f18032423017.certificate_issue_date",
+                  "op": "gt",
+                  "right": "case.r-d0bae975f18032423017.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-d0bae975f18032423017.certificate_issue_date",
+                  "op": "le",
+                  "right": "case.r-d0bae975f18032423017.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-d2e4fe3a4fab72fcc8bd",
+      "source_rule_sha256": "24a5e3dd9bdca4fc03ad4bbcee02c3ea792cc9738ec339628987e3034ac54ac9",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Evaluate whether the relevant event precedes the written request plus 30 days; relative date comparison is not implemented.",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-d2e4fe3a4fab72fcc8bd.scope_date",
+              "op": "lt",
+              "right": "case.r-d2e4fe3a4fab72fcc8bd.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-d65858f4b12bb485c068",
+      "source_rule_sha256": "1e03e0a18c4e576d861e4d115fbb2b8a9f20fbb84b38c0b8c93355c734dcbf71",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Evaluate whether the relevant event precedes the written request plus 30 days; relative date comparison is not implemented.",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-d65858f4b12bb485c068.scope_date",
+              "op": "lt",
+              "right": "case.r-d65858f4b12bb485c068.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-d764e39f57d6c96e196d",
+      "source_rule_sha256": "763549a54b8a370c37f27e055c87c54417c43a26ca95decd57c06b4ade15eec8",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Evaluate whether the relevant event precedes the written request plus 30 days; relative date comparison is not implemented.",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-d764e39f57d6c96e196d.scope_date",
+              "op": "lt",
+              "right": "case.r-d764e39f57d6c96e196d.opt_in_sent_date",
+              "years": 0,
+              "days": 30,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-defcdc70be10d84920f1",
+      "source_rule_sha256": "5e2fc16490e9fe4026e3359693e02d36d99825083b9e826b4f17ed2a1e3baa2b",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "Exemption requires certificate issuance within 15 years preceding the relevant legal event. Relative event-date calculation is unavailable; query date cannot replace event date.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-defcdc70be10d84920f1.certificate_of_occupancy_date",
+                  "op": "gt",
+                  "right": "case.r-defcdc70be10d84920f1.relevant_event_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-defcdc70be10d84920f1.certificate_of_occupancy_date",
+                  "op": "le",
+                  "right": "case.r-defcdc70be10d84920f1.relevant_event_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": [
+        {
+          "key": "case.r-defcdc70be10d84920f1.certificate_of_occupancy_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual certificate-of-occupancy issuance date for the subject housing, never construction year.",
+          "comparisons": []
+        },
+        {
+          "key": "case.r-defcdc70be10d84920f1.relevant_event_date",
+          "subject_scope": "rule_specific_actual_event_or_property_date",
+          "data_type": "date",
+          "description": "Actual event date for the branch (agreement/signing/notice/termination as applicable), not automatically the query date. Separate events require separate fact overlays.",
+          "comparisons": []
+        }
+      ]
+    },
+    {
+      "team_rule_id": "r-ecff349ff08e8780c64b",
+      "source_rule_sha256": "14e36637733cb2a3a7a937bbf8be24b43332f4d13a0e46d99f7653384011f6ad",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [
+        {
+          "reason": "The rolling 15-year certificate window requires event-date recalculation; only the query-date window is implemented.",
+          "expression": {
+            "all": [
+              {
+                "date_compare": {
+                  "left": "case.r-ecff349ff08e8780c64b.certificate_issued_date",
+                  "op": "gt",
+                  "right": "case.r-ecff349ff08e8780c64b.scope_assessment_date",
+                  "years": -15,
+                  "days": 0,
+                  "months": 0
+                }
+              },
+              {
+                "date_compare": {
+                  "left": "case.r-ecff349ff08e8780c64b.certificate_issued_date",
+                  "op": "le",
+                  "right": "case.r-ecff349ff08e8780c64b.scope_assessment_date",
+                  "years": 0,
+                  "days": 0,
+                  "months": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "remove_duplicate_gate_ids": [
+        "certificate_relative_interval",
+        "certificate_interval",
+        "relative_certificate_interval",
+        "relative_co",
+        "event_relative_certificate",
+        "certificate_relative"
+      ],
+      "gate_predicates": [],
+      "added_facts": []
+    },
+    {
+      "team_rule_id": "r-f4c83099cc6fbb0ef472",
+      "source_rule_sha256": "c7297d691ac6a76f76f8bae6ef192153c5fbb5b2d6e6f2a2280476901278a86f",
+      "reason": "Replace identified computational placeholders with typed date comparisons. Preserve the original Boolean context, evidence, exemptions and event anchors; missing dates remain unknown. No construction-to-certificate inference. Other unresolved legal or computational gates remain explicit.",
+      "replacements": [],
+      "remove_duplicate_gate_ids": [],
+      "gate_predicates": [
+        {
+          "id": "post_recording_tenancy",
+          "expression": {
+            "date_compare": {
+              "left": "case.r-f4c83099cc6fbb0ef472.initial_rental_start_date",
+              "op": "gt",
+              "right": "case.r-f4c83099cc6fbb0ef472.recording_date",
+              "years": 0,
+              "days": 0,
+              "months": 0
+            }
+          }
+        }
+      ],
+      "added_facts": []
+    }
+  ]
+}

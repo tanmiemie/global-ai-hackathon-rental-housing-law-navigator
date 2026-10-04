@@ -1,0 +1,2962 @@
+{
+  "schema_version": "1.0",
+  "rules_sha256": "8430e5972ec27ef3c490f40bdf54b0bf1775b65371f850d4170e18b4b71140e9",
+  "supported_as_of": [
+    "2026-10-01"
+  ],
+  "compilation": {
+    "method": "model_assisted_source_review",
+    "review_date": "2026-10-03",
+    "query_date": "2026-10-01",
+    "source": "Final applicability criteria and exact source evidence in the frozen Module A records; prior pilot decisions were not used as a decision oracle.",
+    "scope": "Seven reviewed rules only; not a universal natural-language compiler or complete legal calculation engine.",
+    "agents_sha256": "bebe270b8775831a95f2dac4089a1f1a013c0fc259ae155ae91433a8f7976b49",
+    "applicability_contract_sha256": "6554bc1bcc7c24a584da827090a71c4cf7aefbe3805ef82b9fc1444c3b0c7c59",
+    "runtime_model_calls_required": 0,
+    "fact_binding_notes": [
+      "Only jurisdiction, verified residential use/type and the explicit residential-rental query context are available to establish the general conditional protections.",
+      "A source-reported Units1 value is not building count, owner portfolio count, offered-for-rent count or a count at a different legal geography.",
+      "Owner portfolio facts require owner identity, geographic scope, property/unit definitions and observation date; property_unit facts require the evaluated unit/building identity.",
+      "All transaction, tenancy, household and legal-context facts are unknown unless separately supplied with the expected subject scope and provenance.",
+      "Elapsed-time, ratio and excess arithmetic inputs must identify their original operands and event dates. These specialized inputs are not automatically derived by this pilot binder."
+    ]
+  },
+  "fact_scopes": {
+    "context.residential_rental_lookup": "query_context",
+    "household.any_tenant_disabled_under_42_usc_423": "tenancy",
+    "household.any_tenant_handicapped_under_hsc_50072": "tenancy",
+    "household.maximum_tenant_age_at_notice": "tenancy",
+    "household.minor_dependent_children_under_tax_definition": "tenancy",
+    "jurisdiction.city": "address_jurisdiction",
+    "jurisdiction.state": "address_jurisdiction",
+    "legal_context.chapter_2_7_scope_resolved": "legal_context",
+    "legal_context.la_jco_coverage": "legal_context",
+    "legal_context.la_rso_coverage": "legal_context",
+    "legal_context.public_rent_control_allows_lower_annual_increase": "legal_context",
+    "legal_context.public_rent_control_consistent_with_chapter_2_7": "legal_context",
+    "legal_context.public_rent_control_is_valid": "legal_context",
+    "legal_context.section_400_definition_resolved": "legal_context",
+    "legal_context.section_798_9_definition_resolved": "legal_context",
+    "legal_context.unit_subject_to_public_rent_control": "legal_context",
+    "owner.all_llc_members_are_natural_persons": "owner_portfolio",
+    "owner.all_trust_parties_have_statutory_family_relationships": "owner_portfolio",
+    "owner.any_llc_member_is_corporation": "owner_portfolio",
+    "owner.entity_type": "owner_portfolio",
+    "owner.family_trust_type": "owner_portfolio",
+    "owner.intended_relative_owns_la_residential_property": "owner_portfolio",
+    "owner.is_corporation": "owner_portfolio",
+    "owner.is_family_trust_settlor_or_beneficiary": "owner_portfolio",
+    "owner.is_mobilehome_park_management": "owner_portfolio",
+    "owner.is_natural_person": "owner_portfolio",
+    "owner.is_reit": "owner_portfolio",
+    "owner.la_reduced_relocation_ever_used": "owner_portfolio",
+    "owner.la_reduced_relocation_years_since_last_use": "owner_portfolio",
+    "owner.la_single_family_home_on_separate_lot": "owner_portfolio",
+    "owner.los_angeles_residential_unit_count": "owner_portfolio",
+    "owner.portfolio_dwelling_units_offered_for_rent": "owner_portfolio",
+    "owner.portfolio_residential_rental_property_count": "owner_portfolio",
+    "owner.principal_residence_in_one_unit_at_tenancy_start": "owner_portfolio",
+    "owner.principal_residence_in_that_unit_continues": "owner_portfolio",
+    "procedure.eviction_ground": "transaction",
+    "procedure.eviction_required_for_natural_disaster_hazard": "transaction",
+    "procedure.good_faith_occupancy_eviction": "transaction",
+    "procedure.hazard_caused_by_landlord_negligence": "transaction",
+    "procedure.notice_posting_common_area_accessible": "transaction",
+    "procedure.renters_protections_notice_delivered": "transaction",
+    "procedure.renters_protections_notice_posted": "transaction",
+    "procedure.replaces_resident_manager_with_resident_manager": "transaction",
+    "procedure.termination_required_by_government_order_to_vacate": "transaction",
+    "procedure.termination_to_comply_with_unpermitted_dwelling_order": "transaction",
+    "property.affordable_housing_subsidy_agreement": "property_unit",
+    "property.any_unit_is_adu_or_jadu": "property_unit",
+    "property.building_rental_unit_count": "property_unit",
+    "property.building_unit_count": "property_unit",
+    "property.certificate_of_occupancy_date": "property_unit",
+    "property.dormitory_institution_type": "property_unit",
+    "property.dormitory_operated_by_institution": "property_unit",
+    "property.dormitory_owned_by_institution": "property_unit",
+    "property.housing_assistance_program_applies": "property_unit",
+    "property.is_dormitory": "property_unit",
+    "property.is_mobilehome": "property_unit",
+    "property.recorded_affordable_housing_restriction": "property_unit",
+    "property.residential_use": "address_property",
+    "property.restricted_income_classes_are_statutory": "property_unit",
+    "property.separately_alienable_title": "property_unit",
+    "property.subsidy_income_classes_are_statutory": "property_unit",
+    "property.two_units_in_single_structure": "property_unit",
+    "property.use": "address_property",
+    "tenancy.accumulated_rent_owed": "tenancy",
+    "tenancy.has_renewed": "tenancy",
+    "tenancy.is_fixed_term": "tenancy",
+    "tenancy.manager_compensation_only_free_or_reduced_rent": "tenancy",
+    "tenancy.prescribed_exemption_notice_delivered": "tenancy",
+    "tenancy.prescribed_exemption_notice_in_rental_agreement": "tenancy",
+    "tenancy.prior_tenant_remains_lawfully": "tenancy",
+    "tenancy.renewal_date": "tenancy",
+    "tenancy.start_date": "tenancy",
+    "tenancy.tenant_vacated": "tenancy",
+    "tenancy.term_months": "tenancy",
+    "tenancy.unit_tenant_count": "tenancy",
+    "tenant.is_mobilehome_homeowner_under_section_798_9": "tenancy",
+    "tenant.is_service_member_under_section_400": "tenancy",
+    "transaction.advance_rent_months": "transaction",
+    "transaction.alteration_charge_is_specified": "transaction",
+    "transaction.alteration_is_previous_tenant_cleaning_or_repair": "transaction",
+    "transaction.alteration_mutual_agreement": "transaction",
+    "transaction.alteration_requested_by_tenant": "transaction",
+    "transaction.alteration_type": "transaction",
+    "transaction.alternate_unit_credit_offered": "transaction",
+    "transaction.any_tenant_selected": "transaction",
+    "transaction.applicant_elected_alternate_unit_credit": "transaction",
+    "transaction.applicant_role": "transaction",
+    "transaction.applicant_selected": "transaction",
+    "transaction.application_actually_considered": "transaction",
+    "transaction.application_denied_for_failing_established_criteria": "transaction",
+    "transaction.calendar_days_since_application_submission": "transaction",
+    "transaction.calendar_days_since_tenant_selection": "transaction",
+    "transaction.calendar_days_since_vacancy": "transaction",
+    "transaction.completed_applications_considered_in_receipt_order": "transaction",
+    "transaction.concurrent_submissions": "transaction",
+    "transaction.fee_excess_over_applicable_annual_ceiling": "transaction",
+    "transaction.fee_excess_over_authorized_actual_costs": "transaction",
+    "transaction.fee_only_charged_after_actual_consideration": "transaction",
+    "transaction.first_qualifying_applicant_approved": "transaction",
+    "transaction.inadvertent_refund_elapsed_days": "transaction",
+    "transaction.initial_rent_or_increase": "transaction",
+    "transaction.landlord_elects_relocation_offset": "transaction",
+    "transaction.landlord_knew_unavailable": "transaction",
+    "transaction.landlord_should_have_known_unavailable": "transaction",
+    "transaction.payment_is_advance_rent": "transaction",
+    "transaction.payment_is_residential_security": "transaction",
+    "transaction.payment_is_section_1950_6_screening_fee": "transaction",
+    "transaction.payment_meets_screening_fee_definition": "transaction",
+    "transaction.process_b_offered_earlier_of_7_after_selection_or_30_after_submission": "transaction",
+    "transaction.process_b_offered_full_refund_to_every_unselected_applicant": "transaction",
+    "transaction.proposed_or_imposed_rent_increase": "transaction",
+    "transaction.qualifying_reusable_report_used": "transaction",
+    "transaction.refund_days_after_application_submission": "transaction",
+    "transaction.refund_days_after_tenant_selection": "transaction",
+    "transaction.rent_increase_effective_date": "transaction",
+    "transaction.rent_increase_effective_month": "transaction",
+    "transaction.repairs_can_reasonably_finish_within_21_days": "transaction",
+    "transaction.repairs_performed_by_landlord_or_employee": "transaction",
+    "transaction.return_calendar_days_after_vacancy": "transaction",
+    "transaction.return_days_after_qualifying_termination_notice": "transaction",
+    "transaction.return_days_before_fixed_term_end": "transaction",
+    "transaction.reusable_screening_report_presented": "transaction",
+    "transaction.screening_actor": "transaction",
+    "transaction.screening_criteria_written_with_form": "transaction",
+    "transaction.screening_fee_collected": "transaction",
+    "transaction.screening_process_at_collection": "transaction",
+    "transaction.security_amount_in_months_of_rent": "transaction",
+    "transaction.security_demand_date": "transaction",
+    "transaction.security_demanded": "transaction",
+    "transaction.security_previously_received": "transaction",
+    "transaction.security_received": "transaction",
+    "transaction.security_received_date": "transaction",
+    "transaction.security_remainder_returned_in_full": "transaction",
+    "transaction.statement_calendar_days_after_vacancy": "transaction",
+    "transaction.statement_days_after_qualifying_termination_notice": "transaction",
+    "transaction.statement_days_before_fixed_term_end": "transaction",
+    "transaction.statement_includes_security_amount": "transaction",
+    "transaction.statement_includes_security_basis": "transaction",
+    "transaction.statement_includes_security_disposition": "transaction",
+    "transaction.third_party_cost_documents_possessed_within_21_days": "transaction",
+    "transaction.unconsidered_fee_charge_was_inadvertent": "transaction",
+    "transaction.unconsidered_fee_fully_refunded": "transaction",
+    "transaction.unit_available_within_reasonable_period": "transaction",
+    "transaction.unit_currently_available": "transaction",
+    "transaction.unselected_fee_fully_refunded": "transaction"
+  },
+  "plans": [
+    {
+      "team_rule_id": "r-05d0c98608939365ddba",
+      "source_rule_sha256": "0d32f9ecf253fd9397034efac6157335f8b5b74e73be2beeefb6b9eda790a1e7",
+      "branches": [
+        {
+          "branch_id": "residential_security_cap",
+          "label": "Residential security cap",
+          "coverage": {
+            "all": [
+              {
+                "fact": "jurisdiction.state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "fact": "property.residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "context.residential_rental_lookup",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "trigger": {
+            "all": [
+              {
+                "fact": "transaction.payment_is_residential_security",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "fact": "transaction.security_demanded",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.security_received",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "exclusions": [
+            {
+              "id": "screening_payment_only",
+              "stage": "event",
+              "when": {
+                "fact": "transaction.payment_is_section_1950_6_screening_fee",
+                "op": "eq",
+                "value": true
+              },
+              "reason": "A defined section 1950.6 screening payment is not security; this payment classification does not exempt the property."
+            },
+            {
+              "id": "security_before_july_2024",
+              "stage": "event",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.security_demanded",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.security_demand_date",
+                        "op": "lt",
+                        "value": "2024-07-01"
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.security_received",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.security_received_date",
+                        "op": "lt",
+                        "value": "2024-07-01"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "reason": "A security demanded OR collected before July 1, 2024 is outside subdivision (c); this does not exclude later accounting duties."
+            },
+            {
+              "id": "six_month_advance",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.payment_is_advance_rent",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.advance_rent_months",
+                    "op": "ge",
+                    "value": 6
+                  },
+                  {
+                    "fact": "tenancy.term_months",
+                    "op": "ge",
+                    "value": 6
+                  }
+                ]
+              },
+              "reason": "Advance rent of at least six months for a lease of at least six months is not prohibited by this cap subdivision."
+            },
+            {
+              "id": "tenant_requested_alteration_charge",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.alteration_mutual_agreement",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.alteration_requested_by_tenant",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.alteration_charge_is_specified",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.alteration_type",
+                    "op": "in",
+                    "value": [
+                      "structural",
+                      "decorative",
+                      "furnishing",
+                      "similar"
+                    ]
+                  },
+                  {
+                    "fact": "transaction.alteration_is_previous_tenant_cleaning_or_repair",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "The complete specified tenant-requested alteration agreement is permitted; ordinary previous-tenant cleaning/repair charges do not qualify."
+            }
+          ],
+          "requirements": [
+            {
+              "id": "amount_within_applicable_cap",
+              "when": {
+                "any": [
+                  {
+                    "fact": "transaction.security_amount_in_months_of_rent",
+                    "op": "le",
+                    "value": 1
+                  },
+                  {
+                    "all": [
+                      {
+                        "all": [
+                          {
+                            "all": [
+                              {
+                                "any": [
+                                  {
+                                    "fact": "owner.is_natural_person",
+                                    "op": "eq",
+                                    "value": true
+                                  },
+                                  {
+                                    "all": [
+                                      {
+                                        "fact": "owner.is_family_trust_settlor_or_beneficiary",
+                                        "op": "eq",
+                                        "value": true
+                                      },
+                                      {
+                                        "fact": "owner.family_trust_type",
+                                        "op": "in",
+                                        "value": [
+                                          "revocable_living",
+                                          "irrevocable"
+                                        ]
+                                      },
+                                      {
+                                        "fact": "owner.all_trust_parties_have_statutory_family_relationships",
+                                        "op": "eq",
+                                        "value": true
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "all": [
+                                      {
+                                        "fact": "owner.entity_type",
+                                        "op": "eq",
+                                        "value": "llc"
+                                      },
+                                      {
+                                        "fact": "owner.all_llc_members_are_natural_persons",
+                                        "op": "eq",
+                                        "value": true
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "fact": "owner.portfolio_residential_rental_property_count",
+                                "op": "le",
+                                "value": 2
+                              },
+                              {
+                                "fact": "owner.portfolio_dwelling_units_offered_for_rent",
+                                "op": "le",
+                                "value": 4
+                              }
+                            ]
+                          },
+                          {
+                            "fact": "tenant.is_service_member_under_section_400",
+                            "op": "eq",
+                            "value": false
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "transaction.security_amount_in_months_of_rent",
+                        "op": "le",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "Compare classified security, excluding separately permitted first-month rent, to the applicable one- or two-month amount. An excessive amount is noncompliance, not noncoverage."
+            }
+          ],
+          "modifiers": [
+            {
+              "id": "two_month_allowance",
+              "when": {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "any": [
+                          {
+                            "fact": "owner.is_natural_person",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "owner.is_family_trust_settlor_or_beneficiary",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "fact": "owner.family_trust_type",
+                                "op": "in",
+                                "value": [
+                                  "revocable_living",
+                                  "irrevocable"
+                                ]
+                              },
+                              {
+                                "fact": "owner.all_trust_parties_have_statutory_family_relationships",
+                                "op": "eq",
+                                "value": true
+                              }
+                            ]
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "owner.entity_type",
+                                "op": "eq",
+                                "value": "llc"
+                              },
+                              {
+                                "fact": "owner.all_llc_members_are_natural_persons",
+                                "op": "eq",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "owner.portfolio_residential_rental_property_count",
+                        "op": "le",
+                        "value": 2
+                      },
+                      {
+                        "fact": "owner.portfolio_dwelling_units_offered_for_rent",
+                        "op": "le",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "fact": "tenant.is_service_member_under_section_400",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "effect": {
+                "description": "Two-month ceiling only if all entity, owner-portfolio and prospective-service-member conditions are established.",
+                "cap_months": 2
+              }
+            },
+            {
+              "id": "ordinary_one_month_limit",
+              "when": {
+                "not": {
+                  "all": [
+                    {
+                      "all": [
+                        {
+                          "any": [
+                            {
+                              "fact": "owner.is_natural_person",
+                              "op": "eq",
+                              "value": true
+                            },
+                            {
+                              "all": [
+                                {
+                                  "fact": "owner.is_family_trust_settlor_or_beneficiary",
+                                  "op": "eq",
+                                  "value": true
+                                },
+                                {
+                                  "fact": "owner.family_trust_type",
+                                  "op": "in",
+                                  "value": [
+                                    "revocable_living",
+                                    "irrevocable"
+                                  ]
+                                },
+                                {
+                                  "fact": "owner.all_trust_parties_have_statutory_family_relationships",
+                                  "op": "eq",
+                                  "value": true
+                                }
+                              ]
+                            },
+                            {
+                              "all": [
+                                {
+                                  "fact": "owner.entity_type",
+                                  "op": "eq",
+                                  "value": "llc"
+                                },
+                                {
+                                  "fact": "owner.all_llc_members_are_natural_persons",
+                                  "op": "eq",
+                                  "value": true
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "fact": "owner.portfolio_residential_rental_property_count",
+                          "op": "le",
+                          "value": 2
+                        },
+                        {
+                          "fact": "owner.portfolio_dwelling_units_offered_for_rent",
+                          "op": "le",
+                          "value": 4
+                        }
+                      ]
+                    },
+                    {
+                      "fact": "tenant.is_service_member_under_section_400",
+                      "op": "eq",
+                      "value": false
+                    }
+                  ]
+                }
+              },
+              "effect": {
+                "description": "One-month ceiling when the complete two-month allowance is decisively unavailable; missing owner facts are not treated as false.",
+                "cap_months": 1
+              }
+            }
+          ],
+          "source_gates": [
+            {
+              "id": "service_member_definition",
+              "stage": "calculation",
+              "when": {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "any": [
+                          {
+                            "fact": "owner.is_natural_person",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "owner.is_family_trust_settlor_or_beneficiary",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "fact": "owner.family_trust_type",
+                                "op": "in",
+                                "value": [
+                                  "revocable_living",
+                                  "irrevocable"
+                                ]
+                              },
+                              {
+                                "fact": "owner.all_trust_parties_have_statutory_family_relationships",
+                                "op": "eq",
+                                "value": true
+                              }
+                            ]
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "owner.entity_type",
+                                "op": "eq",
+                                "value": "llc"
+                              },
+                              {
+                                "fact": "owner.all_llc_members_are_natural_persons",
+                                "op": "eq",
+                                "value": true
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "owner.portfolio_residential_rental_property_count",
+                        "op": "le",
+                        "value": 2
+                      },
+                      {
+                        "fact": "owner.portfolio_dwelling_units_offered_for_rent",
+                        "op": "le",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "fact": "legal_context.section_400_definition_resolved",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "The incorporated Military and Veterans Code section 400 definition must be resolved only when small-owner eligibility could make service-member status change the amount.",
+              "conflict": false
+            },
+            {
+              "id": "service_member_definition_for_compliance",
+              "stage": "compliance",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.security_amount_in_months_of_rent",
+                    "op": "gt",
+                    "value": 1
+                  },
+                  {
+                    "all": [
+                      {
+                        "all": [
+                          {
+                            "any": [
+                              {
+                                "fact": "owner.is_natural_person",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "all": [
+                                  {
+                                    "fact": "owner.is_family_trust_settlor_or_beneficiary",
+                                    "op": "eq",
+                                    "value": true
+                                  },
+                                  {
+                                    "fact": "owner.family_trust_type",
+                                    "op": "in",
+                                    "value": [
+                                      "revocable_living",
+                                      "irrevocable"
+                                    ]
+                                  },
+                                  {
+                                    "fact": "owner.all_trust_parties_have_statutory_family_relationships",
+                                    "op": "eq",
+                                    "value": true
+                                  }
+                                ]
+                              },
+                              {
+                                "all": [
+                                  {
+                                    "fact": "owner.entity_type",
+                                    "op": "eq",
+                                    "value": "llc"
+                                  },
+                                  {
+                                    "fact": "owner.all_llc_members_are_natural_persons",
+                                    "op": "eq",
+                                    "value": true
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "fact": "owner.portfolio_residential_rental_property_count",
+                            "op": "le",
+                            "value": 2
+                          },
+                          {
+                            "fact": "owner.portfolio_dwelling_units_offered_for_rent",
+                            "op": "le",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "legal_context.section_400_definition_resolved",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              "reason": "The incorporated service-member definition matters to cap compliance only for an amount above one month when complete small-owner eligibility could authorize the higher amount.",
+              "conflict": false
+            }
+          ],
+          "duty": "For covered residential security demands or receipts, the ordinary limit is one month of rent, or two months only for a landlord satisfying every small-owner condition and a prospective tenant who is not a service member. First-month rent paid on or before initial occupancy is separately allowed.",
+          "retained_conditions": [
+            "Construction year and the address source unit field create no blanket exemption. Reported Units1 is never used as owner-portfolio or building-unit evidence.",
+            "A pre-July-2024 demand or collection, a qualifying six-month advance, and a specified tenant-requested alteration remain transaction-stage qualifications.",
+            "An unresolved amount branch does not remove the underlying security protection, and no concrete cap is resolved without an established event and applicable amount conditions."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "ca_residential_security.dwelling_security",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_residential_security.screening_separate",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_cap_date.cap_temporal",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_small_owner_allowance.small_owner_test",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_small_owner_allowance.service_override",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.cap_demand_receipt",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.advance_exception",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.alteration_exception",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Thresholds are copied from D025 section 1950.5(c); D026 supplies the separate screening-fee classification.",
+        "The service-member definition is a calculation-stage source dependency, not a property-coverage gate. A resolved classification must identify its legal definition provenance.",
+        "security_amount_in_months_of_rent is a provenance-backed arithmetic input for the evaluated demand/receipt; it is not populated from this address CSV. The engine does not infer the ratio, payment classification, owner entity, portfolio counts or service-member status."
+      ]
+    },
+    {
+      "team_rule_id": "r-121333ef6fa6480276b2",
+      "source_rule_sha256": "5f504242aedf4f6701d4195757f247524caad77fa150bfe5a2a51ff51d501208",
+      "branches": [
+        {
+          "branch_id": "security_accounting_after_vacancy",
+          "label": "Security accounting and remainder return",
+          "coverage": {
+            "all": [
+              {
+                "fact": "jurisdiction.state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "fact": "property.residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "context.residential_rental_lookup",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "trigger": {
+            "all": [
+              {
+                "fact": "transaction.payment_is_residential_security",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "transaction.security_previously_received",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "tenancy.tenant_vacated",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exclusions": [
+            {
+              "id": "screening_payment_only",
+              "stage": "event",
+              "when": {
+                "fact": "transaction.payment_is_section_1950_6_screening_fee",
+                "op": "eq",
+                "value": true
+              },
+              "reason": "A defined screening fee is handled under section 1950.6, not this security-accounting rule."
+            }
+          ],
+          "requirements": [
+            {
+              "id": "itemized_statement",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.statement_includes_security_basis",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.statement_includes_security_amount",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.statement_includes_security_disposition",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.calendar_days_since_vacancy",
+                        "op": "le",
+                        "value": 21
+                      },
+                      {
+                        "unknown": {
+                          "reason": "The 21-day deadline has not elapsed; incomplete performance alone does not yet establish noncompliance.",
+                          "kind": "uncompiled"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "The statement must identify the basis, amount and disposition of the security. Incomplete performance before the deadline does not establish a breach."
+            },
+            {
+              "id": "statement_window",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.statement_calendar_days_after_vacancy",
+                        "op": "le",
+                        "value": 21
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "transaction.statement_days_after_qualifying_termination_notice",
+                            "op": "ge",
+                            "value": 0
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "tenancy.is_fixed_term",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "fact": "transaction.statement_days_before_fixed_term_end",
+                                "op": "le",
+                                "value": 60
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.calendar_days_since_vacancy",
+                        "op": "le",
+                        "value": 21
+                      },
+                      {
+                        "unknown": {
+                          "reason": "The 21-day deadline has not elapsed; incomplete performance alone does not yet establish noncompliance.",
+                          "kind": "uncompiled"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "An actually furnished statement must satisfy the 21-calendar-day deadline and a qualifying notice or fixed-term earliest window. Incomplete performance before the deadline does not establish a breach."
+            },
+            {
+              "id": "remainder_return_window",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.security_remainder_returned_in_full",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.return_calendar_days_after_vacancy",
+                        "op": "le",
+                        "value": 21
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "transaction.return_days_after_qualifying_termination_notice",
+                            "op": "ge",
+                            "value": 0
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "tenancy.is_fixed_term",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "fact": "transaction.return_days_before_fixed_term_end",
+                                "op": "le",
+                                "value": 60
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.calendar_days_since_vacancy",
+                        "op": "le",
+                        "value": 21
+                      },
+                      {
+                        "unknown": {
+                          "reason": "The 21-day deadline has not elapsed; incomplete performance alone does not yet establish noncompliance.",
+                          "kind": "uncompiled"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "Return the computed remainder, including the full remainder rather than just a payment, within the same statutory window. Incomplete performance before the deadline does not establish a breach."
+            },
+            {
+              "id": "delivery_routes_not_compiled",
+              "when": {
+                "unknown": {
+                  "reason": "The electronic-history, successor, multiple-adult agreement and special termination delivery routes in section 1950.5(h)(1)(A)-(C) have not been compiled.",
+                  "kind": "uncompiled"
+                }
+              },
+              "description": "Complete delivery-route compliance is deliberately unresolved in this small plan."
+            }
+          ],
+          "modifiers": [
+            {
+              "id": "permitted_good_faith_estimate",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.repairs_performed_by_landlord_or_employee",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.repairs_can_reasonably_finish_within_21_days",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "fact": "transaction.third_party_cost_documents_possessed_within_21_days",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "effect": {
+                "description": "A good-faith estimate may cover qualifying unfinished repairs or unavailable third-party cost documents, with the initial statement; missing-provider contact details and later completed accounting remain required.",
+                "followup_calendar_days": 14,
+                "deadline_anchor": "repair_completion_or_document_receipt",
+                "does_not_extend_core_return_deadline": true
+              }
+            }
+          ],
+          "source_gates": [],
+          "duty": "After the tenant vacates, provide the itemized security basis, amount and disposition and return any remainder within 21 calendar days, while respecting the statutory earliest-accounting window. Permitted estimates do not eliminate that core statement and remainder-return duty.",
+          "retained_conditions": [
+            "This accounting duty has no pre-July-2024 security exclusion. The deposit-cap transaction cutoff is not transplanted here.",
+            "The supporting-document exemptions in (h)(4) do not remove (h)(1); a timely tenant document request can restore the (h)(2)-(3) duties.",
+            "A repair estimate requires one complete statutory trigger; it is not permission to postpone the entire refund. Follow-up is within 14 calendar days after completion or document receipt.",
+            "No violation is inferred solely from missing delivery records or the absence of a known move-out event."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "ca_residential_security.dwelling_security",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_residential_security.screening_separate",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_accounting_clock.accounting_dates",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_estimate_timing.estimate_branch",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.core_statement_refund",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "The plan compiles the core deadline and earliest-window comparisons only using supplied, audited elapsed-calendar-day facts. It does not calculate dates or assume a notice is legally qualifying.",
+        "Full document exceptions, the tenant request override, delivery routes and follow-up compliance are retained in the duty/conditions but not fully compiled; the explicit uncompiled requirement prevents a claim of complete compliance.",
+        "The estimate modifier reports a conditional follow-up duration, not an amount owed or a replacement of the original 21-day clock.",
+        "Prior receipt of security is the trigger context, not a positive current balance; returning or spending the money does not remove the itemization duty."
+      ]
+    },
+    {
+      "team_rule_id": "r-2a8eb5c0efe499d180a4",
+      "source_rule_sha256": "64a301d7e3ea7bf1c011d93625eb0e7319f8ad4b67b08aa59ae05cd60390e362",
+      "branches": [
+        {
+          "branch_id": "screening_fee_routes",
+          "label": "Alternative screening-fee processes",
+          "coverage": {
+            "all": [
+              {
+                "fact": "jurisdiction.state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "fact": "property.residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "context.residential_rental_lookup",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "trigger": {
+            "all": [
+              {
+                "fact": "transaction.screening_fee_collected",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "transaction.payment_meets_screening_fee_definition",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "transaction.screening_actor",
+                "op": "in",
+                "value": [
+                  "owner",
+                  "agent"
+                ]
+              },
+              {
+                "fact": "transaction.applicant_role",
+                "op": "in",
+                "value": [
+                  "prospective_tenant",
+                  "guarantor",
+                  "cosignor"
+                ]
+              }
+            ]
+          },
+          "exclusions": [],
+          "requirements": [
+            {
+              "id": "offer_complete_a_or_b",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.screening_process_at_collection",
+                        "op": "eq",
+                        "value": "A"
+                      },
+                      {
+                        "fact": "transaction.completed_applications_considered_in_receipt_order",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.screening_criteria_written_with_form",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.first_qualifying_applicant_approved",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "transaction.fee_only_charged_after_actual_consideration",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "transaction.concurrent_submissions",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "fact": "transaction.unconsidered_fee_charge_was_inadvertent",
+                                "op": "eq",
+                                "value": true
+                              },
+                              {
+                                "any": [
+                                  {
+                                    "all": [
+                                      {
+                                        "fact": "transaction.unconsidered_fee_fully_refunded",
+                                        "op": "eq",
+                                        "value": true
+                                      },
+                                      {
+                                        "fact": "transaction.inadvertent_refund_elapsed_days",
+                                        "op": "le",
+                                        "value": 7
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "all": [
+                                      {
+                                        "fact": "transaction.alternate_unit_credit_offered",
+                                        "op": "eq",
+                                        "value": true
+                                      },
+                                      {
+                                        "fact": "transaction.applicant_elected_alternate_unit_credit",
+                                        "op": "eq",
+                                        "value": true
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.screening_process_at_collection",
+                        "op": "eq",
+                        "value": "B"
+                      },
+                      {
+                        "fact": "transaction.process_b_offered_full_refund_to_every_unselected_applicant",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.process_b_offered_earlier_of_7_after_selection_or_30_after_submission",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "At collection either all process A conditions or the complete process B refund route is required; a failure is noncompliance rather than a reason the screening-fee protection does not apply."
+            },
+            {
+              "id": "process_b_actual_refund",
+              "when": {
+                "any": [
+                  {
+                    "fact": "transaction.screening_process_at_collection",
+                    "op": "ne",
+                    "value": "B"
+                  },
+                  {
+                    "fact": "transaction.applicant_selected",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "transaction.unselected_fee_fully_refunded",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "transaction.refund_days_after_application_submission",
+                        "op": "le",
+                        "value": 30
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "transaction.any_tenant_selected",
+                            "op": "eq",
+                            "value": false
+                          },
+                          {
+                            "fact": "transaction.refund_days_after_tenant_selection",
+                            "op": "le",
+                            "value": 7
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "not": {
+                          "any": [
+                            {
+                              "fact": "transaction.calendar_days_since_application_submission",
+                              "op": "gt",
+                              "value": 30
+                            },
+                            {
+                              "all": [
+                                {
+                                  "fact": "transaction.any_tenant_selected",
+                                  "op": "eq",
+                                  "value": true
+                                },
+                                {
+                                  "fact": "transaction.calendar_days_since_tenant_selection",
+                                  "op": "gt",
+                                  "value": 7
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "unknown": {
+                          "reason": "Until the refund deadline passes or performance is completed, the refund-performance branch remains pending rather than noncompliant.",
+                          "kind": "uncompiled"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "description": "For a process B unselected applicant, refund the entire fee regardless of reason by the earlier of selection plus seven days and submission plus 30 days. Before the deadline, incomplete performance remains unresolved rather than being called a violation."
+            },
+            {
+              "id": "independent_availability",
+              "when": {
+                "not": {
+                  "all": [
+                    {
+                      "fact": "transaction.unit_currently_available",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "fact": "transaction.unit_available_within_reasonable_period",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "any": [
+                        {
+                          "fact": "transaction.landlord_knew_unavailable",
+                          "op": "eq",
+                          "value": true
+                        },
+                        {
+                          "fact": "transaction.landlord_should_have_known_unavailable",
+                          "op": "eq",
+                          "value": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "description": "Actual or constructive knowledge of no current or reasonably soon available unit prohibits charging independently of the A/B route."
+            },
+            {
+              "id": "independent_amount_limits",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.fee_excess_over_authorized_actual_costs",
+                    "op": "le",
+                    "value": 0
+                  },
+                  {
+                    "fact": "transaction.fee_excess_over_applicable_annual_ceiling",
+                    "op": "le",
+                    "value": 0
+                  }
+                ]
+              },
+              "description": "The fee must separately satisfy actual authorized costs plus reasonable time and the applicable annual ceiling; both excess figures require audited arithmetic and the correct annual limit."
+            }
+          ],
+          "modifiers": [
+            {
+              "id": "considered_denial_no_automatic_full_refund",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.screening_process_at_collection",
+                    "op": "eq",
+                    "value": "A"
+                  },
+                  {
+                    "fact": "transaction.application_actually_considered",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.application_denied_for_failing_established_criteria",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "effect": {
+                "description": "A considered process A denial does not alone require a full refund; the separate unused-fee refund is preserved."
+              }
+            },
+            {
+              "id": "housing_program_overlay",
+              "when": {
+                "fact": "property.housing_assistance_program_applies",
+                "op": "eq",
+                "value": true
+              },
+              "effect": {
+                "description": "Independent federal/state housing-assistance-program fee restrictions are not preempted; this plan does not determine those restrictions."
+              }
+            }
+          ],
+          "source_gates": [
+            {
+              "id": "inadvertent_cure_clock_origin",
+              "stage": "compliance",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.screening_process_at_collection",
+                    "op": "eq",
+                    "value": "A"
+                  },
+                  {
+                    "fact": "transaction.fee_only_charged_after_actual_consideration",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "fact": "transaction.concurrent_submissions",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.unconsidered_fee_charge_was_inadvertent",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "transaction.applicant_elected_alternate_unit_credit",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "The source does not specify the start of the seven-day inadvertent-concurrent-charge cure clock; that cure branch needs source review.",
+              "conflict": false
+            },
+            {
+              "id": "program_overlay_compliance",
+              "stage": "compliance",
+              "when": {
+                "fact": "property.housing_assistance_program_applies",
+                "op": "eq",
+                "value": true
+              },
+              "reason": "Any applicable housing-program fee restrictions require a separate governing-program review; they are not a blanket coverage exemption.",
+              "conflict": false
+            }
+          ],
+          "duty": "At collection of a defined residential application screening fee, offer a fully compliant process A or process B. A combines completed-application receipt order, criteria supplied in writing with the form, first-qualified approval and charging only when considered. B requires full refunds to all unselected applicants by the earlier statutory deadline.",
+          "retained_conditions": [
+            "A and B are alternatives. Process A considered-denial retention and concurrent-error relief must not be transferred to process B.",
+            "Application of an inadvertently collected fee to another unit is the applicant's choice; no unilateral credit is authorized.",
+            "Separate amount, unit availability, unused-fee return, receipt and credit-report-copy duties remain applicable. This plan does not purport to compile every rule in section 1950.6.",
+            "No specific 2026 annual amount is encoded in this rule because its own source gives the adjustable base rather than the needed CPI observations."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "ca_screening_fee_scope.resident_owner_applicant",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_screening_fee_scope.fee_definition",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_screening_fee_scope.program_rules",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "ca_screening_fee_scope.version_date",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.alternative_gate",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.a_branch",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.b_branch",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.independent_gates",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "A-or-B occurs exclusively in requirements; neither missing process facts nor a failed process can erase property coverage.",
+        "Process B policy offered at collection and actual refund performance are distinct inputs. Precomputed fee excesses and deadline intervals must identify their operands and transaction; they are never derived from address facts.",
+        "Legal lawfulness of screening criteria and external program restrictions are retained dependencies, not inferred from an A/B process choice."
+      ]
+    },
+    {
+      "team_rule_id": "r-909c57f2c2c6d76e0b1e",
+      "source_rule_sha256": "82ac22d1387af11bfdc0aec659b3598e060b38250ea2781643ade7531bef482f",
+      "branches": [
+        {
+          "branch_id": "common_area_posting",
+          "label": "Posting the Notice of Renters' Protections",
+          "coverage": {
+            "all": [
+              {
+                "all": [
+                  {
+                    "fact": "jurisdiction.state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "fact": "property.residential_use",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "context.residential_rental_lookup",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "fact": "jurisdiction.city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          "trigger": null,
+          "exclusions": [],
+          "requirements": [
+            {
+              "id": "notice_posted_accessibly",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.renters_protections_notice_posted",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "procedure.notice_posting_common_area_accessible",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "description": "Post the named notice in an accessible common area."
+            }
+          ],
+          "modifiers": [],
+          "source_gates": [],
+          "duty": "A Los Angeles residential landlord must post the Notice of Renters' Protections in an accessible common area.",
+          "retained_conditions": [
+            "Posting is continuous in this query-date snapshot; no individual tenancy-start, renewal, six-month occupancy or RSO-exclusion condition is imposed."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "rule.specific_event",
+              "evidence_index": 0
+            }
+          ]
+        },
+        {
+          "branch_id": "individual_notice_delivery",
+          "label": "Delivering the Notice of Renters' Protections",
+          "coverage": {
+            "all": [
+              {
+                "all": [
+                  {
+                    "fact": "jurisdiction.state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "fact": "property.residential_use",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "context.residential_rental_lookup",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "fact": "jurisdiction.city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          "trigger": {
+            "any": [
+              {
+                "fact": "tenancy.start_date",
+                "op": "ge",
+                "value": "2023-01-27"
+              },
+              {
+                "fact": "tenancy.renewal_date",
+                "op": "ge",
+                "value": "2023-01-27"
+              }
+            ]
+          },
+          "exclusions": [],
+          "requirements": [
+            {
+              "id": "notice_delivered",
+              "when": {
+                "fact": "procedure.renters_protections_notice_delivered",
+                "op": "eq",
+                "value": true
+              },
+              "description": "Provide the named notice to the tenant in the qualifying commencement or renewal cohort."
+            }
+          ],
+          "modifiers": [],
+          "source_gates": [],
+          "duty": "Provide the Notice of Renters' Protections to a tenant beginning or renewing a tenancy on or after January 27, 2023.",
+          "retained_conditions": [
+            "An unknown start or renewal date leaves this delivery event unresolved but does not remove the separate posting duty.",
+            "The source names the notice but does not supply its full contents or a separate delivery service-method code."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "rule.specific_event",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "D040 expressly covers all Los Angeles residential landlords for this notice. Do not transplant the separate JCO six-month/original-lease threshold into either notice branch.",
+        "The record's January 27, 2023 date is the express commencement/renewal cohort date; the source does not independently date the posting duty. Only the supported 2026-10-01 snapshot is evaluated."
+      ]
+    },
+    {
+      "team_rule_id": "r-cce550a580dd877d4a97",
+      "source_rule_sha256": "8d43de6a08a04b5a079bcb29e6e9b972d36e860b19161dbeba850e58fa45f30a",
+      "branches": [
+        {
+          "branch_id": "state_rolling_rent_cap",
+          "label": "Civil Code section 1947.12 rolling cap",
+          "coverage": {
+            "all": [
+              {
+                "fact": "jurisdiction.state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "fact": "property.residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "context.residential_rental_lookup",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "trigger": {
+            "fact": "transaction.proposed_or_imposed_rent_increase",
+            "op": "eq",
+            "value": true
+          },
+          "exclusions": [
+            {
+              "id": "qualifying_affordable_housing",
+              "stage": "coverage",
+              "when": {
+                "any": [
+                  {
+                    "all": [
+                      {
+                        "fact": "property.recorded_affordable_housing_restriction",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "property.restricted_income_classes_are_statutory",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "fact": "property.affordable_housing_subsidy_agreement",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "property.subsidy_income_classes_are_statutory",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "reason": "A qualifying recorded affordability restriction OR qualifying affordable-housing subsidy agreement excludes the housing; tenant assistance alone is not substituted for that agreement."
+            },
+            {
+              "id": "institution_dormitory",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "property.is_dormitory",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "property.dormitory_owned_by_institution",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "property.dormitory_operated_by_institution",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "property.dormitory_institution_type",
+                    "op": "in",
+                    "value": [
+                      "higher_education",
+                      "k12"
+                    ]
+                  }
+                ]
+              },
+              "reason": "The dormitory must be both owned and operated by the specified educational institution."
+            },
+            {
+              "id": "lower_valid_public_rent_control",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "legal_context.unit_subject_to_public_rent_control",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "legal_context.public_rent_control_is_valid",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "legal_context.public_rent_control_consistent_with_chapter_2_7",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "legal_context.public_rent_control_allows_lower_annual_increase",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "reason": "The evaluated unit must actually be governed by valid, chapter-2.7-consistent public control allowing a lower increase; city location alone does not establish this exclusion."
+            },
+            {
+              "id": "recent_nonmobile_certificate",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "not": {
+                      "fact": "property.is_mobilehome",
+                      "op": "eq",
+                      "value": true
+                    }
+                  },
+                  {
+                    "fact": "property.certificate_of_occupancy_date",
+                    "op": "gt",
+                    "value": "2011-10-01"
+                  },
+                  {
+                    "fact": "property.certificate_of_occupancy_date",
+                    "op": "le",
+                    "value": "2026-10-01"
+                  }
+                ]
+              },
+              "reason": "At the supported October 1, 2026 query date, an actually issued certificate within the previous 15 years excludes non-mobilehome housing; construction year is not a substitute."
+            },
+            {
+              "id": "separate_title_owner_notice",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "property.separately_alienable_title",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "owner.is_reit",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "fact": "owner.is_corporation",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "not": {
+                      "all": [
+                        {
+                          "fact": "owner.entity_type",
+                          "op": "eq",
+                          "value": "llc"
+                        },
+                        {
+                          "fact": "owner.any_llc_member_is_corporation",
+                          "op": "eq",
+                          "value": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "fact": "owner.is_mobilehome_park_management",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "fact": "tenancy.prescribed_exemption_notice_delivered",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "tenancy.prescribed_exemption_notice_in_rental_agreement",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "all": [
+                          {
+                            "not": {
+                              "fact": "property.is_mobilehome",
+                              "op": "eq",
+                              "value": true
+                            }
+                          },
+                          {
+                            "fact": "tenancy.start_date",
+                            "op": "lt",
+                            "value": "2020-07-01"
+                          },
+                          {
+                            "any": [
+                              {
+                                "fact": "tenancy.has_renewed",
+                                "op": "eq",
+                                "value": false
+                              },
+                              {
+                                "fact": "tenancy.renewal_date",
+                                "op": "lt",
+                                "value": "2020-07-01"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "fact": "property.is_mobilehome",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "fact": "tenancy.start_date",
+                            "op": "lt",
+                            "value": "2022-07-01"
+                          },
+                          {
+                            "any": [
+                              {
+                                "fact": "tenancy.has_renewed",
+                                "op": "eq",
+                                "value": false
+                              },
+                              {
+                                "fact": "tenancy.renewal_date",
+                                "op": "lt",
+                                "value": "2022-07-01"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "reason": "Separate title, every restricted-owner test and prescribed notice with its applicable agreement-placement requirements must all hold."
+            },
+            {
+              "id": "qualifying_owner_occupied_duplex",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "property.building_unit_count",
+                    "op": "eq",
+                    "value": 2
+                  },
+                  {
+                    "fact": "property.two_units_in_single_structure",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "property.any_unit_is_adu_or_jadu",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "fact": "owner.principal_residence_in_one_unit_at_tenancy_start",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "owner.principal_residence_in_that_unit_continues",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "reason": "Both units must be in one structure, neither an ADU/JADU, and principal-residence owner occupancy must exist at tenancy inception and continue."
+            },
+            {
+              "id": "mobilehome_homeowner",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "property.is_mobilehome",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenant.is_mobilehome_homeowner_under_section_798_9",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "reason": "A legally defined mobilehome homeowner is excluded; rented mobilehome occupancy alone is insufficient."
+            },
+            {
+              "id": "wholly_new_initial_rate",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.initial_rent_or_increase",
+                    "op": "eq",
+                    "value": "initial_rate"
+                  },
+                  {
+                    "fact": "tenancy.prior_tenant_remains_lawfully",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "A wholly new initial rate with no prior tenant remaining lawfully is outside subdivision (a); subsequent increases return to its protection."
+            }
+          ],
+          "requirements": [
+            {
+              "id": "complete_cpi_and_baseline_calculation",
+              "when": {
+                "unknown": {
+                  "reason": "This DSL does not yet compute geographic CPI selection, date-dependent observation pairs, rounding, the rolling gross-rent baseline or the minimum formula.",
+                  "kind": "uncompiled"
+                }
+              },
+              "description": "A complete numerical cap-compliance finding is not implemented; missing or uncompiled calculation is not treated as legal noncoverage."
+            }
+          ],
+          "modifiers": [
+            {
+              "id": "before_august_cpi_pair",
+              "when": {
+                "fact": "transaction.rent_increase_effective_month",
+                "op": "lt",
+                "value": 8
+              },
+              "effect": {
+                "description": "For increases before August 1, use April in the preceding year versus April in the year before that; use March only if the applicable April observation is not published."
+              }
+            },
+            {
+              "id": "from_august_cpi_pair",
+              "when": {
+                "fact": "transaction.rent_increase_effective_month",
+                "op": "ge",
+                "value": 8
+              },
+              "effect": {
+                "description": "For increases on or after August 1, use April of that year versus April of the preceding year; substitute March only for missing applicable April publication."
+              }
+            }
+          ],
+          "source_gates": [
+            {
+              "id": "chapter_2_7_definition",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "legal_context.unit_subject_to_public_rent_control",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "legal_context.chapter_2_7_scope_resolved",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "Chapter 2.7 is incorporated but not reproduced; resolve material disputed validity or scope of an asserted lower public control.",
+              "conflict": false
+            },
+            {
+              "id": "mobilehome_homeowner_definition",
+              "stage": "coverage",
+              "when": {
+                "all": [
+                  {
+                    "fact": "property.is_mobilehome",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "legal_context.section_798_9_definition_resolved",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "Section 798.9 is incorporated but absent; resolve a materially relevant mobilehome-homeowner classification.",
+              "conflict": false
+            },
+            {
+              "id": "different_event_date_requires_recompilation",
+              "stage": "event",
+              "when": {
+                "fact": "transaction.rent_increase_effective_date",
+                "op": "ne",
+                "value": "2026-10-01"
+              },
+              "reason": "The rolling certificate comparison in this small plan is compiled for the supported query date only; a different historical or future event date requires the corresponding date/version review.",
+              "conflict": false
+            },
+            {
+              "id": "cpi_formula_not_compiled",
+              "stage": "calculation",
+              "when": null,
+              "reason": "CPI observations, area selection, statutory rounding, rolling gross baseline and minimum arithmetic have not been compiled; no concrete increase percentage or amount may be emitted.",
+              "conflict": false
+            }
+          ],
+          "duty": "For a covered subsequent increase, gross rent over a rolling 12-month period cannot rise by more than the lesser of 5 percent plus the correctly selected CPI change or 10 percent, measured against the lowest qualifying gross rent in the preceding 12 months. The 10 percent term is not an independently available increase.",
+          "retained_conditions": [
+            "All statutory exclusions are alternatives, with every requirement inside each exclusion retained. Missing exemption facts are not false.",
+            "Use the relevant metropolitan CPI-U or the statutory California fallback, with successor/new-index timing and rounding to one tenth of a percentage point.",
+            "Accepted concessions are excluded from the gross baseline. The calculation uses the unit's rent history and the increase date, not the execution date.",
+            "Source-reported units do not establish building count, owner-portfolio count, separately alienable title, local RSO coverage or a certificate date."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "civil_1947_12_scope.residential",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.affordable",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.dormitory",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.local_control",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.recent_co",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.separate_title",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.duplex",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "civil_1947_12_scope.mobilehome_homeowner",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.initial_rate",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.cap_event",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.cpi_selection",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.historical_scope",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "The recent-certificate cutoff is a deterministic subtraction of 15 calendar years from the explicitly supported 2026-10-01 query date, not a permanent construction-year cutoff. A date interval overlapping the boundary remains unknown.",
+        "Mobilehome status is a separate evaluated-unit fact. Aggregate multifamily assessment data is not used to negate an explicit mobilehome classification or a homeowner claim.",
+        "The DSL compiles coverage and exclusion structure; complete CPI/rent arithmetic, historical transitions and a different event-date certificate comparison remain explicitly uncompiled."
+      ]
+    },
+    {
+      "team_rule_id": "r-22d0e104d5d089430ea2",
+      "source_rule_sha256": "478a2dd79c8b101e902b03be0a9300fd9499beb26d3abdacc8854a64ec6abd8f",
+      "branches": [
+        {
+          "branch_id": "reusable_screening_report",
+          "label": "Applicant-provided reusable report",
+          "coverage": {
+            "all": [
+              {
+                "fact": "jurisdiction.state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "fact": "property.residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "fact": "context.residential_rental_lookup",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "trigger": {
+            "fact": "transaction.reusable_screening_report_presented",
+            "op": "eq",
+            "value": true
+          },
+          "exclusions": [],
+          "requirements": [
+            {
+              "id": "report_use_if_obligation_established",
+              "when": {
+                "fact": "transaction.qualifying_reusable_report_used",
+                "op": "eq",
+                "value": true
+              },
+              "description": "Report use could be tested only after the legal qualification and mandatory-acceptance relationship are resolved."
+            }
+          ],
+          "modifiers": [],
+          "source_gates": [
+            {
+              "id": "mandatory_acceptance_relationship",
+              "stage": "coverage",
+              "when": null,
+              "reason": "D005 asserts mandatory reusable-report use; D026 preserves discretionary acceptance of ordinary reports and references missing section 1950.1. The frozen record does not resolve the report definition or mandatory-acceptance relationship.",
+              "conflict": true
+            }
+          ],
+          "duty": "The source guide asserts use of a qualifying applicant-provided reusable report, but this plan does not endorse mandatory acceptance until section 1950.1 and its relationship to section 1950.6 are reconciled.",
+          "retained_conditions": [
+            "An ordinary applicant-presented credit report is not automatically a legally qualifying reusable report.",
+            "The conflict is legal-source uncertainty, not merely a missing applicant or report event. No rule precedence is invented."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "rule.reusable_provided",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.qualification_missing",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.1950_1_reference",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "No new external research or source-status change is made. The explicit frozen coverage-stage source gate preserves this conflict even if all transaction facts are supplied."
+      ]
+    },
+    {
+      "team_rule_id": "r-ff43968a7ddaa6bf88ae",
+      "source_rule_sha256": "15ed06561a9d4d39fb533947f50d7cce9d49b0235970c250d5120a2fe05bcf36",
+      "branches": [
+        {
+          "branch_id": "owner_relative_relocation_reduction",
+          "label": "Owner or eligible-relative relocation schedule",
+          "coverage": {
+            "all": [
+              {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "all": [
+                          {
+                            "fact": "jurisdiction.state",
+                            "op": "eq",
+                            "value": "CA"
+                          },
+                          {
+                            "fact": "property.residential_use",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "fact": "context.residential_rental_lookup",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "jurisdiction.city",
+                        "op": "eq",
+                        "value": "Los Angeles"
+                      }
+                    ]
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "legal_context.la_rso_coverage",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "legal_context.la_jco_coverage",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "fact": "property.building_rental_unit_count",
+                    "op": "le",
+                    "value": 4
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "owner.la_reduced_relocation_ever_used",
+                        "op": "eq",
+                        "value": false
+                      },
+                      {
+                        "fact": "owner.la_reduced_relocation_years_since_last_use",
+                        "op": "ge",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "unknown": {
+                      "reason": "D043 clause 3 says no more than four residential units and a single-family home on a separate Los Angeles lot. Without full LAMC 151.30, the pilot does not resolve whether the home is an allowed additional holding, whether one must be owned, or how that home enters the unit-count ceiling.",
+                      "kind": "source"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "trigger": {
+            "all": [
+              {
+                "any": [
+                  {
+                    "fact": "procedure.eviction_ground",
+                    "op": "eq",
+                    "value": "owner_occupancy"
+                  },
+                  {
+                    "fact": "procedure.eviction_ground",
+                    "op": "eq",
+                    "value": "eligible_relative_occupancy"
+                  }
+                ]
+              },
+              {
+                "fact": "procedure.good_faith_occupancy_eviction",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exclusions": [
+            {
+              "id": "resident_manager_replacement",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.replaces_resident_manager_with_resident_manager",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenancy.manager_compensation_only_free_or_reduced_rent",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "Replacing a resident manager is the specified payment exclusion; a manager-tenant compensated solely through rent has a separate unresolved entitlement branch."
+            },
+            {
+              "id": "nonnegligent_natural_disaster",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.eviction_required_for_natural_disaster_hazard",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "procedure.hazard_caused_by_landlord_negligence",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "The disaster payment exclusion requires eviction to be necessary because of the natural-disaster hazard and no landlord negligence."
+            }
+          ],
+          "requirements": [
+            {
+              "id": "relocation_payment_full_compliance_uncompiled",
+              "when": {
+                "unknown": {
+                  "reason": "Payment timing, the highest independently applicable entitlement, amount computation, offsets and per-tenant allocation are not fully compiled.",
+                  "kind": "uncompiled"
+                }
+              },
+              "description": "This plan does not assert full relocation-payment compliance or an amount presently owed."
+            }
+          ],
+          "modifiers": [
+            {
+              "id": "qualified_reduced_schedule",
+              "when": {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "any": [
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "owner_occupancy"
+                          },
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "eligible_relative_occupancy"
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "property.building_rental_unit_count",
+                        "op": "le",
+                        "value": 4
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "owner.la_reduced_relocation_ever_used",
+                            "op": "eq",
+                            "value": false
+                          },
+                          {
+                            "fact": "owner.la_reduced_relocation_years_since_last_use",
+                            "op": "ge",
+                            "value": 3
+                          }
+                        ]
+                      },
+                      {
+                        "unknown": {
+                          "reason": "D043 clause 3 says no more than four residential units and a single-family home on a separate Los Angeles lot. Without full LAMC 151.30, the pilot does not resolve whether the home is an allowed additional holding, whether one must be owned, or how that home enters the unit-count ceiling.",
+                          "kind": "source"
+                        }
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "owner_occupancy"
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "procedure.eviction_ground",
+                                "op": "eq",
+                                "value": "eligible_relative_occupancy"
+                              },
+                              {
+                                "fact": "owner.intended_relative_owns_la_residential_property",
+                                "op": "eq",
+                                "value": false
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "household.maximum_tenant_age_at_notice",
+                        "op": "ge",
+                        "value": 62
+                      },
+                      {
+                        "fact": "household.any_tenant_handicapped_under_hsc_50072",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "household.any_tenant_disabled_under_42_usc_423",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "household.minor_dependent_children_under_tax_definition",
+                        "op": "gt",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              "effect": {
+                "description": "The extracted annual reduced schedule is $21,250 per qualified household unit, only if the complete small-owner branch and further governing-law requirements are resolved.",
+                "amount_usd": 21250,
+                "amount_scope": "household_unit",
+                "schedule_start": "2026-07-01",
+                "schedule_end": "2027-06-30"
+              }
+            },
+            {
+              "id": "eligible_reduced_schedule",
+              "when": {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "any": [
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "owner_occupancy"
+                          },
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "eligible_relative_occupancy"
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "property.building_rental_unit_count",
+                        "op": "le",
+                        "value": 4
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "owner.la_reduced_relocation_ever_used",
+                            "op": "eq",
+                            "value": false
+                          },
+                          {
+                            "fact": "owner.la_reduced_relocation_years_since_last_use",
+                            "op": "ge",
+                            "value": 3
+                          }
+                        ]
+                      },
+                      {
+                        "unknown": {
+                          "reason": "D043 clause 3 says no more than four residential units and a single-family home on a separate Los Angeles lot. Without full LAMC 151.30, the pilot does not resolve whether the home is an allowed additional holding, whether one must be owned, or how that home enters the unit-count ceiling.",
+                          "kind": "source"
+                        }
+                      },
+                      {
+                        "any": [
+                          {
+                            "fact": "procedure.eviction_ground",
+                            "op": "eq",
+                            "value": "owner_occupancy"
+                          },
+                          {
+                            "all": [
+                              {
+                                "fact": "procedure.eviction_ground",
+                                "op": "eq",
+                                "value": "eligible_relative_occupancy"
+                              },
+                              {
+                                "fact": "owner.intended_relative_owns_la_residential_property",
+                                "op": "eq",
+                                "value": false
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "not": {
+                      "any": [
+                        {
+                          "fact": "household.maximum_tenant_age_at_notice",
+                          "op": "ge",
+                          "value": 62
+                        },
+                        {
+                          "fact": "household.any_tenant_handicapped_under_hsc_50072",
+                          "op": "eq",
+                          "value": true
+                        },
+                        {
+                          "fact": "household.any_tenant_disabled_under_42_usc_423",
+                          "op": "eq",
+                          "value": true
+                        },
+                        {
+                          "fact": "household.minor_dependent_children_under_tax_definition",
+                          "op": "gt",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "effect": {
+                "description": "The extracted annual reduced schedule is $10,550 per eligible household unit, only when no occupant qualifies and the complete small-owner branch and further governing-law requirements are resolved.",
+                "amount_usd": 10550,
+                "amount_scope": "household_unit",
+                "schedule_start": "2026-07-01",
+                "schedule_end": "2027-06-30"
+              }
+            },
+            {
+              "id": "accumulated_rent_offset",
+              "when": {
+                "all": [
+                  {
+                    "fact": "transaction.landlord_elects_relocation_offset",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenancy.accumulated_rent_owed",
+                    "op": "gt",
+                    "value": 0
+                  },
+                  {
+                    "fact": "procedure.termination_required_by_government_order_to_vacate",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "fact": "procedure.termination_to_comply_with_unpermitted_dwelling_order",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "effect": {
+                "description": "The source permits an accumulated-rent offset only outside both governmental-order exceptions; this plan does not subtract a net amount or extend the offset to independent HCA/RPO benefits."
+              }
+            },
+            {
+              "id": "shared_unit_payment",
+              "when": {
+                "fact": "tenancy.unit_tenant_count",
+                "op": "gt",
+                "value": 1
+              },
+              "effect": {
+                "description": "Multiple tenants share a per-unit payment equally; select the highest applicable amount before allocation. Complete cross-entitlement comparison and allocation are not compiled."
+              }
+            }
+          ],
+          "source_gates": [
+            {
+              "id": "manager_tenant_compensation_exception",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.replaces_resident_manager_with_resident_manager",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenancy.manager_compensation_only_free_or_reduced_rent",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "reason": "RAC 920 is not reproduced; a manager-tenant compensated solely by free or reduced rent may remain entitled.",
+              "conflict": false
+            },
+            {
+              "id": "full_15130_reduction_scope",
+              "stage": "calculation",
+              "when": null,
+              "reason": "The full LAMC 151.30 text is absent. The extracted four conditions are encoded, but the pilot cannot certify the complete reduced-payment eligibility or a final amount from this bulletin alone.",
+              "conflict": false
+            }
+          ],
+          "duty": "Where a Los Angeles RSO/JCO relocation entitlement exists, a good-faith owner or eligible-relative occupancy eviction can use the reduced annual schedule only if every specified small-owner condition and governing LAMC 151.30 requirement holds. Failure of a reduction condition changes the amount branch; it does not erase general relocation entitlement.",
+          "retained_conditions": [
+            "Building rental-unit count and an eligible relative's property ownership have separate scopes. The clause 3 owner-holdings/single-family-home formulation remains unresolved without full LAMC 151.30.",
+            "The owner must not have used the reduction within the preceding three years. The relative-property condition applies to an intended relative, not an owner occupying for themselves.",
+            "Qualified status is tested at notice service, using age, the specified disability definitions or minor dependent children. Missing facts do not make a household eligible rather than qualified.",
+            "The extracted amounts are per unit for July 1, 2026 through June 30, 2027; source and calculation gaps prevent a resolved monetary result in this pilot.",
+            "This record is the reduced-payment permission only. A decisive failure of its static small-owner conditions excludes this permission, while independently applicable ordinary relocation duties remain intact."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_scope",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_exemptions",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_accumulated_rent_offset",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_amount_facts.la_qualified_tenant",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_amount_facts.la_amount_per_unit",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.specific_event",
+              "evidence_index": 0
+            }
+          ]
+        },
+        {
+          "branch_id": "manager_reduction_source_question",
+          "label": "Manager-occupancy reduction is unresolved",
+          "coverage": {
+            "all": [
+              {
+                "all": [
+                  {
+                    "all": [
+                      {
+                        "all": [
+                          {
+                            "fact": "jurisdiction.state",
+                            "op": "eq",
+                            "value": "CA"
+                          },
+                          {
+                            "fact": "property.residential_use",
+                            "op": "eq",
+                            "value": true
+                          },
+                          {
+                            "fact": "context.residential_rental_lookup",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      },
+                      {
+                        "fact": "jurisdiction.city",
+                        "op": "eq",
+                        "value": "Los Angeles"
+                      }
+                    ]
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "legal_context.la_rso_coverage",
+                        "op": "eq",
+                        "value": true
+                      },
+                      {
+                        "fact": "legal_context.la_jco_coverage",
+                        "op": "eq",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "fact": "property.building_rental_unit_count",
+                    "op": "le",
+                    "value": 4
+                  },
+                  {
+                    "any": [
+                      {
+                        "fact": "owner.la_reduced_relocation_ever_used",
+                        "op": "eq",
+                        "value": false
+                      },
+                      {
+                        "fact": "owner.la_reduced_relocation_years_since_last_use",
+                        "op": "ge",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "unknown": {
+                      "reason": "D043 clause 3 says no more than four residential units and a single-family home on a separate Los Angeles lot. Without full LAMC 151.30, the pilot does not resolve whether the home is an allowed additional holding, whether one must be owned, or how that home enters the unit-count ceiling.",
+                      "kind": "source"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "trigger": {
+            "all": [
+              {
+                "fact": "procedure.eviction_ground",
+                "op": "eq",
+                "value": "resident_manager_occupancy"
+              },
+              {
+                "fact": "procedure.good_faith_occupancy_eviction",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exclusions": [
+            {
+              "id": "resident_manager_replacement",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.replaces_resident_manager_with_resident_manager",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenancy.manager_compensation_only_free_or_reduced_rent",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "Replacing a resident manager is the specified payment exclusion; a manager-tenant compensated solely through rent has a separate unresolved entitlement branch."
+            },
+            {
+              "id": "nonnegligent_natural_disaster",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.eviction_required_for_natural_disaster_hazard",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "procedure.hazard_caused_by_landlord_negligence",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              "reason": "The disaster payment exclusion requires eviction to be necessary because of the natural-disaster hazard and no landlord negligence."
+            }
+          ],
+          "requirements": [
+            {
+              "id": "manager_reduced_amount_uncompiled",
+              "when": {
+                "unknown": {
+                  "reason": "Manager eligibility for the reduced owner/family schedule is unresolved.",
+                  "kind": "source"
+                }
+              },
+              "description": "No reduced manager payment is treated as compliant or owed."
+            }
+          ],
+          "modifiers": [],
+          "source_gates": [
+            {
+              "id": "manager_tenant_compensation_exception",
+              "stage": "event",
+              "when": {
+                "all": [
+                  {
+                    "fact": "procedure.replaces_resident_manager_with_resident_manager",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "fact": "tenancy.manager_compensation_only_free_or_reduced_rent",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              "reason": "RAC 920 is not reproduced; a manager-tenant compensated solely by free or reduced rent may remain entitled.",
+              "conflict": false
+            },
+            {
+              "id": "full_15130_reduction_scope",
+              "stage": "calculation",
+              "when": null,
+              "reason": "The full LAMC 151.30 text is absent. The extracted four conditions are encoded, but the pilot cannot certify the complete reduced-payment eligibility or a final amount from this bulletin alone.",
+              "conflict": false
+            },
+            {
+              "id": "manager_schedule_conflict",
+              "stage": "event",
+              "when": {
+                "fact": "procedure.eviction_ground",
+                "op": "eq",
+                "value": "resident_manager_occupancy"
+              },
+              "reason": "One sentence mentions manager occupancy while the detailed four-condition provision and table restrict reductions to owner or eligible-relative/family occupancy.",
+              "conflict": true
+            }
+          ],
+          "duty": "The bulletin contains inconsistent manager-occupancy wording. This branch preserves a possible manager case for review and establishes no entitlement to the owner/family reduced amounts.",
+          "retained_conditions": [
+            "The manager inconsistency is not applied to a known owner/eligible-relative event.",
+            "A manager event still requires the otherwise applicable local relocation entitlement and event-specific payment exclusions.",
+            "This record is the reduced-payment permission only. A decisive failure of its static small-owner conditions excludes this permission, while independently applicable ordinary relocation duties remain intact."
+          ],
+          "evidence_refs": [
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_scope",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_exemptions",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_payment_scope.la_relocation_accumulated_rent_offset",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_amount_facts.la_qualified_tenant",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "la_relocation_amount_facts.la_amount_per_unit",
+              "evidence_index": 0
+            },
+            {
+              "criterion_id": "rule.specific_event",
+              "evidence_index": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "This selected reduced owner/family schedule is tied to RSO/JCO occupancy evictions. The bulletin's independent demolition/conversion entitlements under sections 47.06/47.07 are acknowledged but are not broadened into owner/family reduction eligibility.",
+        "This record is a narrow reduced-payment permission. Building rental-unit count and prior use are explicit static eligibility tests; clause 3's owner holdings/home counting meaning is an unresolved source subtree, not an invented ownership or count predicate. The intended-relative restriction and qualified-household amount remain separate branches.",
+        "The manager-only conflict is gated by its own asserted event; the missing complete section 151.30 is independently preserved at calculation stage.",
+        "The annual amounts appear as source-grounded candidate modifiers, but the unconditional unresolved calculation gate prevents resolved_effects from returning them. There is no implemented net-offset, highest-entitlement or pro-rata arithmetic.",
+        "A verified building count above four defeats this narrow reduction without requiring unrelated owner facts. This is out of scope for the permission, not a statutory exemption from ordinary relocation assistance.",
+        "D043 clause 3 says no more than four residential units and a single-family home on a separate Los Angeles lot. Without full LAMC 151.30, the pilot does not resolve whether the home is an allowed additional holding, whether one must be owned, or how that home enters the unit-count ceiling."
+      ]
+    }
+  ]
+}
