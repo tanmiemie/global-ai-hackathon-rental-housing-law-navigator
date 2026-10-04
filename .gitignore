@@ -21,6 +21,8 @@ outputs/module_a/*
 !outputs/submission_readiness_20261003/
 outputs/submission_readiness_20261003/*
 !outputs/submission_readiness_20261003/address_profile.json
+!outputs/address_facts/
+!outputs/address_facts/**
 
 # Third-party research captures stay local; the official final code is included.
 data/supplemental/*

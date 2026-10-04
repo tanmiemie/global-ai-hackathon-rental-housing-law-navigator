@@ -27,6 +27,7 @@ advice** and does not establish complete legal coverage.
 | [D074 capture log](data/supplemental/D074_capture_log.json) | Retrieval and capture provenance for the included supplemental source |
 | [Capture notes](data/supplemental/capture_notes.txt) | Source availability and redistribution boundaries |
 | `src/`, `scripts/`, `tests/` | Extraction implementation, optional source fetcher, and automated tests |
+| [Address facts](outputs/address_facts/README.md) | 500-address jurisdiction and property-fact enrichment, evidence table, audit files, and deterministic rebuild scripts |
 
 The organizer pack is unchanged. Generated outputs and supplemental material
 belong outside it. Some provenance fields in the saved artifacts name local
