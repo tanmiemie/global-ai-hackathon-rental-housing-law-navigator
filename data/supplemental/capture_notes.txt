@@ -6,17 +6,23 @@ manifest URL, the official replacement PDF URL, retrieval-time basis, PDF hash,
 text hash and extraction method. The organizer pack remains unchanged.
 
 The local workspace additionally retains five earlier research captures from
-the supplied manifest URLs: D035, D037, D059, D086 and D087. These third-party
-full-text files and their historical fetch_log.json are not published here.
+the supplied manifest URLs: D035, D037, D059, D086 and D087. D037.txt and D059.txt
+are included as the exact captures required to reproduce the current lookup.
+D035, D086, D087 and the historical fetch_log.json remain local.
 SOURCE records the captured source URL. RETRIEVED identifies capture time, not
 the law's effective date or the competition's 2026-10-01 query date.
 
 The current rules reference D037 (Morgan Lewis), D059 (WBUR), and D074 among
 supplemental sources. Full provenance validation needs the original D037/D059
-snapshots as well as the published originals and D074. The shipped validation
-report records a check in the full local workspace. A clean clone can validate
-the official JSON schema but cannot reproduce every source-text check without
-those two private snapshots. Missing-source errors must not be suppressed.
+snapshots as well as the published originals and D074. These three supplemental
+snapshots are now included, providing the source bodies referenced by the
+current plans. The shipped validation report records a check in the original
+local workspace; run a fresh check on the cloned files. Missing-source errors
+must not be suppressed, and source text and line endings must remain unchanged.
+
+The exact added capture identities are:
+D037.txt: 14018 bytes; SHA-256 8fbbe9e39b3f8dba163ae9596b3d4bebb799f23db57cdc21fed6da115dc3050f
+D059.txt: 5697 bytes; SHA-256 196df2382df0cb9a66cfb5e67294c8e8f4e2efd25509b72630a0f367de2ce982
 
 Run python3 scripts/fetch_sources.py --dry-run to inspect the five reviewed
 sources. Run without --dry-run to retrieve new copies. Use --documents to select
@@ -27,11 +33,11 @@ omitting script, style, head, SVG and noscript elements. It does not summarize o
 manually supply missing legal text. A failed refresh retains any earlier local
 capture and records the failure and previous capture in the log.
 
-Local capture is not a grant of permission to republish article text. Keep the
-five third-party full-text copies and model full-text caches out of public repositories. Any public
-submission should separately assess its use of short quotations and source links.
-Morgan Lewis permits personal, noncommercial downloads with copyright notices
-retained; this is not permission to redistribute the full article.
+The publication set includes D037 and D059 for this reproducibility handoff.
+Keep the remaining three research captures and model full-text caches local.
+Original attribution and copyright notices remain in the included captures;
+their inclusion does not relicense third-party text or expand publication to
+other research material.
 
 The script refuses eCode360 sources because the reviewed terms restrict copying
 for public/non-profit purposes and derivative works. It refuses GoCodebook because

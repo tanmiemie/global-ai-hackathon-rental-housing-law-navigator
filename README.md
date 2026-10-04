@@ -30,6 +30,7 @@ does not establish complete legal coverage.
 | [Address profile](outputs/submission_readiness_20261003/address_profile.json) | Input completeness and consistency findings for the supplied address table |
 | [Organizer pack](participant-final-no-hour16_v5/README.md) | Original challenge, schema, submission examples, source manifest, and address CSV |
 | [Supplemental D074](data/supplemental/D074.txt) | Final San Diego algorithmic-pricing code used to update three draft-derived records |
+| [Supplemental D037](data/supplemental/D037.txt), [D059](data/supplemental/D059.txt) | Exact source captures required to validate the reviewed plans and reproduce lookup results |
 | [D074 capture log](data/supplemental/D074_capture_log.json) | Retrieval and capture provenance for the included supplemental source |
 | [Capture notes](data/supplemental/capture_notes.txt) | Source availability and redistribution boundaries |
 | `src/`, `scripts/`, `tests/` | Extraction implementation, optional source fetcher, and automated tests |
@@ -117,17 +118,18 @@ PY
 ## Source availability and full provenance validation
 
 The manifest lists **87 sources**. The public clone includes the **54 original
-text sources plus supplemental D074**, making **55 available source bodies**.
-The original local review environment had 60: these 55 plus five supplemental
-captures that are not included in this public package. Restricted or unavailable
+text sources plus supplemental D037, D059, and D074**, making **57 available
+source bodies**. The original local review environment had 60: these 57 plus
+three research captures (D035, D086, and D087) that remain local. Unavailable
 sources remain coverage gaps; an absent source is not evidence that no law exists.
 
 The saved zero-error validation result was produced with the local source set.
-In particular, full validation of this export requires the exact **D037 and
-D059** captures, which are not redistributed. A public-clone full validation
-will report missing-source evidence for those documents. Keep those failures
-visible; do not treat the saved result or the schema-only check as proof that
-the clone independently reproduced the provenance validation.
+The exact **D037 and D059** captures are now included under `data/supplemental/`.
+Together with D074 and the organizer texts, they supply all 51 source bodies
+referenced by the current executable plans. Run the reproduction guide's
+preflight and the provenance checks below against your checkout; a saved report
+or schema-only check does not replace a fresh evidence check. Preserve source
+bytes and keep any missing-source or mismatched-evidence errors visible.
 
 Inspect the available inventory without a model call:
 
@@ -137,8 +139,7 @@ PYTHONPATH=src .venv/bin/python -m rent_rules inventory \
 ```
 
 To run the stricter validator while preserving the shipped validation report,
-copy the export to a separate output directory. Missing-source failures are
-expected in the public clone:
+copy the export to a separate output directory:
 
 ```bash
 mkdir -p outputs/provenance_check

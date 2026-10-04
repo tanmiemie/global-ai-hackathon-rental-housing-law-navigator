@@ -69,10 +69,11 @@ local artifacts. These reports are historical records, not a complete reusable
 cache or enough files to rerun the historical audit comparison. A fresh run
 creates its own audit files.
 
-Old and failed output runs, caches, detailed batch audits, and restricted
-third-party full-text captures are excluded from this publication. In
-particular, D037 and D059 remain excluded under the existing
-[capture notes](../../data/supplemental/capture_notes.txt). Reading these
-published results requires neither capture. Full source-evidence validation
-and fresh lookup execution require their exact original snapshots, as explained
-in the reproduction guide; missing-source checks must not be bypassed.
+Old and failed output runs, caches, and detailed batch audits are excluded from
+this publication. The exact [D037](../../data/supplemental/D037.txt),
+[D059](../../data/supplemental/D059.txt), and
+[D074](../../data/supplemental/D074.txt) snapshots needed for the current plans
+are included under `data/supplemental/`. Other research captures remain local;
+see the [capture notes](../../data/supplemental/capture_notes.txt). Fresh lookup
+execution uses these original source bytes for evidence validation; missing or
+mismatched source checks must not be bypassed.

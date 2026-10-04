@@ -87,10 +87,10 @@ section 5 creates a new smoke run that can be reused safely.
 
 **Source availability matters.** The current plan validation checks 2,300
 evidence references against 51 distinct source bodies. It needs the three
-supplemental captures listed above. D037 and D059 exist in the working
-environment used for this result but are absent from the public handoff
-described in `README.md`. Check that the colleague actually has those exact
-captures. Re-downloading a current page can change its text and offsets.
+supplemental captures listed above. D037, D059, and D074 are all included in
+the repository under `data/supplemental/`; update the checkout to obtain them.
+No separate source download is needed for the current plan bundle. Preserve
+these exact captures: re-downloading a current page can change text and offsets.
 Missing evidence is a failed preflight, not a reason to disable validation.
 
 Do not reformat the input JSON, rewrite CSV values, convert source line endings,

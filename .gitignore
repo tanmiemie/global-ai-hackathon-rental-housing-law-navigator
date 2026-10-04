@@ -46,8 +46,11 @@ outputs/evaluator_first10_workflow_v3/*
 !outputs/evaluator_first10_workflow_v3/address_diagnostics.json
 !outputs/evaluator_first10_workflow_v3/run_report.json
 
-# Third-party research captures stay local; the official final code is included.
+# Include the exact supplemental captures required by the reviewed plans.
+# Other research captures and model caches stay local.
 data/supplemental/*
+!data/supplemental/D037.txt
+!data/supplemental/D059.txt
 !data/supplemental/D074.txt
 !data/supplemental/D074_capture_log.json
 !data/supplemental/capture_notes.txt
