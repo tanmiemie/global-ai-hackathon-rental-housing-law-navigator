@@ -1,0 +1,55 @@
+Supplemental source capture notes
+
+The published repository includes D074.txt, the official San Diego Municipal
+Code Chapter 9, Article 8, Division 11. D074_capture_log.json records the original
+manifest URL, the official replacement PDF URL, retrieval-time basis, PDF hash,
+text hash and extraction method. The organizer pack remains unchanged.
+
+The local workspace additionally retains five earlier research captures from
+the supplied manifest URLs: D035, D037, D059, D086 and D087. These third-party
+full-text files and their historical fetch_log.json are not published here.
+SOURCE records the captured source URL. RETRIEVED identifies capture time, not
+the law's effective date or the competition's 2026-10-01 query date.
+
+The current rules reference D037 (Morgan Lewis), D059 (WBUR), and D074 among
+supplemental sources. Full provenance validation needs the original D037/D059
+snapshots as well as the published originals and D074. The shipped validation
+report records a check in the full local workspace. A clean clone can validate
+the official JSON schema but cannot reproduce every source-text check without
+those two private snapshots. Missing-source errors must not be suppressed.
+
+Run python3 scripts/fetch_sources.py --dry-run to inspect the five reviewed
+sources. Run without --dry-run to retrieve new copies. Use --documents to select
+one or more of D035, D037, D059, D086 and D087. New captures can differ from the
+October 3, 2026 copies because live pages, navigation and parser formatting change.
+The script preserves source text and copyright footers, while mechanically
+omitting script, style, head, SVG and noscript elements. It does not summarize or
+manually supply missing legal text. A failed refresh retains any earlier local
+capture and records the failure and previous capture in the log.
+
+Local capture is not a grant of permission to republish article text. Keep the
+five third-party full-text copies and model full-text caches out of public repositories. Any public
+submission should separately assess its use of short quotations and source links.
+Morgan Lewis permits personal, noncommercial downloads with copyright notices
+retained; this is not permission to redistribute the full article.
+
+The script refuses eCode360 sources because the reviewed terms restrict copying
+for public/non-profit purposes and derivative works. It refuses GoCodebook because
+section 2.2(d) prohibits automated access outside documented APIs. It also refuses
+all other sources beyond the five reviewed URLs. TLS validation is always enabled;
+there are no authenticated requests, CAPTCHA workarounds, or retries that bypass
+HTTP 403 responses. The tool performs individual requests, not a site crawl.
+
+The five earlier captures are secondary reporting; D074 is official code text.
+D037 covers multiple jurisdictions despite the manifest's Jersey City label and
+contains a Berkeley effective-date conflict with supplied official ordinance D001.
+D087 reports the first reading of Santa Ana's ordinance; D086 later reports final
+passage. Do not infer final enactment from a first-reading report. Monthly dates
+in D037 must not be silently converted into precise days without further evidence. Recent-news navigation
+may contain dates later than the competition query date and is not legal evidence.
+
+The current status_verification records provide later official corroboration
+and date findings where available. They do not turn every statement in an older
+secondary source into a verified primary-law statement. D074 was acquired from
+the official PDF and extracted with PDFKit; the five-URL fetch script does not
+reconstruct D074. Re-downloading a live source may change text, dates and offsets.

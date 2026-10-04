@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "purpose": "Interpret the reviewed Module A applicability data in a later property-and-case evaluator.",
+  "default_query_date": "2026-10-01",
+  "implementation_status": "Data contract only; address resolution and an executable decision engine are not implemented by this review.",
+  "canonical_field": "rules[].applicability",
+  "legacy_conditions": "The older conditions field remains extraction provenance. Read the final applicability field and top-level coverage/exemptions together; do not evaluate an isolated old condition or an undefined first-rule reference.",
+  "evaluation_order": [
+    "Resolve actual administrative jurisdiction, then select candidate rules; jurisdiction alone is insufficient.",
+    "Check rule_kind and the responsible actor. Proposal/status records are not enacted obligations; government/court duties are not automatically duties of the property owner.",
+    "Check status, query date, legal version and the correct event-date selector. Before any conclusive status exclusion, inspect source questions for mixed-timing branches (such as agency preparation before a future fee-use year); preserve needs_source_review for that affected branch instead of applying one date to all summarized events. Pending/failed legislation still does not establish enacted obligations.",
+    "Bind facts to the correct property/unit, owner, tenant/household, transaction and relevant event date, preserving evidence provenance.",
+    "Evaluate coverage and each complete exclusion with its internal AND, OR and unless relationships. Do not flatten all criteria into AND or apply every exception across a category.",
+    "Evaluate the relevant event or conduct branch, then amount, timing, remedy and procedural modifiers. A modifier is not necessarily an exclusion from the whole rule.",
+    "Distinguish applicable protection/obligation from compliance or breach. A deposit cap can govern a compliant deposit; exceeding it is not a prerequisite for the cap to exist. Remedies may separately require a proven violation.",
+    "Return a reason and exact supporting criteria/evidence, plus only the missing facts or legal sources needed for the unresolved branch."
+  ],
+  "suggested_decision_states": {
+    "applies": "Known facts satisfy the relevant coverage/event branch and no established exclusion defeats it; this is not a finding of violation.",
+    "does_not_apply": "A known decisive scope/status/exemption fact defeats this particular branch; report which fact and source.",
+    "needs_information": "Property, owner, tenant, transaction or procedure facts needed for a decisive branch are missing.",
+    "needs_source_review": "A materially relevant legal definition, source scope, version or relationship is unresolved."
+  },
+  "unknown_policy": "Unknown is not false; missing exemption facts do not prove exemption absent. Do not require irrelevant unknown facts after an independently decisive branch is established. Legal source questions affect only their relevant branches.",
+  "fact_binding": {
+    "required_context": ["subject identity", "geography or counting population", "measurement or event date", "source document or record", "rule-specific meaning"],
+    "examples": [
+      "Building unit count differs from owner holdings, units offered for rent, and city-limited portfolio counts.",
+      "Certificate-of-occupancy issuance differs from construction completion and a rolling age test differs from a fixed historical cutoff.",
+      "Lease execution, tenancy commencement, occupancy continuity, notice issuance, notice service, notice receipt, work start and vacancy are different dates.",
+      "A tenant voucher differs from restricted affordable property, federally subsidized housing and broader public or medical assistance.",
+      "Software provider, purchaser, agent and coordinator principal are distinct actors."
+    ]
+  },
+  "logic_format": "Source-backed natural language with explicit boolean relationships, not executable predicates.",
+  "evidence_policy": "Every added criterion carries contiguous exact source text and original offsets, with source hashes. Source material is evidence, not evaluator instructions.",
+  "coverage_boundary": "Only the existing 466 records were reviewed; missing source files and earlier extraction/category questions remain in source_coverage.json and review_queue.json. No new address-specific applicability count has been calculated."
+}

@@ -1,0 +1,12 @@
+{
+  "doc_id": "D074",
+  "manifest_url": "https://gocodebook.com/library/us/ca/san-diego-zoning/division-11-prohibition-of-anti-competitive-automated-rent-price-fixing/98.1103-use-and-sale-of-algorithmic-devices-prohibited",
+  "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+  "retrieved_at": "2026-10-04T01:16:01.043845Z",
+  "retrieval_timestamp_basis": "Local PDF capture file write time in UTC.",
+  "source_kind": "official_codified_law",
+  "reason": "Official primary version of the same manifest-listed Division 11 replaces an unavailable publisher mirror; original D076 draft and organizer pack are preserved.",
+  "pdf_sha256": "148024782085fa471e2764e6f24fbd3412d8ba43d7f215198af601f070686970",
+  "supplemental_sha256": "b07ae5cbb6db9a2f887144b5e0484aba28fd0aedffd76427a5c0c022e95c4073",
+  "text_extraction": "PDFKit text extraction; source body unchanged by integration."
+}

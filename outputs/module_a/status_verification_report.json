@@ -1,0 +1,4828 @@
+{
+  "review_date": "2026-10-03",
+  "as_of": "2026-10-01",
+  "rule_count": 466,
+  "baseline_sha256": "acadb7d2b835488a39e449e4152f6fddce8f2fcdce3376ad2f554d3d80c951fc",
+  "result_sha256": "8430e5972ec27ef3c490f40bdf54b0bf1775b65371f850d4170e18b4b71140e9",
+  "status_counts_before": {
+    "in_force": 451,
+    "not_yet_effective": 6,
+    "pending": 8,
+    "failed": 1
+  },
+  "status_counts_after": {
+    "in_force": 457,
+    "not_yet_effective": 6,
+    "pending": 2,
+    "failed": 1
+  },
+  "verification_counts": {
+    "externally_supported": 333,
+    "conflict": 1,
+    "externally_confirmed": 102,
+    "corpus_only": 30
+  },
+  "status_change_count": 6,
+  "effective_date_change_count": 6,
+  "targeted_content_update_ids": [
+    "r-1c705d0a45decc26ca8e",
+    "r-348949bcc15baafa33d9",
+    "r-4fcfc494ad65ecf8a906",
+    "r-6f96ebe74c183e607f78",
+    "r-a5930d1eb7b5d1f0bd36",
+    "r-e0cfa2608e7b856d4643",
+    "r-f59e846f247a147910fe",
+    "r-fccf9f4b2a02bd93c271"
+  ],
+  "review_artifacts": [
+    "outputs/status_verification_20261003/reviews/ca_state.json",
+    "outputs/status_verification_20261003/reviews/ca_local.json",
+    "outputs/status_verification_20261003/reviews/nj.json",
+    "outputs/status_verification_20261003/reviews/ma.json"
+  ],
+  "validation": {
+    "valid": true,
+    "error_count": 0,
+    "errors": [],
+    "rule_count": 466
+  },
+  "changes": [
+    {
+      "team_rule_id": "r-0031694696ee5510fbbb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0050f22a2b36fbb03da7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-024a0c68f47c93ac8c4c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-02a3bd4c4451a610b895",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-038898c325eaa94daf73",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-03a705a5b2fd13c23cc5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-0485c8772770dabb1c7e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-04c099559f1691fddce6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-0531f6212c76aa92fff7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-05d0c98608939365ddba",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-06c9bc47d92cd4ce96cb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-077fa3d356ea72ccfe75",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-10-14",
+      "effective_date_after": "2024-10-14"
+    },
+    {
+      "team_rule_id": "r-0782fc70f5a61a2067ac",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-08260e8f4e69cb30b34a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-09256002a4668fd70d85",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0985759c6fd807a82798",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-09ae49c6f5afaaca4c87",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0a0364cb0611c4de4b51",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0ae51c51aa5bcb4b8139",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0c6fecb2eee03e1055a8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0c724f797ca99a8811e8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0de399b8ca107438b211",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0de4988a4be8d45c3cbf",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-0e6df07a1d23b8a86d1d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-0f31844e0be39274fb84",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1004990da7cc9dce54f0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-103370206d5d79070d73",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-10e8f85ab60bca6a6246",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-07-01",
+      "effective_date_after": "2027-07-01"
+    },
+    {
+      "team_rule_id": "r-1132dff4a496f308317f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-11887482601cf26e33e5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-121333ef6fa6480276b2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-133ecfbf092919e6c226",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-135701a6886ff65f1089",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-13877f2ce3e3a87844d3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-13d86b2131ec6737ed19",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-13fb57eeb26ac20b9a82",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-140706c9ebc0e42fd3fa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-144acc554f9136e6f433",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-08-01",
+      "effective_date_after": "2025-08-01"
+    },
+    {
+      "team_rule_id": "r-1570fb5a55a5dd492bc7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-166b1ac83fb122d68f8f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-173073bb90c938507794",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1736a013b268ffc65cb2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1798ad82f57fa1ded71b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-18527b79792020e67e5c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-18c68c339ea440b6d4f5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1959c7eeb73675dc5540",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1b2177f9734c5ad1f63e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1b46566f1187d0531630",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-1b78eed70e0b6c0a3624",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1b84bca784c49fa2390e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1c705d0a45decc26ca8e",
+      "changed_fields": [
+        "status",
+        "title",
+        "requirement",
+        "coverage_conditions",
+        "exemptions",
+        "effective_date",
+        "citation",
+        "quoted_span",
+        "interaction",
+        "source_doc_id",
+        "source_url",
+        "retrieved_at",
+        "temporal_notes",
+        "penalty",
+        "limitations",
+        "source_doc_ids",
+        "evidence",
+        "interactions",
+        "applicability",
+        "historical_interactions",
+        "historical_evidence",
+        "historical_extraction",
+        "status_verification",
+        "quoted_span_location"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": "2025-06-21"
+    },
+    {
+      "team_rule_id": "r-1c94bf3ed93aa92a1520",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1d1a9f085a144e3465fa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1dd7b3da663df7ca93b1",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-04-01",
+      "effective_date_after": "2025-04-01"
+    },
+    {
+      "team_rule_id": "r-1e8474890565dd0a53d0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-1ec2878265dd66f7ede9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-1ec2a47abee81be8714d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-07-01",
+      "effective_date_after": "2026-07-01"
+    },
+    {
+      "team_rule_id": "r-218a00648640236a42f2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-22d0e104d5d089430ea2",
+      "changed_fields": [
+        "conflict_note",
+        "applicability",
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-230a9912dea10f8f8302",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-231297b0754691005c59",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2350aacd84aefebd72a5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-240177e13c801bcefa22",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-243f416168fd35d959cd",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-244868a8c38f1e79d621",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-246fe28a5a81c175d71a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-24706c23efed3c3c5949",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-25afca7230b634660a0d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2631447ed394936009aa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-26513a06f9a33e42cca1",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-26b2d99fc53aba7da8bb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-27929ed8504f4847e303",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-28a5e9ffe31598cf76f6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2a24f9d85eda930ab1ce",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2a5469485ea296f663fa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2a76d6f5bb85dbe3f80f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-2a8eb5c0efe499d180a4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2bdf855426e9e89aae4f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2ca0d52e147e4f6916e5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2cc4cc22ff5144827672",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2d7eb798780a5a803462",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-2f3009c9ca62b44ed37f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-07-01",
+      "effective_date_after": "2026-07-01"
+    },
+    {
+      "team_rule_id": "r-2f4510377b1727516d54",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-315f369e257e926ec300",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-316f2a7e6c0124dc9205",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-31df336e5319d40e51cc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-32abde707cc7e9b289f4",
+      "changed_fields": [
+        "effective_date",
+        "temporal_notes",
+        "applicability",
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-06",
+      "effective_date_after": "2025-06-21"
+    },
+    {
+      "team_rule_id": "r-330b5c9a6cf6fd9cba6a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-3434e42497cb2a3e59c6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-348949bcc15baafa33d9",
+      "changed_fields": [
+        "status",
+        "title",
+        "requirement",
+        "key_value",
+        "coverage_conditions",
+        "exemptions",
+        "effective_date",
+        "citation",
+        "quoted_span",
+        "interaction",
+        "source_doc_id",
+        "source_url",
+        "retrieved_at",
+        "temporal_notes",
+        "penalty",
+        "limitations",
+        "source_doc_ids",
+        "evidence",
+        "interactions",
+        "applicability",
+        "historical_interactions",
+        "historical_evidence",
+        "historical_extraction",
+        "status_verification",
+        "quoted_span_location"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": "2025-06-21"
+    },
+    {
+      "team_rule_id": "r-3489d5a0acad2c69eabb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-34a5ae12c33a21a9e85f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-34f17edbac653c449f1c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-353c19839ae565d781ab",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-35c5e5528d21db43e59d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-36b1e58b7e3ebf70c23a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-37465950d79e2ebeeb5f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3805dad117fde8aca726",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3a3770a9662f4d0187ff",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-10",
+      "effective_date_after": "2024-10"
+    },
+    {
+      "team_rule_id": "r-3a6203e1434f616cf4cf",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-3abb388191445fe5282d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3bec362694f1299fb080",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3c8d21243cccf224902e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-07-01",
+      "effective_date_after": "2027-07-01"
+    },
+    {
+      "team_rule_id": "r-3d8fb4bc67d3e34d2977",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2020-11-06",
+      "effective_date_after": "2020-11-06"
+    },
+    {
+      "team_rule_id": "r-3dcd092e7150c5f5f6d4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3e1f8f5089bf1e4c75b3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3f2de348f8fc5b9db32e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-3f3fb535765fc20ceba5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-404290ae0c129b4ad2af",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-40e06c1d7254d3e6cf42",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-41c216770e881f697270",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-42958fa192a037d949a3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4315713a30dfb24d9b8b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4383284fa0689add3f72",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-43a5e08e14c420a390b9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-44fcd096c82e1bf9900c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-450f68c39b9f7173b393",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-45503cbe2d34f9bf15a6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-45b75550e089f4a590c3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-45c5b4f0fa4a38aa03fb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-04-02",
+      "effective_date_after": "2026-04-02"
+    },
+    {
+      "team_rule_id": "r-45d5b0fcfd50a0ff4504",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-01",
+      "effective_date_after": "2026-01"
+    },
+    {
+      "team_rule_id": "r-46bac03898d3976e0a7b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "pending",
+      "status_after": "pending",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-46ecbdcb348c97893896",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-470b85f5dd7e01a06eb2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-47165d9d511b4ad2119e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-08-20",
+      "effective_date_after": "2025-08-20"
+    },
+    {
+      "team_rule_id": "r-471d6c68cf5e3721f402",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-482d702ce026e47875e4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-485d566ff433cf036651",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-48bbc72d689a595ec711",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-48d7a70e039fd7886dbf",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-49001c5c8c73cca9e8bf",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-49a2d61c82e5f7ac32ad",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4a61e925e7a34e77f4ae",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4a85cae127d5c99b6a43",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4ada4ef0a0a68473e565",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4b1aae40f2491020e470",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-02-02",
+      "effective_date_after": "2026-02-02"
+    },
+    {
+      "team_rule_id": "r-4b7b1c43512d44f89555",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-07-01",
+      "effective_date_after": "2024-07-01"
+    },
+    {
+      "team_rule_id": "r-4ceb92460da465089440",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4d1840406650fdd76aa3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4d23316f760ba3c98d20",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-4dc23790a7e640178400",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-4dde156773986e4e78b9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4e1f59b1c232c84d95cd",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-4ea9d914b4fb6eaa002d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-4f2d51d65cf29a80ab0c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-4f3b2f29fa9a7351bb4e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-02-02",
+      "effective_date_after": "2026-02-02"
+    },
+    {
+      "team_rule_id": "r-4fcfc494ad65ecf8a906",
+      "changed_fields": [
+        "effective_date",
+        "temporal_notes",
+        "limitations",
+        "applicability",
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": "2026-01-01"
+    },
+    {
+      "team_rule_id": "r-50baf29cdc9977efe8d8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-50be04be0cc4573c9611",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-50d740e2d871c23b57b4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-50e76b1159776278ca7f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-51574feb0640e447b2f7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-51b9215b75fa0da590e3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-52016cc8695662d3d86f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5206201808c29681cbf2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5217228bfc3be056af88",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-52845f2be20d30361509",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-529f500ec97aa25f183d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-52f3243ccaa9b1723852",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-532e2ffd5635321b90b2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5451af2bb9a733cf5824",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-54a549b0bc1e17950702",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-54c449dadc6fc9fd0bd5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-56c53cd2463a31b93814",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-57bfe293b3358a9d7589",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-02-06",
+      "effective_date_after": "2024-02-06"
+    },
+    {
+      "team_rule_id": "r-5905284b959d09c5a56e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-10-14",
+      "effective_date_after": "2024-10-14"
+    },
+    {
+      "team_rule_id": "r-590a907f8dc71da2276c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-59552dc8568e5961e275",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-59f722f4c2a0f1d97bab",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-5aa73903b2b49971f973",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5ad0f98ba2eaeab487fd",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5b584468833be61b042b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-5c0741b7e2e47aa1002c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-5c25915dab1a9f20ce72",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5cca2ca497be668c9a18",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-01-01",
+      "effective_date_after": "2026-01-01"
+    },
+    {
+      "team_rule_id": "r-5d7b4e6653ae8b89dfe3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5e6e3b0e071f5bbffea4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5efe9fb6fcb3e8424c8c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5f19064e1862664bc58c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5f5af32beba9dcf5f366",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-5fa41bf950781164d1b7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-5fd5feb113b663f98e12",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-60acffbd43d6d1281509",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-638262799059d40b3dc7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-63c74a4c512be59a673e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-01-01",
+      "effective_date_after": "2027-01-01"
+    },
+    {
+      "team_rule_id": "r-64af8cdd447869248980",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6509b2fd179c81178024",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-65297fb19ce15a9992d6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-661a9e57565fefb40323",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-664d261ea2db47e2dc7d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-66e6e2170d3fbc0dcd06",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-67410e07334a7aaac316",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6754252206ea19aa2165",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-67a8d6109e63fc85cc8c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-01-01",
+      "effective_date_after": "2025-01-01"
+    },
+    {
+      "team_rule_id": "r-67b2b9adba2d2044fe39",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-680140f045c5d290508f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-68552f1b1279380a6a03",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-68f1b5f82c66aa952eed",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-69bdaad768edee5b062c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-69c8f2a6e41f7da54dfb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6a0f31e31ef84b7e6587",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026",
+      "effective_date_after": "2026"
+    },
+    {
+      "team_rule_id": "r-6a4dc2b39ecfb8d89e86",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6ab8a4320b6415fb5e4e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-6b8166a934df7066431f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6bec618b01506002c6c9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-6c3b1b734e206938c6fe",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-07-01",
+      "effective_date_after": "2027-07-01"
+    },
+    {
+      "team_rule_id": "r-6cf78a7714ba8f3f1be5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-6d1cc7baf92f653b2d2e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6d605ba8290d24c25494",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6dde39d9b245cd113a6c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6e4697b7920c56ae23cb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-01-01",
+      "effective_date_after": "2026-01-01"
+    },
+    {
+      "team_rule_id": "r-6ebe43825b015c8af742",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-6f96ebe74c183e607f78",
+      "changed_fields": [
+        "effective_date",
+        "temporal_notes",
+        "limitations",
+        "applicability",
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": "2026-01-01"
+    },
+    {
+      "team_rule_id": "r-6f9bbb637d8541879391",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-701d0f1afdb408185fc0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-71b566a4ace7e6e3e61a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-71b9801b716d56b27f1d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-720e1b6c29210f4fe76f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-721ef71861c3d1581567",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-72863e3b4f013db0ec2a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-72acca7b9b346ebcbf55",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-72e6795a9b3404d2d4a8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-06",
+      "effective_date_after": "2025-06"
+    },
+    {
+      "team_rule_id": "r-7398127861e3da4822af",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-73aefb5aaf6402898b19",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-740b3cb4e2b05a4406aa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-740d08718e3c102cffca",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-74eec774b5d89bc1b6e2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7521de50fda102e2951b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-754ffed340e38544b2fb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-77b011c506c0d8ec2c2b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-77da169c959113201eac",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-08-01",
+      "effective_date_after": "2025-08-01"
+    },
+    {
+      "team_rule_id": "r-790b61fd3323b311047c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-79551e4fdcae9a4f9fdc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7a42c541126f8b139b0b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7a7aadb88849c189b3d0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7b4cf67f3d8595915f26",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7c2bbbc1dfd449652655",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7c2cfc7fe63d43dd3b48",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-07-01",
+      "effective_date_after": "2027-07-01"
+    },
+    {
+      "team_rule_id": "r-7c5277a81f0a3ec0d6b9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7d0833347416798536dc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-7e38d436c8253495b9fb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-7ea98dd660e6391220f9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-80d3a3e3dd574c062534",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-810ce117aff3c0ee958c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8308475cb120791f8b50",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-85c4c4f3dfc7e035f28e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-8635dda969781a251d31",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-07",
+      "effective_date_after": "2025-07"
+    },
+    {
+      "team_rule_id": "r-86bd7fbfaea1ceea7119",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-86d1e4ae527a1d080714",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-87f1787ca3e1d83ecbd4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-887007dc17cacc781490",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-892dc885e8b30064b7e2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-89b9b17ab15f444d2e95",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8a0df2e394aa3c2a8d6e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-04-01",
+      "effective_date_after": "2025-04-01"
+    },
+    {
+      "team_rule_id": "r-8a8375ba453b34ea3e40",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8ac026c6ae5d7e9c19c6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8b767f6a6cba0264700b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8b88fac70ac409f67268",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8c65a9fa2b5031a63be2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8c85852e6370bf5678d3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8c9ae1f58fc609654a7c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8d343e7b6ead2d1e3b01",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8dbbdf070cc0c363322e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8e1e4d30593cc6026c12",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "pending",
+      "status_after": "pending",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-8ea27afd637abdd7e11b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-05-01",
+      "effective_date_after": "2026-05-01"
+    },
+    {
+      "team_rule_id": "r-9088ddf081b63ea05be9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-909c57f2c2c6d76e0b1e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-01-27",
+      "effective_date_after": "2023-01-27"
+    },
+    {
+      "team_rule_id": "r-90d97c60f4434a9f7976",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-912e8ea3b7dd539f34e1",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-931c3dc99ad034b0f6c4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-9326588cb05e8900afdc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9339005d3257ba6d8673",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-9353a8714b7edc44c3eb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-935b48f63dc3010e1fe9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-949daa1b284ec8d783cf",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-94a83d26ae299f58d816",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-94f8f7d135f3c7cc35ca",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-95886c8fa5b93fca1c7e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-96b54c8ba5c09ef3187e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-97dca25ba264edb4726c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-97dd7657a299f4a7a501",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-983074c94d363d30226a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-07-01",
+      "effective_date_after": "2026-07-01"
+    },
+    {
+      "team_rule_id": "r-98341956e9d3dea8767a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-99b3083d86eebf5f8687",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-99e1409c8c9be8c10db0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-99fe139699cf74b2c846",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-9aabadce2cd91964c040",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-9abdf0f5872dcffb59da",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9ae915f6c29a37270b10",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9b2e46b46f435acd4471",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9b4bdba24cc034d5157e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-01-01",
+      "effective_date_after": "2026-01-01"
+    },
+    {
+      "team_rule_id": "r-9bc70b320ec6d3f32942",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9c304dc5e20a3c485523",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9c454b21247b5afa327a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2020-11-06",
+      "effective_date_after": "2020-11-06"
+    },
+    {
+      "team_rule_id": "r-9d0148e3dc34d001f68f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9d3664fc1415d480c949",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-9ded5cc7b50f1bdabaec",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-9e2bbe542adb800f9128",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-9f08f058764c568ed872",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-04-01",
+      "effective_date_after": "2025-04-01"
+    },
+    {
+      "team_rule_id": "r-9f3017567a0f259161ea",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a00067ab58b24f828cab",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a0c68a8a93cb80946df4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a0cfdcc5b66e66a775fe",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-a1bd7feca25720c745e0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a2d9f502d656228ba4d8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-a2e81a71b8564b481979",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a568d56c984cd913017d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a5930d1eb7b5d1f0bd36",
+      "changed_fields": [
+        "status",
+        "title",
+        "coverage_conditions",
+        "citation",
+        "interaction",
+        "temporal_notes",
+        "limitations",
+        "interactions",
+        "applicability",
+        "historical_interactions",
+        "status_verification"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a7429aab805727d88fb6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-a75b948654e0e10607d8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a7704a1cdad521b4a4eb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-a771d2ac4dec0e8aaa22",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "not_yet_effective",
+      "status_after": "not_yet_effective",
+      "effective_date_before": "2027-07-01",
+      "effective_date_after": "2027-07-01"
+    },
+    {
+      "team_rule_id": "r-a7d79cec279857ed1173",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-07-01",
+      "effective_date_after": "2025-07-01"
+    },
+    {
+      "team_rule_id": "r-a80e487f0f9ebedf169b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-06-29",
+      "effective_date_after": "2026-06-29"
+    },
+    {
+      "team_rule_id": "r-aa9161eec30648c8dc9b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ab1f71380bcf341917fb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-abd7191bb8199aa15ac5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-03-28",
+      "effective_date_after": "2024-03-28"
+    },
+    {
+      "team_rule_id": "r-ac912ef15050ed14a1b5",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ad0c0bda5f549729c455",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-ad27d5b6c11b0e9ea666",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-ad4e4858c5fb3dafc01d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ad91984d4c38520bc1ea",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-adefcdc0043db16662c0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ae817a415d54110c9b65",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-10-14",
+      "effective_date_after": "2024-10-14"
+    },
+    {
+      "team_rule_id": "r-af02e6b6f436f6b72879",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-af2abd4994fed6eba51b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-af67de538c40a7aefa31",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-afb1c62be0fd01e5940f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-afe0743da80dcc3f9866",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-08-20",
+      "effective_date_after": "2025-08-20"
+    },
+    {
+      "team_rule_id": "r-b1493c6e63120bfeb16d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b14e8b2d2050cdd117e0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-b19ab452f69379f1bcd7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b20c3538f3df30b4f32d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b3414185d38d9d8b56d4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b3c72b9299816ae066ea",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b4e037c2113b14195562",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b5bc8d43a6d46cd439b8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b5c7aba9e65c137c547e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b65410ee8f075b5a1209",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b686f7527aaf38816210",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b7163382a895a3ce4e57",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b71f3cf5e5154d0d8f45",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b7a92b22dcde37e24412",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b8d80366d1e99d195305",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-b8e5af1a0f77993c9c3b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-b9e48d2b6883ef3e70d2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bacaadd03c9ac958fc9c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bacdd226ee13a3b6bfea",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bae306dfcd15c2181cf4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-baeb2343708297483aa8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bbc7bb7479f0ec18b79a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bbc8fc832a2f6986a804",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bbc9ffa580982ffbf005",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bda3c0773fbf766ffbde",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-becdeea2aeb31f7ded85",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-bff82770f3b92f7f6040",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c0568ba7e8c592734076",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-c364b910164100e10ac4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c3915bf2cb21e7bfd9c6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-c424a4b67285b425f818",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c456d410ac23049c139a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c47b9b9e87f46b5a6920",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c4a23d71452d0d58d132",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c50dd882bd5472b0c853",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c53104475ec3da114908",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c6571f1f45db724a7568",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c65d35c86d60f1e323a9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-c67b74ce3e451debe91b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-c856f6363cf81035ec9b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2021-11-19",
+      "effective_date_after": "2021-11-19"
+    },
+    {
+      "team_rule_id": "r-cb031e0a313207ed8a75",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-cce550a580dd877d4a97",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-ccef92bfebe196802e51",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-cd48d9fc6458d52b2bba",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ce8bf6e25c5381bfc539",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ceebe7921eb3113f3921",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-cf35e8c4f284f2c1901d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-cf527528799d3983d441",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-cf9eefb468d869a4291d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d023dd306ddcb3697f36",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-02-11",
+      "effective_date_after": "2025-02-11"
+    },
+    {
+      "team_rule_id": "r-d0bae975f18032423017",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-d17048b585bba277c95b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d1791ac321a75fe587a9",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d2290b251b5ce9039724",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d2e4fe3a4fab72fcc8bd",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d46ecd27a3368ed08410",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d59cc371488246d9c06f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-03-27",
+      "effective_date_after": "2023-03-27"
+    },
+    {
+      "team_rule_id": "r-d65858f4b12bb485c068",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d6fbbd508e9a1230b7a4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-d764e39f57d6c96e196d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d81a6a49cf27a4258817",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d8dcbbd84d6528dc276c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d91d5854030e5d8ad2f4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-d9365bd2dc8f1833dfdb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-d93d31990227ab3ef02f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-daf4c7c753ad0c0330ad",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-db0c0cf4d4926b3d837a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-db4af2b7eb6f20fe685c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-dbdded398071e8fa0231",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-dd62064d271dea9c776b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "failed",
+      "status_after": "failed",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-dd7b7566dafe1b7d5756",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-dddc68f515f23670613e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ddfc5ff19a932b331dfa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-de0394778866153ec5fc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-de071fe74246e83982fc",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-deeb5c4c478b198bfbd7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-defcdc70be10d84920f1",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2023-06-24",
+      "effective_date_after": "2023-06-24"
+    },
+    {
+      "team_rule_id": "r-df0b349c7b36773fa249",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2025-08-01",
+      "effective_date_after": "2025-08-01"
+    },
+    {
+      "team_rule_id": "r-df5d8c6845d1cd061d63",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-df71c976dead414416df",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e009fdce9d384d7512be",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e0cfa2608e7b856d4643",
+      "changed_fields": [
+        "status",
+        "title",
+        "requirement",
+        "coverage_conditions",
+        "citation",
+        "temporal_notes",
+        "limitations",
+        "applicability",
+        "status_verification"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e18019d66fdf94f35a6c",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e220b606ff085ac2697b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e30d6604bc4a6d17b113",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e333c6b8ae3559f86ee1",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e38e0b6de6ec5b00722a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e39845cefa898ad33917",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-e4031ab9a67773c14b2f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e55502be954da2c0f2cb",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e70a2b2db013d1b70aa6",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e71b3419f83af44e97e7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e7e90f2637c38d8d0c2d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e8689e2af5d282be75e4",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e9581a38cc3c24e4a6f8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e9b724b8622ba4e77e64",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-e9c394d1e5d3f595282e",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ea615b7b555172de7c88",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ebce1a06dc7df5191217",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ecff349ff08e8780c64b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-ed652dc72e81afddb376",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-ed97caf50b2db1fc5658",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-03-01",
+      "effective_date_after": "2026-03-01"
+    },
+    {
+      "team_rule_id": "r-ee3bd1c24dfbca8a874a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ef496668a728f4613eba",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ef8474d3ea4049f40d2d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-efac1f4525ae091a4cb7",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2022-01-01",
+      "effective_date_after": "2022-01-01"
+    },
+    {
+      "team_rule_id": "r-f0911017621cb9299b31",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f11fa4c956d2c782b4c8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f1d67b884788cd1609ed",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f21d51fcb9e931be79aa",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f2262ea533642213e622",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f406361dbd8fedce3112",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f41a1b710a068216f9f8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f4c83099cc6fbb0ef472",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f5621f34888e1e765e41",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f5681e101ad2f6e0cb69",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-04-01",
+      "effective_date_after": "2024-04-01"
+    },
+    {
+      "team_rule_id": "r-f59e846f247a147910fe",
+      "changed_fields": [
+        "status",
+        "title",
+        "key_value",
+        "coverage_conditions",
+        "citation",
+        "interaction",
+        "temporal_notes",
+        "penalty",
+        "limitations",
+        "interactions",
+        "applicability",
+        "historical_interactions",
+        "status_verification"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f68c5d64129b4f2dba70",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f737906db0088a0d5354",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f79568af1d8e55d81fa3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f7b4f4004c775226e4b3",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2024-12-20",
+      "effective_date_after": "2024-12-20"
+    },
+    {
+      "team_rule_id": "r-f7c12bb362b72e048a7a",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f7d34b1241aa0b5bde89",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f8957835c8480f4778c0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-f901f9e99e98890132d8",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-09-01",
+      "effective_date_after": "2026-09-01"
+    },
+    {
+      "team_rule_id": "r-fafc3285e9bbbd4189d2",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fb3321136c81ca774c80",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fccf9f4b2a02bd93c271",
+      "changed_fields": [
+        "status",
+        "title",
+        "requirement",
+        "coverage_conditions",
+        "exemptions",
+        "effective_date",
+        "citation",
+        "quoted_span",
+        "interaction",
+        "source_doc_id",
+        "source_url",
+        "retrieved_at",
+        "temporal_notes",
+        "limitations",
+        "source_doc_ids",
+        "evidence",
+        "applicability",
+        "historical_evidence",
+        "historical_extraction",
+        "status_verification",
+        "quoted_span_location"
+      ],
+      "status_before": "pending",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": "2025-06-21"
+    },
+    {
+      "team_rule_id": "r-fd096566a234e80306ae",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2020-11-06",
+      "effective_date_after": "2020-11-06"
+    },
+    {
+      "team_rule_id": "r-fd65261c2dc20b55aa0d",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fdcbf27688fd2027c57f",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fe5de0019ca608a70a8b",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fe73b5a4b58333097a67",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fe7d60889c0621479405",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-fee0e1eab9a51a431091",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    },
+    {
+      "team_rule_id": "r-ff43968a7ddaa6bf88ae",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": "2026-07-01",
+      "effective_date_after": "2026-07-01"
+    },
+    {
+      "team_rule_id": "r-ffe08d4e21bd5f2a88c0",
+      "changed_fields": [
+        "status_verification"
+      ],
+      "status_before": "in_force",
+      "status_after": "in_force",
+      "effective_date_before": null,
+      "effective_date_after": null
+    }
+  ],
+  "limitations": [
+    "Status review is source-backed model interpretation followed by deterministic assembly, not a new general status service.",
+    "External support for a legal framework does not establish full historical version coverage or resolve every substantive applicability question.",
+    "Corpus-only and unresolved records retain the original assertion without claiming external confirmation.",
+    "Source conflicts require legal-source review before a conclusive address applicability result.",
+    "Existing extraction and applicability audit reports describe earlier snapshots; this report identifies the revised export hash."
+  ]
+}

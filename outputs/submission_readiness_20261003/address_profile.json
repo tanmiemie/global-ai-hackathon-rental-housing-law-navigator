@@ -1,0 +1,3144 @@
+{
+  "assessment_date": "2026-10-01",
+  "input": {
+    "path": "participant-final-no-hour16_v5/data/sample_addresses.csv",
+    "sha256": "0a5ebe8cd9c422f5999831f668cc787da5a22f3ca78ba94cb941a801e68af95d",
+    "read_scope": "Complete CSV parsed; all 500 records and every column included. No geocoding, external lookup, rule matching or source mutations.",
+    "organizer_readme": "participant-final-no-hour16_v5/README.md",
+    "readme_evidence_lines": [
+      45,
+      57
+    ]
+  },
+  "row_count": 500,
+  "headers": [
+    "address_id",
+    "street_address",
+    "postal_city",
+    "state",
+    "zip",
+    "year_built",
+    "units",
+    "use_code",
+    "use_description",
+    "source_dataset",
+    "retrieved_at"
+  ],
+  "expected_header_match": true,
+  "column_profile": {
+    "address_id": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 500
+    },
+    "street_address": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 500
+    },
+    "postal_city": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 19
+    },
+    "state": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 3
+    },
+    "zip": {
+      "missing": 130,
+      "present": 370,
+      "distinct_raw_values_including_blank": 133
+    },
+    "year_built": {
+      "missing": 212,
+      "present": 288,
+      "distinct_raw_values_including_blank": 92
+    },
+    "units": {
+      "missing": 242,
+      "present": 258,
+      "distinct_raw_values_including_blank": 52
+    },
+    "use_code": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 23
+    },
+    "use_description": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 109
+    },
+    "source_dataset": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 7
+    },
+    "retrieved_at": {
+      "missing": 0,
+      "present": 500,
+      "distinct_raw_values_including_blank": 1
+    }
+  },
+  "overall": {
+    "rows": 500,
+    "missing": {
+      "address_id": 0,
+      "street_address": 0,
+      "postal_city": 0,
+      "state": 0,
+      "zip": 130,
+      "year_built": 212,
+      "units": 242,
+      "use_code": 0,
+      "use_description": 0,
+      "source_dataset": 0,
+      "retrieved_at": 0
+    },
+    "year_built": {
+      "present": 288,
+      "missing": 212,
+      "integer_min": 1837,
+      "integer_max": 2024,
+      "non_integer_address_ids": [],
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "units": {
+      "present": 258,
+      "missing": 242,
+      "integer_min": 2,
+      "integer_max": 468,
+      "non_integer_address_ids": [],
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "year_units_completeness": {
+      "both_present": 203,
+      "year_only": 85,
+      "units_only": 55,
+      "neither_present": 157,
+      "at_least_one_missing": 297
+    },
+    "use_code_counts": {
+      "0500": 71,
+      "0501": 5,
+      "050C": 1,
+      "050V": 2,
+      "0551": 1,
+      "111": 33,
+      "112": 17,
+      "14": 41,
+      "15": 7,
+      "16": 2,
+      "4C": 140,
+      "7200": 5,
+      "7700": 34,
+      "7800": 1,
+      "A/112": 28,
+      "A/118": 1,
+      "A/120": 5,
+      "A/125": 26,
+      "A15": 17,
+      "A5": 55,
+      "F5": 1,
+      "FS5": 6,
+      "TIC": 1
+    },
+    "use_description_counts": {
+      "10S-B-A-151U-HE": 1,
+      "13B-93U-2C-G": 1,
+      "1SCB": 1,
+      "2,4B-16U-H-X": 1,
+      "2,5B-90U-H-BA": 1,
+      "2-4S-B-A-26U-H": 1,
+      "2.5S.F.": 1,
+      "2.5SF": 1,
+      "2.5SF4UG": 1,
+      "2F-4U/2F-2U": 1,
+      "2S-B-A-6U": 1,
+      "2SF2UG": 1,
+      "2SF3UG": 1,
+      "3&4S-B&F-14U": 1,
+      "3B-7U/4B-24U-G": 1,
+      "3S+BT-F-6U": 2,
+      "3S-6U-AFFORDABL": 1,
+      "3S-B-12U": 1,
+      "3S-B-A-13U-H": 2,
+      "3S-B-A-14U-H": 1,
+      "3S-B-A-22U": 1,
+      "3S-B-D-6U-H": 2,
+      "3S-B-D-6U-NH": 2,
+      "3S-B-D-7U-NH": 1,
+      "3S-F-5U-NH": 1,
+      "3S-F-7U": 1,
+      "3S-F-A-12U-H": 1,
+      "3S-F-D-5U-NH": 1,
+      "3S-F-D-6U": 3,
+      "3S-F-D-6U-H": 2,
+      "3S-F-D-6U-NH": 5,
+      "3S-F-D-7U-NH": 1,
+      "3S-F-D-8U-H": 1,
+      "3S-FD-12U-H": 1,
+      "3S.B.": 2,
+      "3S.F.": 3,
+      "3SB": 12,
+      "3SB-2UG": 1,
+      "3SB1UG": 1,
+      "3SB2UG": 1,
+      "3SB3UG": 1,
+      "3SF": 8,
+      "3SF3UG": 1,
+      "3SF4UG": 1,
+      "3SF5UG": 1,
+      "4 1/2B-10U-BA": 1,
+      "4-8-UNIT-APT": 33,
+      "4-S-BT-21U-H": 1,
+      "4B-5U-H-BA": 3,
+      "4B-7U-H": 1,
+      "4B-7U-H-BA": 1,
+      "4B-8U": 1,
+      "4B-8U-BA": 1,
+      "4B-8U-H": 1,
+      "4B-9U": 1,
+      "4B-9U-H-BA": 1,
+      "4F-6U": 1,
+      "4F-7U": 1,
+      "4F-8U": 1,
+      "4F-8U-C/3F-2U": 1,
+      "4S-B-44U": 1,
+      "4S-B-8U-H": 1,
+      "4S-B-A-16U-H": 1,
+      "4S-B-A-17U": 1,
+      "4S-B-A-17U-H": 1,
+      "4S-B-A-21U": 1,
+      "4S-B-A-21U-H": 1,
+      "4S-B-A-25U-H": 1,
+      "4S-B-A-46U-H": 1,
+      "4S-B-D-7U-NH-G": 1,
+      "4S-B-D-8U-NH": 3,
+      "4S-BA-21U-H": 1,
+      "4S.B": 1,
+      "4SB": 7,
+      "5B-10U-BA": 1,
+      "5B-10U-H-BA": 3,
+      "5B-11U-H-BA-G": 1,
+      "5B-12U-1BX-H-BA": 1,
+      "5B-12U-BA": 1,
+      "5B-14U": 1,
+      "5B-14U-H-BA": 2,
+      "5B-1OU": 1,
+      "5B-20U-H": 1,
+      "5B-26U-H-CO-OP": 1,
+      "5B-35U-G": 1,
+      "5B-5U-H-(CO-OP)": 1,
+      "5B-64U/5B-64U-G": 1,
+      "5B-6B-25U-H-BA": 1,
+      "5S-BT-B-C-21U-H": 1,
+      "5SB": 1,
+      "6B-20U-G": 1,
+      "6B-30U-G": 1,
+      "6S-B+F-45U-17G": 1,
+      ">8-UNIT-APT": 16,
+      "APT 7-30 UNITS": 28,
+      "Alameda County use code (5+ units)": 40,
+      "Apartment 15 Units or more": 17,
+      "Apartment 5 to 14 Units": 55,
+      "Apartments (class 4C)": 2,
+      "ELDERLY HOME": 1,
+      "Five or more apartments": 80,
+      "Flat & Store 5 to 14 units": 6,
+      "Flats 5 to 14 units": 1,
+      "LUXURY APARTMENT": 5,
+      "MXD >8-UNIT-APT": 1,
+      "SANDAG asr_landuse 14-16 (5+ units)": 50,
+      "SUBSD HOUSING S- 8": 26,
+      "TIC Bldg 4 units or less": 1,
+      "USCB16UG": 1
+    }
+  },
+  "both_year_and_units_present_percent": 40.6,
+  "at_least_one_year_or_units_missing_percent": 59.4,
+  "state_counts": {
+    "CA": 250,
+    "MA": 110,
+    "NJ": 140
+  },
+  "postal_city_counts": {
+    "Allston": 3,
+    "Berkeley": 40,
+    "Boston": 23,
+    "Brighton": 4,
+    "Cambridge": 50,
+    "Dorchester": 13,
+    "East Boston": 6,
+    "Hoboken": 40,
+    "Hyde Park": 1,
+    "Jamaica Plain": 1,
+    "Jersey City": 50,
+    "Los Angeles": 80,
+    "Mattapan": 1,
+    "Newark": 50,
+    "Roxbury": 7,
+    "San Diego": 49,
+    "San Francisco": 80,
+    "San Ysidro": 1,
+    "South Boston": 1
+  },
+  "by_state": {
+    "CA": {
+      "rows": 250,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 80,
+        "year_built": 98,
+        "units": 43,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 152,
+        "missing": 98,
+        "integer_min": 1885,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 207,
+        "missing": 43,
+        "integer_min": 5,
+        "integer_max": 152,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 152,
+        "year_only": 0,
+        "units_only": 55,
+        "neither_present": 43,
+        "at_least_one_missing": 98
+      },
+      "use_code_counts": {
+        "0500": 71,
+        "0501": 5,
+        "050C": 1,
+        "050V": 2,
+        "0551": 1,
+        "14": 41,
+        "15": 7,
+        "16": 2,
+        "7200": 5,
+        "7700": 34,
+        "7800": 1,
+        "A15": 17,
+        "A5": 55,
+        "F5": 1,
+        "FS5": 6,
+        "TIC": 1
+      },
+      "use_description_counts": {
+        "Alameda County use code (5+ units)": 40,
+        "Apartment 15 Units or more": 17,
+        "Apartment 5 to 14 Units": 55,
+        "Five or more apartments": 80,
+        "Flat & Store 5 to 14 units": 6,
+        "Flats 5 to 14 units": 1,
+        "SANDAG asr_landuse 14-16 (5+ units)": 50,
+        "TIC Bldg 4 units or less": 1
+      }
+    },
+    "MA": {
+      "rows": 110,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 50,
+        "year_built": 8,
+        "units": 60,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 102,
+        "missing": 8,
+        "integer_min": 1837,
+        "integer_max": 2024,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 60,
+        "integer_min": 5,
+        "integer_max": 468,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 50,
+        "year_only": 52,
+        "units_only": 0,
+        "neither_present": 8,
+        "at_least_one_missing": 60
+      },
+      "use_code_counts": {
+        "111": 33,
+        "112": 17,
+        "A/112": 28,
+        "A/118": 1,
+        "A/120": 5,
+        "A/125": 26
+      },
+      "use_description_counts": {
+        "4-8-UNIT-APT": 33,
+        ">8-UNIT-APT": 16,
+        "APT 7-30 UNITS": 28,
+        "ELDERLY HOME": 1,
+        "LUXURY APARTMENT": 5,
+        "MXD >8-UNIT-APT": 1,
+        "SUBSD HOUSING S- 8": 26
+      }
+    },
+    "NJ": {
+      "rows": 140,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 106,
+        "units": 139,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 34,
+        "missing": 106,
+        "integer_min": 1870,
+        "integer_max": 2010,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 1,
+        "missing": 139,
+        "integer_min": 2,
+        "integer_max": 2,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 1,
+        "year_only": 33,
+        "units_only": 0,
+        "neither_present": 106,
+        "at_least_one_missing": 139
+      },
+      "use_code_counts": {
+        "4C": 140
+      },
+      "use_description_counts": {
+        "10S-B-A-151U-HE": 1,
+        "13B-93U-2C-G": 1,
+        "1SCB": 1,
+        "2,4B-16U-H-X": 1,
+        "2,5B-90U-H-BA": 1,
+        "2-4S-B-A-26U-H": 1,
+        "2.5S.F.": 1,
+        "2.5SF": 1,
+        "2.5SF4UG": 1,
+        "2F-4U/2F-2U": 1,
+        "2S-B-A-6U": 1,
+        "2SF2UG": 1,
+        "2SF3UG": 1,
+        "3&4S-B&F-14U": 1,
+        "3B-7U/4B-24U-G": 1,
+        "3S+BT-F-6U": 2,
+        "3S-6U-AFFORDABL": 1,
+        "3S-B-12U": 1,
+        "3S-B-A-13U-H": 2,
+        "3S-B-A-14U-H": 1,
+        "3S-B-A-22U": 1,
+        "3S-B-D-6U-H": 2,
+        "3S-B-D-6U-NH": 2,
+        "3S-B-D-7U-NH": 1,
+        "3S-F-5U-NH": 1,
+        "3S-F-7U": 1,
+        "3S-F-A-12U-H": 1,
+        "3S-F-D-5U-NH": 1,
+        "3S-F-D-6U": 3,
+        "3S-F-D-6U-H": 2,
+        "3S-F-D-6U-NH": 5,
+        "3S-F-D-7U-NH": 1,
+        "3S-F-D-8U-H": 1,
+        "3S-FD-12U-H": 1,
+        "3S.B.": 2,
+        "3S.F.": 3,
+        "3SB": 12,
+        "3SB-2UG": 1,
+        "3SB1UG": 1,
+        "3SB2UG": 1,
+        "3SB3UG": 1,
+        "3SF": 8,
+        "3SF3UG": 1,
+        "3SF4UG": 1,
+        "3SF5UG": 1,
+        "4 1/2B-10U-BA": 1,
+        "4-S-BT-21U-H": 1,
+        "4B-5U-H-BA": 3,
+        "4B-7U-H": 1,
+        "4B-7U-H-BA": 1,
+        "4B-8U": 1,
+        "4B-8U-BA": 1,
+        "4B-8U-H": 1,
+        "4B-9U": 1,
+        "4B-9U-H-BA": 1,
+        "4F-6U": 1,
+        "4F-7U": 1,
+        "4F-8U": 1,
+        "4F-8U-C/3F-2U": 1,
+        "4S-B-44U": 1,
+        "4S-B-8U-H": 1,
+        "4S-B-A-16U-H": 1,
+        "4S-B-A-17U": 1,
+        "4S-B-A-17U-H": 1,
+        "4S-B-A-21U": 1,
+        "4S-B-A-21U-H": 1,
+        "4S-B-A-25U-H": 1,
+        "4S-B-A-46U-H": 1,
+        "4S-B-D-7U-NH-G": 1,
+        "4S-B-D-8U-NH": 3,
+        "4S-BA-21U-H": 1,
+        "4S.B": 1,
+        "4SB": 7,
+        "5B-10U-BA": 1,
+        "5B-10U-H-BA": 3,
+        "5B-11U-H-BA-G": 1,
+        "5B-12U-1BX-H-BA": 1,
+        "5B-12U-BA": 1,
+        "5B-14U": 1,
+        "5B-14U-H-BA": 2,
+        "5B-1OU": 1,
+        "5B-20U-H": 1,
+        "5B-26U-H-CO-OP": 1,
+        "5B-35U-G": 1,
+        "5B-5U-H-(CO-OP)": 1,
+        "5B-64U/5B-64U-G": 1,
+        "5B-6B-25U-H-BA": 1,
+        "5S-BT-B-C-21U-H": 1,
+        "5SB": 1,
+        "6B-20U-G": 1,
+        "6B-30U-G": 1,
+        "6S-B+F-45U-17G": 1,
+        "Apartments (class 4C)": 2,
+        "USCB16UG": 1
+      }
+    }
+  },
+  "by_postal_city": {
+    "Allston": {
+      "rows": 3,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 3,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 3,
+        "missing": 0,
+        "integer_min": 1900,
+        "integer_max": 1965,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 3,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 3,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 3
+      },
+      "use_code_counts": {
+        "A/112": 3
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 3
+      }
+    },
+    "Berkeley": {
+      "rows": 40,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 40,
+        "units": 40,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 40,
+        "at_least_one_missing": 40
+      },
+      "use_code_counts": {
+        "7200": 5,
+        "7700": 34,
+        "7800": 1
+      },
+      "use_description_counts": {
+        "Alameda County use code (5+ units)": 40
+      }
+    },
+    "Boston": {
+      "rows": 23,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 23,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 23,
+        "missing": 0,
+        "integer_min": 1899,
+        "integer_max": 2022,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 23,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 23,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 23
+      },
+      "use_code_counts": {
+        "A/112": 15,
+        "A/120": 1,
+        "A/125": 7
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 15,
+        "LUXURY APARTMENT": 1,
+        "SUBSD HOUSING S- 8": 7
+      }
+    },
+    "Brighton": {
+      "rows": 4,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 4,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 4,
+        "missing": 0,
+        "integer_min": 1899,
+        "integer_max": 1965,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 4,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 4,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 4
+      },
+      "use_code_counts": {
+        "A/112": 4
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 4
+      }
+    },
+    "Cambridge": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 50,
+        "year_built": 0,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 1837,
+        "integer_max": 2020,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 468,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 50,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 0
+      },
+      "use_code_counts": {
+        "111": 33,
+        "112": 17
+      },
+      "use_description_counts": {
+        "4-8-UNIT-APT": 33,
+        ">8-UNIT-APT": 16,
+        "MXD >8-UNIT-APT": 1
+      }
+    },
+    "Dorchester": {
+      "rows": 13,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 6,
+        "units": 13,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 7,
+        "missing": 6,
+        "integer_min": 1899,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 13,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 7,
+        "units_only": 0,
+        "neither_present": 6,
+        "at_least_one_missing": 13
+      },
+      "use_code_counts": {
+        "A/120": 2,
+        "A/125": 11
+      },
+      "use_description_counts": {
+        "LUXURY APARTMENT": 2,
+        "SUBSD HOUSING S- 8": 11
+      }
+    },
+    "East Boston": {
+      "rows": 6,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 6,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 6,
+        "missing": 0,
+        "integer_min": 1899,
+        "integer_max": 2024,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 6,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 6,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 6
+      },
+      "use_code_counts": {
+        "A/112": 2,
+        "A/120": 2,
+        "A/125": 2
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 2,
+        "LUXURY APARTMENT": 2,
+        "SUBSD HOUSING S- 8": 2
+      }
+    },
+    "Hoboken": {
+      "rows": 40,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 36,
+        "units": 39,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 4,
+        "missing": 36,
+        "integer_min": 2000,
+        "integer_max": 2010,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 1,
+        "missing": 39,
+        "integer_min": 2,
+        "integer_max": 2,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 1,
+        "year_only": 3,
+        "units_only": 0,
+        "neither_present": 36,
+        "at_least_one_missing": 39
+      },
+      "use_code_counts": {
+        "4C": 40
+      },
+      "use_description_counts": {
+        "13B-93U-2C-G": 1,
+        "2,4B-16U-H-X": 1,
+        "2,5B-90U-H-BA": 1,
+        "2F-4U/2F-2U": 1,
+        "3B-7U/4B-24U-G": 1,
+        "3S-6U-AFFORDABL": 1,
+        "4 1/2B-10U-BA": 1,
+        "4B-5U-H-BA": 3,
+        "4B-7U-H": 1,
+        "4B-7U-H-BA": 1,
+        "4B-8U": 1,
+        "4B-8U-BA": 1,
+        "4B-8U-H": 1,
+        "4B-9U": 1,
+        "4B-9U-H-BA": 1,
+        "4F-6U": 1,
+        "4F-7U": 1,
+        "4F-8U": 1,
+        "4F-8U-C/3F-2U": 1,
+        "5B-10U-BA": 1,
+        "5B-10U-H-BA": 3,
+        "5B-11U-H-BA-G": 1,
+        "5B-12U-1BX-H-BA": 1,
+        "5B-12U-BA": 1,
+        "5B-14U": 1,
+        "5B-14U-H-BA": 2,
+        "5B-1OU": 1,
+        "5B-20U-H": 1,
+        "5B-26U-H-CO-OP": 1,
+        "5B-35U-G": 1,
+        "5B-5U-H-(CO-OP)": 1,
+        "5B-64U/5B-64U-G": 1,
+        "5B-6B-25U-H-BA": 1,
+        "6B-20U-G": 1,
+        "6B-30U-G": 1
+      }
+    },
+    "Hyde Park": {
+      "rows": 1,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 1,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 1,
+        "missing": 0,
+        "integer_min": 1960,
+        "integer_max": 1960,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 1,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 1,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 1
+      },
+      "use_code_counts": {
+        "A/112": 1
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 1
+      }
+    },
+    "Jamaica Plain": {
+      "rows": 1,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 1,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 1,
+        "missing": 0,
+        "integer_min": 2004,
+        "integer_max": 2004,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 1,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 1,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 1
+      },
+      "use_code_counts": {
+        "A/118": 1
+      },
+      "use_description_counts": {
+        "ELDERLY HOME": 1
+      }
+    },
+    "Jersey City": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 22,
+        "units": 50,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 28,
+        "missing": 22,
+        "integer_min": 1870,
+        "integer_max": 1930,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 28,
+        "units_only": 0,
+        "neither_present": 22,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "4C": 50
+      },
+      "use_description_counts": {
+        "10S-B-A-151U-HE": 1,
+        "2-4S-B-A-26U-H": 1,
+        "2S-B-A-6U": 1,
+        "3&4S-B&F-14U": 1,
+        "3S+BT-F-6U": 2,
+        "3S-B-12U": 1,
+        "3S-B-A-13U-H": 2,
+        "3S-B-A-14U-H": 1,
+        "3S-B-A-22U": 1,
+        "3S-B-D-6U-H": 2,
+        "3S-B-D-6U-NH": 2,
+        "3S-B-D-7U-NH": 1,
+        "3S-F-5U-NH": 1,
+        "3S-F-7U": 1,
+        "3S-F-A-12U-H": 1,
+        "3S-F-D-5U-NH": 1,
+        "3S-F-D-6U": 3,
+        "3S-F-D-6U-H": 2,
+        "3S-F-D-6U-NH": 5,
+        "3S-F-D-7U-NH": 1,
+        "3S-F-D-8U-H": 1,
+        "3S-FD-12U-H": 1,
+        "4-S-BT-21U-H": 1,
+        "4S-B-44U": 1,
+        "4S-B-8U-H": 1,
+        "4S-B-A-16U-H": 1,
+        "4S-B-A-17U": 1,
+        "4S-B-A-17U-H": 1,
+        "4S-B-A-21U": 1,
+        "4S-B-A-21U-H": 1,
+        "4S-B-A-25U-H": 1,
+        "4S-B-A-46U-H": 1,
+        "4S-B-D-7U-NH-G": 1,
+        "4S-B-D-8U-NH": 3,
+        "4S-BA-21U-H": 1,
+        "5S-BT-B-C-21U-H": 1,
+        "6S-B+F-45U-17G": 1
+      }
+    },
+    "Los Angeles": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 6,
+        "units": 3,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 74,
+        "missing": 6,
+        "integer_min": 1901,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 77,
+        "missing": 3,
+        "integer_min": 5,
+        "integer_max": 131,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 74,
+        "year_only": 0,
+        "units_only": 3,
+        "neither_present": 3,
+        "at_least_one_missing": 6
+      },
+      "use_code_counts": {
+        "0500": 71,
+        "0501": 5,
+        "050C": 1,
+        "050V": 2,
+        "0551": 1
+      },
+      "use_description_counts": {
+        "Five or more apartments": 80
+      }
+    },
+    "Mattapan": {
+      "rows": 1,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 1,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 1,
+        "missing": 0,
+        "integer_min": 1965,
+        "integer_max": 1965,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 1,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 1,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 1
+      },
+      "use_code_counts": {
+        "A/125": 1
+      },
+      "use_description_counts": {
+        "SUBSD HOUSING S- 8": 1
+      }
+    },
+    "Newark": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 48,
+        "units": 50,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 2,
+        "missing": 48,
+        "integer_min": 1900,
+        "integer_max": 1910,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 2,
+        "units_only": 0,
+        "neither_present": 48,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "4C": 50
+      },
+      "use_description_counts": {
+        "1SCB": 1,
+        "2.5S.F.": 1,
+        "2.5SF": 1,
+        "2.5SF4UG": 1,
+        "2SF2UG": 1,
+        "2SF3UG": 1,
+        "3S.B.": 2,
+        "3S.F.": 3,
+        "3SB": 12,
+        "3SB-2UG": 1,
+        "3SB1UG": 1,
+        "3SB2UG": 1,
+        "3SB3UG": 1,
+        "3SF": 8,
+        "3SF3UG": 1,
+        "3SF4UG": 1,
+        "3SF5UG": 1,
+        "4S.B": 1,
+        "4SB": 7,
+        "5SB": 1,
+        "Apartments (class 4C)": 2,
+        "USCB16UG": 1
+      }
+    },
+    "Roxbury": {
+      "rows": 7,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 2,
+        "units": 7,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 5,
+        "missing": 2,
+        "integer_min": 1890,
+        "integer_max": 2020,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 7,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 5,
+        "units_only": 0,
+        "neither_present": 2,
+        "at_least_one_missing": 7
+      },
+      "use_code_counts": {
+        "A/112": 2,
+        "A/125": 5
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 2,
+        "SUBSD HOUSING S- 8": 5
+      }
+    },
+    "San Diego": {
+      "rows": 49,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 49,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 49,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 49,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 152,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 49,
+        "neither_present": 0,
+        "at_least_one_missing": 49
+      },
+      "use_code_counts": {
+        "14": 41,
+        "15": 6,
+        "16": 2
+      },
+      "use_description_counts": {
+        "SANDAG asr_landuse 14-16 (5+ units)": 49
+      }
+    },
+    "San Francisco": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 80,
+        "year_built": 2,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 78,
+        "missing": 2,
+        "integer_min": 1885,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 80,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 72,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 78,
+        "year_only": 0,
+        "units_only": 2,
+        "neither_present": 0,
+        "at_least_one_missing": 2
+      },
+      "use_code_counts": {
+        "A15": 17,
+        "A5": 55,
+        "F5": 1,
+        "FS5": 6,
+        "TIC": 1
+      },
+      "use_description_counts": {
+        "Apartment 15 Units or more": 17,
+        "Apartment 5 to 14 Units": 55,
+        "Flat & Store 5 to 14 units": 6,
+        "Flats 5 to 14 units": 1,
+        "TIC Bldg 4 units or less": 1
+      }
+    },
+    "San Ysidro": {
+      "rows": 1,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 1,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 1,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 1,
+        "missing": 0,
+        "integer_min": 31,
+        "integer_max": 31,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 1,
+        "neither_present": 0,
+        "at_least_one_missing": 1
+      },
+      "use_code_counts": {
+        "15": 1
+      },
+      "use_description_counts": {
+        "SANDAG asr_landuse 14-16 (5+ units)": 1
+      }
+    },
+    "South Boston": {
+      "rows": 1,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 0,
+        "units": 1,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 1,
+        "missing": 0,
+        "integer_min": 2019,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 1,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 1,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 1
+      },
+      "use_code_counts": {
+        "A/112": 1
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 1
+      }
+    }
+  },
+  "by_source_dataset": {
+    "Alameda County parcels": {
+      "rows": 40,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 40,
+        "units": 40,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 40,
+        "at_least_one_missing": 40
+      },
+      "use_code_counts": {
+        "7200": 5,
+        "7700": 34,
+        "7800": 1
+      },
+      "use_description_counts": {
+        "Alameda County use code (5+ units)": 40
+      }
+    },
+    "Boston Property Assessment FY2026": {
+      "rows": 60,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 8,
+        "units": 60,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 52,
+        "missing": 8,
+        "integer_min": 1890,
+        "integer_max": 2024,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 60,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 52,
+        "units_only": 0,
+        "neither_present": 8,
+        "at_least_one_missing": 60
+      },
+      "use_code_counts": {
+        "A/112": 28,
+        "A/118": 1,
+        "A/120": 5,
+        "A/125": 26
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 28,
+        "ELDERLY HOME": 1,
+        "LUXURY APARTMENT": 5,
+        "SUBSD HOUSING S- 8": 26
+      }
+    },
+    "Cambridge Property Database FY2026 (waa7-ibdu)": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 50,
+        "year_built": 0,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 1837,
+        "integer_max": 2020,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 468,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 50,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 0
+      },
+      "use_code_counts": {
+        "111": 33,
+        "112": 17
+      },
+      "use_description_counts": {
+        "4-8-UNIT-APT": 33,
+        ">8-UNIT-APT": 16,
+        "MXD >8-UNIT-APT": 1
+      }
+    },
+    "DataSF wv5m-vpq2 (2025 roll)": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 80,
+        "year_built": 2,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 78,
+        "missing": 2,
+        "integer_min": 1885,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 80,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 72,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 78,
+        "year_only": 0,
+        "units_only": 2,
+        "neither_present": 0,
+        "at_least_one_missing": 2
+      },
+      "use_code_counts": {
+        "A15": 17,
+        "A5": 55,
+        "F5": 1,
+        "FS5": 6,
+        "TIC": 1
+      },
+      "use_description_counts": {
+        "Apartment 15 Units or more": 17,
+        "Apartment 5 to 14 Units": 55,
+        "Flat & Store 5 to 14 units": 6,
+        "Flats 5 to 14 units": 1,
+        "TIC Bldg 4 units or less": 1
+      }
+    },
+    "LA County eGIS parcels": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 6,
+        "units": 3,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 74,
+        "missing": 6,
+        "integer_min": 1901,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 77,
+        "missing": 3,
+        "integer_min": 5,
+        "integer_max": 131,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 74,
+        "year_only": 0,
+        "units_only": 3,
+        "neither_present": 3,
+        "at_least_one_missing": 6
+      },
+      "use_code_counts": {
+        "0500": 71,
+        "0501": 5,
+        "050C": 1,
+        "050V": 2,
+        "0551": 1
+      },
+      "use_description_counts": {
+        "Five or more apartments": 80
+      }
+    },
+    "NJOGIS Parcels & MOD-IV Composite": {
+      "rows": 140,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 106,
+        "units": 139,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 34,
+        "missing": 106,
+        "integer_min": 1870,
+        "integer_max": 2010,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 1,
+        "missing": 139,
+        "integer_min": 2,
+        "integer_max": 2,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 1,
+        "year_only": 33,
+        "units_only": 0,
+        "neither_present": 106,
+        "at_least_one_missing": 139
+      },
+      "use_code_counts": {
+        "4C": 140
+      },
+      "use_description_counts": {
+        "10S-B-A-151U-HE": 1,
+        "13B-93U-2C-G": 1,
+        "1SCB": 1,
+        "2,4B-16U-H-X": 1,
+        "2,5B-90U-H-BA": 1,
+        "2-4S-B-A-26U-H": 1,
+        "2.5S.F.": 1,
+        "2.5SF": 1,
+        "2.5SF4UG": 1,
+        "2F-4U/2F-2U": 1,
+        "2S-B-A-6U": 1,
+        "2SF2UG": 1,
+        "2SF3UG": 1,
+        "3&4S-B&F-14U": 1,
+        "3B-7U/4B-24U-G": 1,
+        "3S+BT-F-6U": 2,
+        "3S-6U-AFFORDABL": 1,
+        "3S-B-12U": 1,
+        "3S-B-A-13U-H": 2,
+        "3S-B-A-14U-H": 1,
+        "3S-B-A-22U": 1,
+        "3S-B-D-6U-H": 2,
+        "3S-B-D-6U-NH": 2,
+        "3S-B-D-7U-NH": 1,
+        "3S-F-5U-NH": 1,
+        "3S-F-7U": 1,
+        "3S-F-A-12U-H": 1,
+        "3S-F-D-5U-NH": 1,
+        "3S-F-D-6U": 3,
+        "3S-F-D-6U-H": 2,
+        "3S-F-D-6U-NH": 5,
+        "3S-F-D-7U-NH": 1,
+        "3S-F-D-8U-H": 1,
+        "3S-FD-12U-H": 1,
+        "3S.B.": 2,
+        "3S.F.": 3,
+        "3SB": 12,
+        "3SB-2UG": 1,
+        "3SB1UG": 1,
+        "3SB2UG": 1,
+        "3SB3UG": 1,
+        "3SF": 8,
+        "3SF3UG": 1,
+        "3SF4UG": 1,
+        "3SF5UG": 1,
+        "4 1/2B-10U-BA": 1,
+        "4-S-BT-21U-H": 1,
+        "4B-5U-H-BA": 3,
+        "4B-7U-H": 1,
+        "4B-7U-H-BA": 1,
+        "4B-8U": 1,
+        "4B-8U-BA": 1,
+        "4B-8U-H": 1,
+        "4B-9U": 1,
+        "4B-9U-H-BA": 1,
+        "4F-6U": 1,
+        "4F-7U": 1,
+        "4F-8U": 1,
+        "4F-8U-C/3F-2U": 1,
+        "4S-B-44U": 1,
+        "4S-B-8U-H": 1,
+        "4S-B-A-16U-H": 1,
+        "4S-B-A-17U": 1,
+        "4S-B-A-17U-H": 1,
+        "4S-B-A-21U": 1,
+        "4S-B-A-21U-H": 1,
+        "4S-B-A-25U-H": 1,
+        "4S-B-A-46U-H": 1,
+        "4S-B-D-7U-NH-G": 1,
+        "4S-B-D-8U-NH": 3,
+        "4S-BA-21U-H": 1,
+        "4S.B": 1,
+        "4SB": 7,
+        "5B-10U-BA": 1,
+        "5B-10U-H-BA": 3,
+        "5B-11U-H-BA-G": 1,
+        "5B-12U-1BX-H-BA": 1,
+        "5B-12U-BA": 1,
+        "5B-14U": 1,
+        "5B-14U-H-BA": 2,
+        "5B-1OU": 1,
+        "5B-20U-H": 1,
+        "5B-26U-H-CO-OP": 1,
+        "5B-35U-G": 1,
+        "5B-5U-H-(CO-OP)": 1,
+        "5B-64U/5B-64U-G": 1,
+        "5B-6B-25U-H-BA": 1,
+        "5S-BT-B-C-21U-H": 1,
+        "5SB": 1,
+        "6B-20U-G": 1,
+        "6B-30U-G": 1,
+        "6S-B+F-45U-17G": 1,
+        "Apartments (class 4C)": 2,
+        "USCB16UG": 1
+      }
+    },
+    "SANDAG/SanGIS parcels": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 50,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 152,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 50,
+        "neither_present": 0,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "14": 41,
+        "15": 7,
+        "16": 2
+      },
+      "use_description_counts": {
+        "SANDAG asr_landuse 14-16 (5+ units)": 50
+      }
+    }
+  },
+  "organizer_sample_groups_not_verified_jurisdictions": {
+    "Los Angeles sample": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 6,
+        "units": 3,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 74,
+        "missing": 6,
+        "integer_min": 1901,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 77,
+        "missing": 3,
+        "integer_min": 5,
+        "integer_max": 131,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 74,
+        "year_only": 0,
+        "units_only": 3,
+        "neither_present": 3,
+        "at_least_one_missing": 6
+      },
+      "use_code_counts": {
+        "0500": 71,
+        "0501": 5,
+        "050C": 1,
+        "050V": 2,
+        "0551": 1
+      },
+      "use_description_counts": {
+        "Five or more apartments": 80
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Los Angeles": 80
+      }
+    },
+    "San Francisco sample": {
+      "rows": 80,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 80,
+        "year_built": 2,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 78,
+        "missing": 2,
+        "integer_min": 1885,
+        "integer_max": 2019,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 80,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 72,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 78,
+        "year_only": 0,
+        "units_only": 2,
+        "neither_present": 0,
+        "at_least_one_missing": 2
+      },
+      "use_code_counts": {
+        "A15": 17,
+        "A5": 55,
+        "F5": 1,
+        "FS5": 6,
+        "TIC": 1
+      },
+      "use_description_counts": {
+        "Apartment 15 Units or more": 17,
+        "Apartment 5 to 14 Units": 55,
+        "Flat & Store 5 to 14 units": 6,
+        "Flats 5 to 14 units": 1,
+        "TIC Bldg 4 units or less": 1
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "San Francisco": 80
+      }
+    },
+    "San Diego sample": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 50,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 152,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 50,
+        "neither_present": 0,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "14": 41,
+        "15": 7,
+        "16": 2
+      },
+      "use_description_counts": {
+        "SANDAG asr_landuse 14-16 (5+ units)": 50
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "San Diego": 49,
+        "San Ysidro": 1
+      }
+    },
+    "Berkeley sample": {
+      "rows": 40,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 40,
+        "units": 40,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 40,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 40,
+        "at_least_one_missing": 40
+      },
+      "use_code_counts": {
+        "7200": 5,
+        "7700": 34,
+        "7800": 1
+      },
+      "use_description_counts": {
+        "Alameda County use code (5+ units)": 40
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Berkeley": 40
+      }
+    },
+    "Jersey City sample": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 22,
+        "units": 50,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 28,
+        "missing": 22,
+        "integer_min": 1870,
+        "integer_max": 1930,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 28,
+        "units_only": 0,
+        "neither_present": 22,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "4C": 50
+      },
+      "use_description_counts": {
+        "10S-B-A-151U-HE": 1,
+        "2-4S-B-A-26U-H": 1,
+        "2S-B-A-6U": 1,
+        "3&4S-B&F-14U": 1,
+        "3S+BT-F-6U": 2,
+        "3S-B-12U": 1,
+        "3S-B-A-13U-H": 2,
+        "3S-B-A-14U-H": 1,
+        "3S-B-A-22U": 1,
+        "3S-B-D-6U-H": 2,
+        "3S-B-D-6U-NH": 2,
+        "3S-B-D-7U-NH": 1,
+        "3S-F-5U-NH": 1,
+        "3S-F-7U": 1,
+        "3S-F-A-12U-H": 1,
+        "3S-F-D-5U-NH": 1,
+        "3S-F-D-6U": 3,
+        "3S-F-D-6U-H": 2,
+        "3S-F-D-6U-NH": 5,
+        "3S-F-D-7U-NH": 1,
+        "3S-F-D-8U-H": 1,
+        "3S-FD-12U-H": 1,
+        "4-S-BT-21U-H": 1,
+        "4S-B-44U": 1,
+        "4S-B-8U-H": 1,
+        "4S-B-A-16U-H": 1,
+        "4S-B-A-17U": 1,
+        "4S-B-A-17U-H": 1,
+        "4S-B-A-21U": 1,
+        "4S-B-A-21U-H": 1,
+        "4S-B-A-25U-H": 1,
+        "4S-B-A-46U-H": 1,
+        "4S-B-D-7U-NH-G": 1,
+        "4S-B-D-8U-NH": 3,
+        "4S-BA-21U-H": 1,
+        "5S-BT-B-C-21U-H": 1,
+        "6S-B+F-45U-17G": 1
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Jersey City": 50
+      }
+    },
+    "Hoboken sample": {
+      "rows": 40,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 36,
+        "units": 39,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 4,
+        "missing": 36,
+        "integer_min": 2000,
+        "integer_max": 2010,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 1,
+        "missing": 39,
+        "integer_min": 2,
+        "integer_max": 2,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 1,
+        "year_only": 3,
+        "units_only": 0,
+        "neither_present": 36,
+        "at_least_one_missing": 39
+      },
+      "use_code_counts": {
+        "4C": 40
+      },
+      "use_description_counts": {
+        "13B-93U-2C-G": 1,
+        "2,4B-16U-H-X": 1,
+        "2,5B-90U-H-BA": 1,
+        "2F-4U/2F-2U": 1,
+        "3B-7U/4B-24U-G": 1,
+        "3S-6U-AFFORDABL": 1,
+        "4 1/2B-10U-BA": 1,
+        "4B-5U-H-BA": 3,
+        "4B-7U-H": 1,
+        "4B-7U-H-BA": 1,
+        "4B-8U": 1,
+        "4B-8U-BA": 1,
+        "4B-8U-H": 1,
+        "4B-9U": 1,
+        "4B-9U-H-BA": 1,
+        "4F-6U": 1,
+        "4F-7U": 1,
+        "4F-8U": 1,
+        "4F-8U-C/3F-2U": 1,
+        "5B-10U-BA": 1,
+        "5B-10U-H-BA": 3,
+        "5B-11U-H-BA-G": 1,
+        "5B-12U-1BX-H-BA": 1,
+        "5B-12U-BA": 1,
+        "5B-14U": 1,
+        "5B-14U-H-BA": 2,
+        "5B-1OU": 1,
+        "5B-20U-H": 1,
+        "5B-26U-H-CO-OP": 1,
+        "5B-35U-G": 1,
+        "5B-5U-H-(CO-OP)": 1,
+        "5B-64U/5B-64U-G": 1,
+        "5B-6B-25U-H-BA": 1,
+        "6B-20U-G": 1,
+        "6B-30U-G": 1
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Hoboken": 40
+      }
+    },
+    "Newark sample": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 48,
+        "units": 50,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 2,
+        "missing": 48,
+        "integer_min": 1900,
+        "integer_max": 1910,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 50,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 2,
+        "units_only": 0,
+        "neither_present": 48,
+        "at_least_one_missing": 50
+      },
+      "use_code_counts": {
+        "4C": 50
+      },
+      "use_description_counts": {
+        "1SCB": 1,
+        "2.5S.F.": 1,
+        "2.5SF": 1,
+        "2.5SF4UG": 1,
+        "2SF2UG": 1,
+        "2SF3UG": 1,
+        "3S.B.": 2,
+        "3S.F.": 3,
+        "3SB": 12,
+        "3SB-2UG": 1,
+        "3SB1UG": 1,
+        "3SB2UG": 1,
+        "3SB3UG": 1,
+        "3SF": 8,
+        "3SF3UG": 1,
+        "3SF4UG": 1,
+        "3SF5UG": 1,
+        "4S.B": 1,
+        "4SB": 7,
+        "5SB": 1,
+        "Apartments (class 4C)": 2,
+        "USCB16UG": 1
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Newark": 50
+      }
+    },
+    "Boston sample": {
+      "rows": 60,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 0,
+        "year_built": 8,
+        "units": 60,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 52,
+        "missing": 8,
+        "integer_min": 1890,
+        "integer_max": 2024,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 0,
+        "missing": 60,
+        "integer_min": null,
+        "integer_max": null,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 0,
+        "year_only": 52,
+        "units_only": 0,
+        "neither_present": 8,
+        "at_least_one_missing": 60
+      },
+      "use_code_counts": {
+        "A/112": 28,
+        "A/118": 1,
+        "A/120": 5,
+        "A/125": 26
+      },
+      "use_description_counts": {
+        "APT 7-30 UNITS": 28,
+        "ELDERLY HOME": 1,
+        "LUXURY APARTMENT": 5,
+        "SUBSD HOUSING S- 8": 26
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Allston": 3,
+        "Boston": 23,
+        "Brighton": 4,
+        "Dorchester": 13,
+        "East Boston": 6,
+        "Hyde Park": 1,
+        "Jamaica Plain": 1,
+        "Mattapan": 1,
+        "Roxbury": 7,
+        "South Boston": 1
+      }
+    },
+    "Cambridge sample": {
+      "rows": 50,
+      "missing": {
+        "address_id": 0,
+        "street_address": 0,
+        "postal_city": 0,
+        "state": 0,
+        "zip": 50,
+        "year_built": 0,
+        "units": 0,
+        "use_code": 0,
+        "use_description": 0,
+        "source_dataset": 0,
+        "retrieved_at": 0
+      },
+      "year_built": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 1837,
+        "integer_max": 2020,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "units": {
+        "present": 50,
+        "missing": 0,
+        "integer_min": 5,
+        "integer_max": 468,
+        "non_integer_address_ids": [],
+        "zero_count": 0,
+        "negative_count": 0
+      },
+      "year_units_completeness": {
+        "both_present": 50,
+        "year_only": 0,
+        "units_only": 0,
+        "neither_present": 0,
+        "at_least_one_missing": 0
+      },
+      "use_code_counts": {
+        "111": 33,
+        "112": 17
+      },
+      "use_description_counts": {
+        "4-8-UNIT-APT": 33,
+        ">8-UNIT-APT": 16,
+        "MXD >8-UNIT-APT": 1
+      },
+      "grouping_basis": "Organizer sample label matched using source_dataset; NJ subset additionally uses postal_city. Not a verified legal jurisdiction.",
+      "postal_city_counts": {
+        "Cambridge": 50
+      }
+    }
+  },
+  "provenance": {
+    "source_dataset_counts": {
+      "Alameda County parcels": 40,
+      "Boston Property Assessment FY2026": 60,
+      "Cambridge Property Database FY2026 (waa7-ibdu)": 50,
+      "DataSF wv5m-vpq2 (2025 roll)": 80,
+      "LA County eGIS parcels": 80,
+      "NJOGIS Parcels & MOD-IV Composite": 140,
+      "SANDAG/SanGIS parcels": 50
+    },
+    "retrieved_at_counts": {
+      "2026-10-01T22:50Z": 500
+    },
+    "notes": [
+      "All rows have retrieved_at=2026-10-01T22:50Z. Retrieval is not the age, last update, or legal verification date of each underlying assessor fact.",
+      "Dataset names identify a DataSF 2025 roll and Boston/Cambridge FY2026 assessments; these periods are not interchangeable with a certificate-of-occupancy date.",
+      "No per-row source URL, parcel identifier or assessor-field definition is supplied in the CSV."
+    ]
+  },
+  "duplicates": {
+    "address_id_groups": [],
+    "exact_street_city_state_zip_groups": [],
+    "normalized_street_city_state_groups": [],
+    "normalized_street_state_groups": [],
+    "note": "No duplicate under these textual comparisons is not proof that every record is a distinct physical property. Street aliases, ranges, parcels, condominium interests and overlapping sites were not resolved."
+  },
+  "numeric_quality": {
+    "year_built": {
+      "present": 288,
+      "missing": 212,
+      "integer_min": 1837,
+      "integer_max": 2024,
+      "non_integer_address_ids": [],
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "units": {
+      "present": 258,
+      "missing": 242,
+      "integer_min": 2,
+      "integer_max": 468,
+      "non_integer_address_ids": [],
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "numeric_sentinel_candidates": {
+      "year_built": [],
+      "units": []
+    },
+    "year_after_assessment_year_ids": [],
+    "notes": [
+      "Blank strings are the observed missing-value representation. Present years and unit counts are syntactically integers.",
+      "No listed sentinel appears; recurring years such as 1900 are retained as supplied rather than assumed to be either verified dates or missing-value sentinels.",
+      "The unit count of 2 at A0227 needs reconciliation with its coded description; present does not mean reliable.",
+      "Year built is an annual assessor field, not first residential use, original construction history, exact completion date or certificate of occupancy."
+    ]
+  },
+  "zip_quality": {
+    "missing_count": 130,
+    "present_count": 370,
+    "non_five_digit_rows": [],
+    "by_state_prefix_2": {
+      "CA": {
+        "90": 44,
+        "91": 36,
+        "92": 50,
+        "94": 40
+      },
+      "MA": {
+        "02": 60
+      },
+      "NJ": {
+        "06": 1,
+        "07": 108,
+        "08": 5,
+        "10": 11,
+        "11": 14,
+        "78": 1
+      }
+    },
+    "nj_prefix_2_counts": {
+      "06": 1,
+      "07": 108,
+      "08": 5,
+      "10": 11,
+      "11": 14,
+      "78": 1
+    },
+    "nj_prefix_3_counts": {
+      "069": 1,
+      "070": 46,
+      "071": 20,
+      "072": 2,
+      "073": 19,
+      "074": 7,
+      "075": 2,
+      "076": 9,
+      "077": 1,
+      "078": 2,
+      "087": 3,
+      "088": 2,
+      "100": 5,
+      "102": 1,
+      "109": 5,
+      "112": 13,
+      "115": 1,
+      "787": 1
+    },
+    "nj_rows_with_prefix_outside_07_or_08": [
+      {
+        "address_id": "A0003",
+        "street_address": "876-878 S 14TH ST",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11219"
+      },
+      {
+        "address_id": "A0008",
+        "street_address": "1065 SUMMIT AVENUE",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "78746"
+      },
+      {
+        "address_id": "A0017",
+        "street_address": "225 DUNCAN AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "10949"
+      },
+      {
+        "address_id": "A0044",
+        "street_address": "773-775 SANDFORD AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11211"
+      },
+      {
+        "address_id": "A0102",
+        "street_address": "124 BLOOMFIELD ST",
+        "postal_city": "Hoboken",
+        "state": "NJ",
+        "zip": "10003"
+      },
+      {
+        "address_id": "A0132",
+        "street_address": "587 N 6TH ST",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11205"
+      },
+      {
+        "address_id": "A0159",
+        "street_address": "104 SUNSET AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11211"
+      },
+      {
+        "address_id": "A0177",
+        "street_address": "166 HIGHLAND AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "11201"
+      },
+      {
+        "address_id": "A0249",
+        "street_address": "498-500 HAWTHORNE AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "10013"
+      },
+      {
+        "address_id": "A0264",
+        "street_address": "583-589 ELIZABETH AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11516"
+      },
+      {
+        "address_id": "A0266",
+        "street_address": "52 BRIGHT ST.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "10016"
+      },
+      {
+        "address_id": "A0269",
+        "street_address": "1015 CLINTON ST",
+        "postal_city": "Hoboken",
+        "state": "NJ",
+        "zip": "10003"
+      },
+      {
+        "address_id": "A0288",
+        "street_address": "75 CLENDENNY AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "11211"
+      },
+      {
+        "address_id": "A0297",
+        "street_address": "211-213 SUMMER AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11205"
+      },
+      {
+        "address_id": "A0299",
+        "street_address": "1037 WASHINGTON ST",
+        "postal_city": "Hoboken",
+        "state": "NJ",
+        "zip": "10994"
+      },
+      {
+        "address_id": "A0313",
+        "street_address": "317-319 W RUNYON ST",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11205"
+      },
+      {
+        "address_id": "A0331",
+        "street_address": "342-344 IRVINE TURNER BLV",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11219"
+      },
+      {
+        "address_id": "A0343",
+        "street_address": "408-410 5TH ST",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "10997"
+      },
+      {
+        "address_id": "A0360",
+        "street_address": "140 NEW YORK AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "10977"
+      },
+      {
+        "address_id": "A0377",
+        "street_address": "206 BLOOMFIELD ST",
+        "postal_city": "Hoboken",
+        "state": "NJ",
+        "zip": "10003"
+      },
+      {
+        "address_id": "A0416",
+        "street_address": "882 PAVONIA AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "10281"
+      },
+      {
+        "address_id": "A0450",
+        "street_address": "94 NEPTUNE AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "11211"
+      },
+      {
+        "address_id": "A0460",
+        "street_address": "223-229 SHEPHARD AVE",
+        "postal_city": "Newark",
+        "state": "NJ",
+        "zip": "11204"
+      },
+      {
+        "address_id": "A0462",
+        "street_address": "128 ST. PAULS AVE.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "11211"
+      },
+      {
+        "address_id": "A0482",
+        "street_address": "101 CLIFTON PL.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "10982"
+      },
+      {
+        "address_id": "A0489",
+        "street_address": "204 GRAND ST",
+        "postal_city": "Hoboken",
+        "state": "NJ",
+        "zip": "06901"
+      },
+      {
+        "address_id": "A0495",
+        "street_address": "230 VAN HORNE ST.",
+        "postal_city": "Jersey City",
+        "state": "NJ",
+        "zip": "11219"
+      }
+    ],
+    "caution": "The prefix list identifies input consistency review candidates, not verified postal geography. No ZIP has been corrected or used to override a property location. All nonblank ZIPs pass five-digit syntax, which does not validate city/state/ZIP consistency."
+  },
+  "address_syntax": {
+    "leading_number_range_count": 60,
+    "leading_number_range_address_ids": [
+      "A0002",
+      "A0003",
+      "A0006",
+      "A0009",
+      "A0011",
+      "A0020",
+      "A0029",
+      "A0040",
+      "A0044",
+      "A0046",
+      "A0056",
+      "A0059",
+      "A0064",
+      "A0068",
+      "A0071",
+      "A0073",
+      "A0101",
+      "A0110",
+      "A0118",
+      "A0124",
+      "A0129",
+      "A0137",
+      "A0144",
+      "A0146",
+      "A0148",
+      "A0163",
+      "A0182",
+      "A0195",
+      "A0203",
+      "A0204",
+      "A0217",
+      "A0220",
+      "A0242",
+      "A0249",
+      "A0264",
+      "A0296",
+      "A0297",
+      "A0302",
+      "A0307",
+      "A0310",
+      "A0311",
+      "A0313",
+      "A0331",
+      "A0338",
+      "A0343",
+      "A0352",
+      "A0371",
+      "A0381",
+      "A0388",
+      "A0412",
+      "A0422",
+      "A0428",
+      "A0438",
+      "A0448",
+      "A0460",
+      "A0464",
+      "A0471",
+      "A0476",
+      "A0485",
+      "A0498"
+    ],
+    "fractional_or_decimal_number_rows": [
+      {
+        "address_id": "A0009",
+        "street_address": "322-322.5 Western Ave"
+      },
+      {
+        "address_id": "A0071",
+        "street_address": "14.5-16 Vandine St"
+      }
+    ],
+    "note": "Preserve original range/fraction syntax and original address_id if future geocoding normalizes street text. Do not silently replace a range with one endpoint."
+  },
+  "jurisdiction_readiness": {
+    "verified_legal_city_field_present": false,
+    "verified_legal_city_rows_supplied": 0,
+    "rows_needing_independent_legal_jurisdiction_resolution": 500,
+    "postal_city_distinct_labels": 19,
+    "organizer_sample_group_count": 9,
+    "postal_city_notes": [
+      "Organizer README line 49 explicitly states postal_city is a mailing city, not a supplied legal jurisdiction. Identical spelling to a city name is not boundary verification.",
+      "README uses Van Nuys as a Los Angeles example, but this exact CSV contains zero Van Nuys postal_city labels: all 80 LA County sample rows say Los Angeles. This does not certify their incorporated place.",
+      "The Boston assessment source contributes 60 rows: 23 say Boston and 37 use other postal labels, including 13 Dorchester. Their grouping here is based on source_dataset and organizer sample inventory, not a new geocoding result.",
+      "The SANDAG/SanGIS source contributes 50 rows: 49 say San Diego and A0322 says San Ysidro. No incorporated-place inference was made for that row.",
+      "Santa Ana laws are in scope but this sample has no Santa Ana group or postal_city label, consistent with README line 55."
+    ],
+    "fields_absent": [
+      "legal_city",
+      "incorporated_place_id",
+      "county",
+      "latitude",
+      "longitude",
+      "geocode_match",
+      "geocode_confidence",
+      "boundary_source",
+      "boundary_as_of"
+    ]
+  },
+  "readme_gap_comparison": [
+    {
+      "claim": "San Diego and Berkeley have no year built; Berkeley has no units.",
+      "result": "confirmed",
+      "observed": "SANDAG 50/50 missing years; Alameda/Berkeley 40/40 missing both years and units."
+    },
+    {
+      "claim": "Boston apartment rows with A/ use_code have no units.",
+      "result": "confirmed",
+      "observed": "All 60 Boston-source rows have A/ codes and all 60 lack units; 8 also lack year built."
+    },
+    {
+      "claim": "Jersey City and Newark have no units; 39/40 Hoboken rows lack them.",
+      "result": "confirmed",
+      "observed": "Jersey City 50/50 and Newark 50/50 missing units; Hoboken 39/40 missing. The sole present value is A0227 units=2, needing source-definition review."
+    },
+    {
+      "claim": "New Jersey construction years are often missing.",
+      "result": "quantified",
+      "observed": "106/140 missing: Jersey City 22/50, Hoboken 36/40, Newark 48/50."
+    },
+    {
+      "claim": "No owner names; year built differs from certificate of occupancy.",
+      "result": "confirmed",
+      "observed": "No owner or CO field exists; a populated year and units pair cannot resolve those conditions."
+    },
+    {
+      "claim": "Published city coverage totals 500.",
+      "result": "counts_match_as_sample_groups",
+      "observed": "80 LA, 80 SF, 50 SANDAG, 40 Berkeley, 50 Jersey City, 40 Hoboken, 50 Newark, 60 Boston-source, 50 Cambridge-source. Postal labels alone give 19 categories."
+    },
+    {
+      "claim": "Additional observed gaps not enumerated in README 4.1.",
+      "result": "additional",
+      "observed": "LA lacks 6 years and 3 unit counts; SF lacks 2 years; Boston lacks 8 years. ZIP is blank in all 80 SF and all 50 Cambridge rows."
+    }
+  ],
+  "review_findings": [
+    {
+      "id": "A0227_unit_description_conflict",
+      "address_ids": [
+        "A0227"
+      ],
+      "observed_fields": {
+        "units": "2",
+        "use_code": "4C",
+        "use_description": "13B-93U-2C-G"
+      },
+      "issue": "The numeric field and coded description are potentially inconsistent. Only this one NJ row has a numeric units value.",
+      "next_step": "Obtain source field definitions and property record before using the count in a legal threshold. Do not decode 93U or 2C as a proven alternative count."
+    },
+    {
+      "id": "A0398_unit_description_conflict",
+      "address_ids": [
+        "A0398"
+      ],
+      "observed_fields": {
+        "units": "5",
+        "use_code": "TIC",
+        "use_description": "TIC Bldg 4 units or less"
+      },
+      "issue": "Explicit description upper bound conflicts with numeric units=5.",
+      "next_step": "Reconcile source roll fields and legal counting scope; do not silently choose either value."
+    },
+    {
+      "id": "nj_zip_consistency",
+      "address_ids": [
+        "A0003",
+        "A0008",
+        "A0017",
+        "A0044",
+        "A0102",
+        "A0132",
+        "A0159",
+        "A0177",
+        "A0249",
+        "A0264",
+        "A0266",
+        "A0269",
+        "A0288",
+        "A0297",
+        "A0299",
+        "A0313",
+        "A0331",
+        "A0343",
+        "A0360",
+        "A0377",
+        "A0416",
+        "A0450",
+        "A0460",
+        "A0462",
+        "A0482",
+        "A0489",
+        "A0495"
+      ],
+      "issue": "27 NJ-state rows have ZIP prefixes other than 07 or 08; examples include A0003 Newark / 11219. These values warrant provenance and input-consistency checks.",
+      "next_step": "Verify whether the source ZIP refers to property location or another address and compare to geocoder evidence. No location or correction is asserted here."
+    },
+    {
+      "id": "same_year_date_precision",
+      "address_ids": [
+        "A0107",
+        "A0432"
+      ],
+      "observed_fields": {
+        "year_built": "1978"
+      },
+      "issue": "Two LA sample rows carry only the cutoff year, with no month/day or CO certificate.",
+      "next_step": "Read each actual rule date basis and obtain required date evidence; do not infer the exact statutory/local cutoff result from the year alone."
+    },
+    {
+      "id": "uninterpreted_use_labels",
+      "issue": "All 500 rows have use_code and use_description, but those are assessor classifications from seven datasets. Some refer to mixed use, subsidy, elderly housing or encoded counts.",
+      "next_step": "Use dataset-specific definitions and explicit evidence bounds. Do not infer a verified housing program, current residential layout, owner occupancy, tenure or legal unit count from an undecoded label."
+    }
+  ],
+  "important_facts_not_supplied": [
+    "Owner identity, natural-person/entity status, ownership share and portfolio counts",
+    "Owner principal residence, move-in history or shared kitchen/bathroom facts",
+    "Certificate-of-occupancy exact dates and historical building/unit changes",
+    "Recorded affordability covenants, subsidy agreements and legal program eligibility",
+    "Lease/tenancy start, renewal, term, occupants, main-residence and temporary-use facts",
+    "Tenant qualifications and event-specific facts such as rent increase, screening, move-out, notices and exemptions",
+    "Applicable legal boundary, government-regulated status and rule-specific historical property facts"
+  ],
+  "interpretation_limits": [
+    "203 rows with both year and units is a completeness count, not a count of properties for which rule applicability can be decided. At least two present unit counts have identified source-consistency questions.",
+    "The sample includes 500 property-address records, not 500 proven individual rental units or 500 independently verified parcels.",
+    "No rule has been marked applies, unknown, superseded, pending or not_yet_effective by this profiling task. No number of applicable rules is estimated."
+  ]
+}

@@ -1,0 +1,34 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.cache/
+*.egg-info/
+participant-final-no-hour16 3/
+*.zip
+# Publish only the reviewed handoff artifacts; retain local runs and audits.
+outputs/*
+!outputs/module_a/
+outputs/module_a/*
+!outputs/module_a/rules.json
+!outputs/module_a/applicability_contract.json
+!outputs/module_a/applicability_fact_catalog.json
+!outputs/module_a/format_validation.json
+!outputs/module_a/status_verification_report.json
+!outputs/submission_readiness_20261003/
+outputs/submission_readiness_20261003/*
+!outputs/submission_readiness_20261003/address_profile.json
+
+# Third-party research captures stay local; the official final code is included.
+data/supplemental/*
+!data/supplemental/D074.txt
+!data/supplemental/D074_capture_log.json
+!data/supplemental/capture_notes.txt
+
+# Local historical notes and the superseded challenge PDF are not the handoff.
+/CHAT_HANDOFF.md
+/RULE_*.md
+/challenge2-rental housing law navigator.pdf

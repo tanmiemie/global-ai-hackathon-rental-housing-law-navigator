@@ -1,0 +1,5 @@
+# Preserve source offsets and artifact hashes across checkout platforms.
+participant-final-no-hour16_v5/** -text
+data/supplemental/D074.txt -text
+outputs/module_a/*.json -text
+*.pdf -text -diff
