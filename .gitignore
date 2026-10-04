@@ -46,6 +46,12 @@ outputs/evaluator_first10_workflow_v3/*
 !outputs/evaluator_first10_workflow_v3/address_diagnostics.json
 !outputs/evaluator_first10_workflow_v3/run_report.json
 
+# Deterministic Module C change-test output and compact audit.
+!outputs/module_c/
+outputs/module_c/*
+!outputs/module_c/changes.json
+!outputs/module_c/change_test_audit.json
+
 # Include the exact supplemental captures required by the reviewed plans.
 # Other research captures and model caches stay local.
 data/supplemental/*
